@@ -132,6 +132,19 @@
   td.val.nd{color:var(--nd);}
   td.val.att{color:var(--green-dark);font-weight:800;}
   .g30-note{font-size:10px;color:var(--green-dark);margin-top:8px;font-weight:600;font-style:italic;}
+  .kpi-cards{display:none;}
+  .kpi-card{border:1px solid var(--line);border-radius:12px;padding:11px 12px;margin-top:10px;}
+  .kpi-card.primary{background:rgba(95,178,89,0.06);border-color:rgba(95,178,89,0.4);}
+  .kc-name{font-size:11px;font-weight:700;color:var(--ink);text-transform:uppercase;letter-spacing:0.04em;margin-bottom:9px;}
+  .kpi-card.primary .kc-name{color:var(--green-dark);}
+  .kc-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+  .kc-cell{background:#F4F7F4;border-radius:8px;padding:8px 10px;display:flex;flex-direction:column;gap:2px;}
+  .kc-cell.over{background:rgba(95,178,89,0.1);}
+  .kc-win{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.04em;color:var(--muted);}
+  .kc-val{font-size:17px;font-weight:800;font-variant-numeric:tabular-nums;color:var(--ink);line-height:1;}
+  .kc-cell.over .kc-val{color:var(--green-dark);}
+  .kc-val.nd{color:var(--nd);font-weight:600;font-size:14px;}
+  .kc-val.att{color:var(--green-dark);}
   footer{margin-top:40px;font-size:11px;color:var(--muted);text-align:center;border-top:1px solid var(--line);padding-top:18px;}
   .legend{font-size:11px;color:var(--muted);margin-top:8px;}
   @media (max-width:760px){
@@ -140,6 +153,8 @@
     .targets{grid-template-columns:1fr;}
     .feed-post{grid-template-columns:1fr;}
     .ig-side{border-right:none;border-bottom:1px solid var(--line);}
+    .kpi-table{display:none;}
+    .kpi-cards{display:block;}
   }
 </style>
 </head>
@@ -151,7 +166,6 @@
     <div class="sub">Reach-first reporting · Publisher: ZonaFanta · Cliente: Polymarket Italia</div>
     <div class="updated">Ultimo aggiornamento: <b id="lastUpdate">—</b></div>
   </header>
-  <div class="section-label">Nord Stella — Views &amp; Reach</div>
   <div class="north">
     <div class="nstar-title">Performance complessiva ad oggi · 8 giugno 2026</div>
     <div class="overall-hero" id="overallHero"></div>
@@ -638,6 +652,13 @@ function render(){
         if(w==="g7" && isND(v) && p.g7_attesa) return `<td class="val nd att">*</td>`;
         const cls = w==="overall" ? "val over" : "val";
         return `<td class="${cls} ${isND(v)?'nd':''}">${fmt(v)}</td>`;}).join("")}</tr>`).join("");
+    const cards=KPIS.map(([key,name,primary])=>`<div class="kpi-card${primary?' primary':''}">
+      <div class="kc-name">${name}</div>
+      <div class="kc-grid">${WINDOWS.map(([w,l])=>{const v=getKPI(p,w,key);
+        const att = (w==="g7" && isND(v) && p.g7_attesa);
+        const over = w==="overall";
+        return `<div class="kc-cell${over?' over':''}"><span class="kc-win">${l}</span><span class="kc-val ${isND(v)&&!att?'nd':''}${att?' att':''}">${att?'*':fmt(v)}</span></div>`;}).join("")}</div>
+    </div>`).join("");
     const noteRow = attese.length ? `<div class="g30-note">* in arrivo: ${attese.join(" · ")}</div>` : "";
     return `<div class="feed-post"><div class="ig-side">
       <div class="ig-topbar"><a class="ig-avatar" href="${DATA.meta.profilo_ig||'#'}" target="_blank" rel="noopener"><span class="av-inner">${DATA.meta.logo?`<img src="${DATA.meta.logo}" alt="ZonaFanta">`:'ZF'}</span></a><div class="ig-handle"><a href="${DATA.meta.profilo_ig||'#'}" target="_blank" rel="noopener">zonafanta</a><small>Post ${p.n} · ${fmtDate(p.data)}</small></div></div>
@@ -651,7 +672,8 @@ function render(){
         <div class="data-meta">${fmtDate(p.data)}</div></div>
         <span class="tag ${p.tipo}">${p.tipo==='shot'?'Collab shot':'Collab media'}</span></div>
       <span class="market">Mercato: <b>${p.mercato}</b></span>
-      <table><thead><tr><th>KPI insights</th>${WINDOWS.map(([,l])=>`<th>${l}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table>
+      <div class="kpi-table"><table><thead><tr><th>KPI insights</th>${WINDOWS.map(([,l])=>`<th>${l}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>
+      <div class="kpi-cards">${cards}</div>
       ${noteRow}
       <a class="ig-btn" href="${p.url}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>Apri post su Instagram</a>
       </div></div>`;}).join("");
