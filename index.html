@@ -69,17 +69,52 @@
   .win-sub{margin-top:9px;}
   .win-sub .v{font-size:14px;font-weight:700;color:#d8e0d8;}
   .win-sub .v.nd{color:var(--nd);font-weight:500;}
-  .targets{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px;}
-  .target{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow-soft);position:relative;overflow:hidden;}
-  .target::after{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad-green);opacity:0.9;}
-  .target h3{font-size:13px;font-weight:800;}
-  .target .scope{font-size:11px;color:var(--muted);margin-bottom:12px;}
-  .bar{height:10px;background:#E7ECE7;border-radius:99px;overflow:hidden;box-shadow:inset 0 1px 2px rgba(16,20,17,0.08);}
-  .bar>span{display:block;height:100%;background:var(--grad-green);border-radius:99px;width:0%;box-shadow:0 0 12px rgba(95,178,89,0.5);transition:width .6s cubic-bezier(.22,1,.36,1);}
-  .target .nums{display:flex;justify-content:space-between;font-size:12px;margin-top:8px;}
-  .target .nums .cur{font-weight:800;}
-  .target .nums .cur.nd{color:var(--nd);}
-  .target .nums .goal{color:var(--muted);}
+  /* ===== OBIETTIVI — pannello liquid-glass ===== */
+  @keyframes shimmer{0%{background-position:-180% 0;}100%{background-position:180% 0;}}
+  @keyframes fillgrow{from{transform:scaleX(0);}to{transform:scaleX(1);}}
+  .targets{position:relative;margin-top:14px;background:var(--grad-ink);border:1px solid rgba(255,255,255,0.10);border-radius:22px;padding:22px 22px 20px;box-shadow:var(--shadow-glass);overflow:hidden;animation:rise .5s cubic-bezier(.22,1,.36,1) both;}
+  .targets::before{content:'';position:absolute;inset:0;background:radial-gradient(600px 280px at 12% -20%,rgba(95,178,89,0.18),transparent 60%);pointer-events:none;}
+  .targets>*{position:relative;z-index:1;}
+  .obj-head{font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:var(--green);font-weight:700;margin-bottom:18px;}
+  /* Floor aggregato — hero */
+  .obj-agg .oa-top{display:flex;align-items:baseline;justify-content:space-between;gap:14px;flex-wrap:wrap;}
+  .obj-agg .oa-num{font-size:46px;line-height:0.95;font-weight:800;color:#fff;letter-spacing:-0.02em;}
+  .obj-agg .oa-num.nd{color:var(--nd);font-size:34px;}
+  .obj-agg .oa-num .unit{color:var(--green);}
+  .obj-agg .oa-goal{font-size:13px;color:#9AA39A;font-weight:600;text-align:right;}
+  .obj-agg .oa-goal b{color:#d8e0d8;font-weight:800;}
+  .obj-agg .oa-label{font-size:11px;letter-spacing:0.06em;text-transform:uppercase;color:#9AA39A;font-weight:700;margin-bottom:10px;}
+  .liquid{position:relative;height:16px;margin-top:16px;border-radius:99px;background:rgba(255,255,255,0.07);box-shadow:inset 0 1px 3px rgba(0,0,0,0.4),inset 0 0 0 1px rgba(255,255,255,0.06);overflow:hidden;}
+  .liquid>.fill{position:absolute;inset:0;width:0%;border-radius:99px;transform-origin:left center;
+    background:linear-gradient(90deg,#3B7A37 0%,#5FB259 50%,#7BD46F 100%);
+    box-shadow:0 0 18px rgba(95,178,89,0.55),inset 0 1px 0 rgba(255,255,255,0.35);
+    transition:width 1s cubic-bezier(.22,1,.36,1);}
+  .liquid>.fill::after{content:'';position:absolute;inset:0;border-radius:99px;
+    background:linear-gradient(100deg,transparent 20%,rgba(255,255,255,0.45) 50%,transparent 80%);
+    background-size:200% 100%;animation:shimmer 2.6s linear infinite;}
+  .liquid>.fill .cap{position:absolute;right:0;top:50%;width:18px;height:18px;transform:translate(50%,-50%);border-radius:50%;background:#cdf5c9;box-shadow:0 0 14px rgba(123,212,111,0.9),0 0 0 4px rgba(95,178,89,0.25);}
+  .obj-agg .oa-foot{display:flex;justify-content:space-between;align-items:center;margin-top:11px;font-size:11px;color:#9AA39A;font-weight:600;}
+  .obj-agg .oa-foot .pct{color:var(--green);font-weight:800;}
+  /* divisorio */
+  .obj-div{height:1px;background:rgba(255,255,255,0.10);margin:22px 0 18px;}
+  /* Floor singolo — pill row */
+  .obj-sing .os-top{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:4px;}
+  .obj-sing .os-title{font-size:13px;font-weight:800;color:#fff;}
+  .obj-sing .os-count{font-size:13px;font-weight:800;color:var(--green);}
+  .obj-sing .os-count .nd{color:var(--nd);}
+  .obj-sing .os-sub{font-size:11px;color:#9AA39A;font-weight:500;margin-bottom:14px;}
+  .pillrow{display:flex;flex-wrap:wrap;gap:8px;}
+  .ppill{display:flex;flex-direction:column;align-items:center;gap:5px;min-width:52px;padding:9px 8px 8px;border-radius:13px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.10);box-shadow:inset 0 1px 0 rgba(255,255,255,0.10);}
+  .ppill.ok{background:rgba(95,178,89,0.16);border-color:rgba(123,212,111,0.55);box-shadow:inset 0 1px 0 rgba(255,255,255,0.18),0 0 14px rgba(95,178,89,0.18);}
+  .ppill .pn{font-size:10px;color:#9AA39A;font-weight:700;letter-spacing:0.03em;}
+  .ppill.ok .pn{color:#cdeac8;}
+  .ppill .pv{font-size:13px;font-weight:800;color:#d8e0d8;}
+  .ppill.ok .pv{color:#fff;}
+  .ppill .pv.nd{color:var(--nd);font-weight:600;}
+  .ppill .pdot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,0.25);}
+  .ppill.ok .pdot{background:var(--green-bright);box-shadow:0 0 8px rgba(123,212,111,0.8);}
+  .obj-sing .os-foot{margin-top:13px;font-size:11px;color:#9AA39A;font-weight:600;}
+  .obj-sing .os-foot b{color:#d8e0d8;}
   .feed-post{background:var(--card);border:1px solid var(--line);border-radius:20px;overflow:hidden;margin-bottom:22px;display:grid;grid-template-columns:340px 1fr;box-shadow:var(--shadow-soft);}
   .ig-side{background:#000;border-right:1px solid var(--line);}
   .ig-topbar{display:flex;align-items:center;gap:9px;padding:10px 12px;background:#fff;border-bottom:1px solid var(--line);}
@@ -847,21 +882,44 @@ function render(){
   const singPct = postiConDato.length ? Math.round(postiOk.length/postiConDato.length*100) : 0;
   const aggGoalLbl=(floorAgg/1000000).toString().replace(".",",")+"M";
   const postFloorLbl=(floorPost/1000)+"K";
-  document.getElementById("targets").innerHTML=`
-    <div class="target">
-      <h3>Floor aggregato · ${aggGoalLbl} views</h3>
-      <div class="scope">Somma views sui ${nPrev} post previsti (collab estiva)</div>
-      <div class="bar"><span style="width:${aggPct}%"></span></div>
-      <div class="nums"><span class="cur ${isND(aggCur)?'nd':''}">${fmt(aggCur)} views</span><span class="goal">/ ${fmt(floorAgg)}</span></div>
-      <div class="scope" style="margin-top:8px;margin-bottom:0">${POSTS.length}/${nPrev} post pubblicati · ${postiConDato.length} con dato insights</div>
-    </div>
-    <div class="target">
-      <h3>Floor singolo · ${postFloorLbl} / post</h3>
-      <div class="scope">Ogni post deve superare ${postFloorLbl} views (non compensabile)</div>
-      <div class="bar"><span style="width:${singPct}%"></span></div>
-      <div class="nums"><span class="cur ${postiConDato.length?'':'nd'}">${postiOk.length}/${postiConDato.length} post sopra soglia</span><span class="goal">${postiSotto.length?`${postiSotto.length} sotto`:''}</span></div>
-      <div class="scope" style="margin-top:8px;margin-bottom:0">${postiConDato.length?'Su post con dato insights disponibile':'Nessun dato insights ancora rilevato'}</div>
+  // pillole floor singolo: una per post estivo pubblicato
+  const pills=POSTS.map(p=>{
+    const v=bestViews(p); const ok=!isND(v)&&v>=floorPost;
+    return `<div class="ppill ${ok?'ok':''}">
+      <span class="pdot"></span>
+      <span class="pn">P${p.n_collab||p.n}</span>
+      <span class="pv ${isND(v)?'nd':''}">${fmtCompact(v)}</span>
     </div>`;
+  }).join("");
+  document.getElementById("targets").innerHTML=`
+    <div class="obj-head">Obiettivi collab estiva</div>
+
+    <div class="obj-agg">
+      <div class="oa-label">Floor aggregato · tutte le views sommate</div>
+      <div class="oa-top">
+        <div class="oa-num ${isND(aggCur)?'nd':''}">${fmtCompact(aggCur)}<span class="unit"> views</span></div>
+        <div class="oa-goal">obiettivo<br><b>${aggGoalLbl} views</b></div>
+      </div>
+      <div class="liquid"><div class="fill" data-w="${aggPct}"><span class="cap"></span></div></div>
+      <div class="oa-foot">
+        <span>${POSTS.length}/${nPrev} post pubblicati · ${postiConDato.length} con insights</span>
+        <span class="pct">${Math.round(aggPct)}%</span>
+      </div>
+    </div>
+
+    <div class="obj-div"></div>
+
+    <div class="obj-sing">
+      <div class="os-top">
+        <span class="os-title">Floor singolo · ${postFloorLbl} a post</span>
+        <span class="os-count">${postiConDato.length?`${postiOk.length}/${postiConDato.length}`:'<span class="nd">—</span>'} <span style="font-weight:600;color:#9AA39A;">ok</span></span>
+      </div>
+      <div class="os-sub">Ogni post deve superare ${postFloorLbl} views per conto suo · non compensabile</div>
+      <div class="pillrow">${pills||'<span class="os-sub">Nessun post pubblicato</span>'}</div>
+      <div class="os-foot">${postiSotto.length?`<b>${postiSotto.length}</b> post ancora sotto soglia`:(postiConDato.length?'Tutti i post con insights sono sopra soglia':'In attesa dei primi insights')}</div>
+    </div>`;
+  // anima il riempimento liquido dopo il paint
+  requestAnimationFrame(()=>{const f=document.querySelector('.liquid .fill');if(f)f.style.width=(f.dataset.w||0)+'%';});
   // ===== TIMELINE cronologica (storico -> estiva) =====
   const tl=document.getElementById("timeline");
   if(tl){
