@@ -3,7 +3,7 @@
 Dashboard delle performance dei post Instagram sponsorizzati della collaborazione
 **ZonaFanta × Polymarket Italia**. Vista unica, condivisa internamente e con il cliente.
 
-🔗 **Dashboard live:** _(inserisci qui il link dopo il deploy, es. https://tuonome.github.io/zonafanta-polymarket/)_
+🔗 **Dashboard live:** _https://polymarket-zonafanta.vercel.app/_
 
 ---
 
