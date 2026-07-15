@@ -1,77 +1,103 @@
-# ZonaFanta × Polymarket Italia — Performance Dashboard
+# polymarket-zonafanta
 
-Dashboard delle performance dei post Instagram sponsorizzati della collaborazione
-**ZonaFanta × Polymarket Italia**. Vista unica, condivisa internamente e con il cliente.
+Reporting e dashboard delle performance dei post Instagram sponsorizzati della
+collaborazione **ZonaFanta × Polymarket Italia** (collab estiva).
 
-🔗 **Dashboard live:** _https://polymarket-zonafanta.vercel.app/_
+Questa repo è pensata per essere sviluppata con **Claude Code**. Leggi prima
+`TODO.md`: contiene la lista dei task in ordine di dipendenza.
 
 ---
 
-## Cosa mostra
+## Cosa fa questo progetto
 
-- **Performance complessiva ad oggi**: visualizzazioni totali generate (con media per post) e reach aggregata.
-- **Visualizzazioni per finestra temporale**: +24h / +3 giorni / +7 giorni / +30 giorni.
-- **Feed dei post** in stile Instagram: per ogni post, carosello delle slide, mercato Polymarket di riferimento, link diretto al post e tabella KPI completa (reach, visualizzazioni, commenti, condivisioni, salvati, invii in DM, risposte) su tutte le finestre.
+ZonaFanta (community fantacalcio, ~176K follower Instagram) pubblica post
+sponsorizzati per Polymarket Italia. Ogni post va tracciato su 4 finestre
+temporali (g1 / g3 / g7 / g30) e i dati alimentano una dashboard condivisa
+internamente **e** con il cliente (Antonio, referente Polymarket).
 
-La metrica primaria è la **reach (account raggiunti)**. Il dato di punta comunicato è il **totale visualizzazioni**.
+Il progetto tiene traccia di due floor contrattuali:
 
-## Struttura del progetto
+- **Floor singolo:** 100.000 views minime per post (non compensabile tra post)
+- **Floor aggregato:** 1.500.000 views totali sui 12 post della collab estiva
+
+Se a fine ciclo un floor non è raggiunto, si aggiungono post fino al 2026-08-30.
+
+---
+
+## Principio architetturale (IMPORTANTE)
+
+Il problema storico di questo progetto era avere **più fonti di verità che
+divergevano** (dashboard con dati embedded, `CONTESTO_PROGETTO.md`, `dati.md`
+mantenuti a mano in parallelo). Questa repo elimina il problema alla radice:
+
+> **`data/posts.json` è l'UNICA fonte dati editabile.**
+> Tutto il resto (dashboard, CONTESTO, dati.md, floor, aggregati) è **generato**
+> da `posts.json` via `scripts/build.py`. Non si modificano a mano.
+
+Regola d'oro: **non si inventano MAI numeri.** I dati delle performance li
+carica l'utente (screenshot insights Instagram). Se un KPI manca, resta `n/d` —
+non si stima. Dati pubblici di contesto (es. follower count) si possono
+recuperare dal web citando la fonte.
+
+---
+
+## Struttura repo
 
 ```
-.
-├── index.html              # Dashboard pronta (file unico, auto-sufficiente) — è ciò che viene pubblicato
-├── assets/
-│   ├── dati.json           # FONTE DI VERITÀ: tutti i dati dei post
-│   ├── template.html       # Template HTML con placeholder __DATI_JSON__
-│   └── dashboard.html      # Output generato (copia di index.html)
+polymarket-zonafanta/
+├── README.md                    questo file
+├── TODO.md                      lista task per Claude Code (leggi questo)
+├── CONTESTO_PROGETTO.md         OUTPUT generato da build (accordi + floor)
+├── data/
+│   └── posts.json               UNICA fonte dati editabile
+├── dashboard/
+│   └── index.html               autonomo, dati iniettati al build
+├── skills/                      copie di riferimento delle skill (vedi nota sotto)
 ├── scripts/
-│   ├── build_dashboard.py  # Genera la dashboard embeddando dati.json nel template
-│   └── embed_slides.py     # Incorpora le slide (cover/carosello) in base64 nel JSON
-└── SKILL.md                # Protocollo di aggiornamento del reporting
+│   ├── build.py                 posts.json -> index.html + .md rigenerati
+│   ├── validate.py              ricalcola floor, segnala KPI mancanti, blocca se incoerente
+│   └── alert.py                 finestre scadute -> messaggio Telegram
+├── docs/
+│   ├── COME_AGGIORNARE.md       workflow operativo
+│   └── KPI_RULES.md             regole di lettura degli insights
+└── .github/workflows/
+    ├── deploy.yml               validate + build + deploy Vercel su push
+    └── alert.yml                cron giornaliero -> alert Telegram
 ```
-
-## Come aggiornare i dati
-
-Tutti i numeri vivono in `assets/dati.json` — **non si modifica mai `index.html` a mano**.
-
-1. Apri `assets/dati.json` e aggiorna i valori del post interessato (vedi struttura sotto).
-2. Rigenera la dashboard:
-   ```bash
-   cd scripts
-   python build_dashboard.py
-   ```
-3. Copia l'output come homepage:
-   ```bash
-   cp assets/dashboard.html index.html
-   ```
-4. Commit & push:
-   ```bash
-   git add -A && git commit -m "Aggiorna dati performance" && git push
-   ```
-
-### Regola d'oro
-Nessun dato viene mai stimato o inventato. I valori di reach, visualizzazioni, salvati,
-invii in DM e risposte arrivano esclusivamente dagli screenshot insights di Instagram.
-Un dato non disponibile resta `null` → mostrato come `n/d`.
-
-## Pubblicazione
-
-### GitHub Pages
-1. Carica il repository su GitHub.
-2. `Settings` → `Pages` → `Source: Deploy from a branch` → branch `main`, cartella `/ (root)`.
-3. La dashboard sarà su `https://<utente>.github.io/<repo>/`.
-
-### Vercel (alternativa)
-1. Importa il repository su Vercel.
-2. Nessun build step necessario: è un sito statico. Output directory = root.
-3. Deploy → link pronto da condividere.
-
-## Note tecniche
-
-- `index.html` è un **singolo file autosufficiente**: HTML, CSS, dati JSON e immagini (base64) sono tutti dentro. Nessuna dipendenza esterna, funziona anche aperto in locale.
-- Le immagini delle slide sono incorporate in base64, quindi il file è relativamente pesante (~2 MB). È normale e va bene per l'hosting statico.
-- Ottimizzato per la lettura da **mobile**.
 
 ---
 
-_Ultimo aggiornamento dati: 8 giugno 2026_
+## Le skill in `skills/`
+
+Le skill `.md` sono **copie di riferimento versionate**, così Claude Code ha il
+contesto in casa. La **fonte operativa viva** resta il progetto Claude: se
+modifichi una skill lì, ricordati di aggiornare la copia qui (o accetta che
+diverga). Skill rilevanti:
+
+- `zonafanta-polymarket-report` — reporting e dashboard (questo progetto)
+- `polymarket-zonafanta` — contenuti editoriali e pitch B2B
+- `richiesta-mercato-antonio` — richieste di apertura nuovi mercati Polymarket
+
+---
+
+## Workflow operativo (una volta costruita la repo)
+
+1. Arriva uno screenshot insights di un post → si aggiorna `data/posts.json`
+   seguendo `docs/KPI_RULES.md`
+2. `python scripts/validate.py` — controlla che i numeri siano coerenti
+3. `python scripts/build.py` — rigenera `index.html` (autonomo) + i `.md`
+4. push su GitHub → CI valida, builda e deploya su Vercel
+5. ogni giorno GitHub Actions gira `alert.py` → se una finestra è scaduta e non
+   loggata, arriva un messaggio Telegram che ricorda di caricare gli insights
+
+Dettaglio completo in `docs/COME_AGGIORNARE.md`.
+
+---
+
+## Secrets richiesti (GitHub → Settings → Secrets)
+
+Da configurare a mano prima che alert e deploy funzionino:
+
+- `TELEGRAM_BOT_TOKEN` — dal bot creato con @BotFather
+- `TELEGRAM_CHAT_ID` — chat_id dove ricevere gli alert
+- `VERCEL_TOKEN`, `VERCEL_PROJECT_ID`, `VERCEL_ORG_ID` — per il deploy automatico
