@@ -291,10 +291,11 @@ function render(){
   // ===== TIMELINE cronologica (storico -> estiva) =====
   const tl=document.getElementById("timeline");
   if(tl){
-    const ordinati=[...ALL_POSTS].sort((a,b)=>a.data.localeCompare(b.data));
+    // dal più recente al meno recente (richiesta 16/7): l'estiva apre, lo storico chiude
+    const ordinati=[...ALL_POSTS].sort((a,b)=>b.data.localeCompare(a.data));
     let html="";let sepMesso=false;
     ordinati.forEach((p,i)=>{
-      if(!sepMesso && p.collab==="estiva" && i>0){
+      if(!sepMesso && p.collab==="storico" && i>0){
         html+=`<div class="tl-sep"><span>inizio collab estiva</span></div>`;sepMesso=true;
       }
       const v=bestViews(p);
@@ -313,7 +314,7 @@ function render(){
         </div></div>`;
     });
     tl.innerHTML=html;
-    tl.scrollLeft=tl.scrollWidth;
+    tl.scrollLeft=0; // il più recente è già a sinistra
   }
   const feedOrdered=[...POSTS].sort((a,b)=>b.data.localeCompare(a.data));
   document.getElementById("feed").innerHTML=feedOrdered.map(renderPost).join("");

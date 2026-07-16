@@ -81,9 +81,16 @@ La lista task completa è in `TODO.md`; l'audit dati della migrazione in
 - ✅ 5.2 DECISO: tracker resta in JS com'è (porting = rischio senza valore;
   credenziali già unificate via env TELEGRAM_*).
 - ⏳ 5.3: testo aggiornato skill report per il progetto Claude (dopo Fase 5).
-- ⚠️ PRIMO DEPLOY: sostituirà la versione vecchia online → sequenza
-  concordata: preview (senza --prod) → verifica → ok esplicito → produzione.
-  Nulla è stato ancora pushato o deployato.
+- ⚠️ PRIMO DEPLOY — sequenza in corso (16/7 mattina):
+  · secrets GitHub: ✅ tutti e 5 inseriti dall'utente e verificati (nomi)
+  · branch `preview` pushato (commit edf0ccd, main NON toccato) con workflow
+    preview.yml → PREVIEW DEPLOYATA senza --prod:
+    https://polymarket-zonafanta-73k2n4x0g-nicolo-8965s-projects.vercel.app
+  · verifica preview: ✅ numeri nuovi (1,44M · 96% · 7/7 sopra floor),
+    ✅ UI completa, ✅ interazioni (pill→2,54M/12 post), ✅ /api/track
+    funzionante end-to-end (debug 200, messaggi Telegram arrivati),
+    ✅ produzione intatta (3,7MB vecchia)
+  · ⏳ IN ATTESA: ok esplicito dell'utente → merge/push su main → produzione.
 - Ricognizione del 15/7 sera:
   · GitHub secrets: NESSUNO presente → mancano tutti e 5
     (VERCEL_TOKEN/ORG_ID/PROJECT_ID, TELEGRAM_BOT_TOKEN/CHAT_ID). STOP qui.
