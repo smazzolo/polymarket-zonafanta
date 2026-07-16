@@ -85,7 +85,7 @@ La lista task completa è in `TODO.md`; l'audit dati della migrazione in
   · secrets GitHub: ✅ tutti e 5 inseriti dall'utente e verificati (nomi)
   · branch `preview` pushato (commit edf0ccd, main NON toccato) con workflow
     preview.yml → PREVIEW DEPLOYATA senza --prod:
-    https://polymarket-zonafanta-73k2n4x0g-nicolo-8965s-projects.vercel.app
+    https://polymarket-zonafanta-pj62v9ulf-nicolo-8965s-projects.vercel.app (v2 con timeline dal più recente, commit 5d67698)
   · verifica preview: ✅ numeri nuovi (1,44M · 96% · 7/7 sopra floor),
     ✅ UI completa, ✅ interazioni (pill→2,54M/12 post), ✅ /api/track
     funzionante end-to-end (debug 200, messaggi Telegram arrivati),
