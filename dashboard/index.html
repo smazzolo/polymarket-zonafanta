@@ -250,6 +250,10 @@
   .ig-actions b{font-weight:700;}
   .ig-pubnote{font-size:9px;color:var(--faint);padding:0 13px 10px;background:var(--card);text-transform:uppercase;letter-spacing:0.02em;font-weight:600;}
 
+  /* min-width:0 = permette alle colonne della griglia di restringersi:
+     senza, una tabella larga gonfia la card intera oltre lo schermo
+     invece di far scattare lo scroll interno (bug mobile 16/7) */
+  .ig-side,.ig-data{min-width:0;}
   .ig-data{padding:18px 20px;display:flex;flex-direction:column;}
   .data-head{display:flex;align-items:flex-start;justify-content:space-between;gap:13px;margin-bottom:11px;}
   .data-title{font-size:16px;font-weight:800;letter-spacing:-0.01em;line-height:1.25;}
@@ -391,7 +395,7 @@
   .drop-table tr.dt-tot td{background:var(--green-soft);font-weight:800;border-top:2px solid var(--green-line);}
 
   @media (max-width:780px){
-    body{padding:20px 14px 70px;}
+    body{padding:20px 14px 70px;overflow-x:hidden;} /* la pagina non scorre MAI in orizzontale: scorrono solo tabelle e timeline al loro interno */
     .filters{grid-template-columns:1fr;}
     header{flex-direction:column;gap:12px;}
     .head-side{flex-direction:row;align-items:center;}
