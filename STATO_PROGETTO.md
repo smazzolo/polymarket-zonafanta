@@ -1,4 +1,4 @@
-# Stato progetto — aggiornato al 15 luglio 2026
+# Stato progetto — PROGETTO COMPLETO ✅ (16 luglio 2026)
 
 File di stato mantenuto a mano a fine fase (non è un output del build).
 La lista task completa è in `TODO.md`; l'audit dati della migrazione in
@@ -68,7 +68,7 @@ La lista task completa è in `TODO.md`; l'audit dati della migrazione in
 - Per attivarlo servono i secrets `TELEGRAM_BOT_TOKEN` e `TELEGRAM_CHAT_ID`
   su GitHub (checklist in fondo a TODO.md).
 
-## 🔜 Fase 5 — CI/CD (5.1 fatto, 5.2 decisione utente, 5.3 dopo)
+## ✅ Fase 5 — CI/CD (COMPLETA)
 
 - `.github/workflows/deploy.yml`: su push su main → validate+build (in
   catena: se validate fallisce il deploy NON parte) → assembla la versione
@@ -80,7 +80,9 @@ La lista task completa è in `TODO.md`; l'audit dati della migrazione in
   come asset sorgente (vive SOLO nella versione deployata).
 - ✅ 5.2 DECISO: tracker resta in JS com'è (porting = rischio senza valore;
   credenziali già unificate via env TELEGRAM_*).
-- ⏳ 5.3: testo aggiornato skill report per il progetto Claude (dopo Fase 5).
+- ✅ 5.3: skill `zonafanta-polymarket-report` riscritta per il nuovo flusso
+  (16/7): testo consegnato all'utente da incollare nel progetto Claude,
+  copia in `skills/` già riallineata (vedi `skills/README.md`).
 - ⚠️ PRIMO DEPLOY — sequenza in corso (16/7 mattina):
   · secrets GitHub: ✅ tutti e 5 inseriti dall'utente e verificati (nomi)
   · branch `preview` pushato (commit edf0ccd, main NON toccato) con workflow
@@ -110,3 +112,20 @@ La lista task completa è in `TODO.md`; l'audit dati della migrazione in
     github.enabled=false così l'unico canale di deploy resta la GitHub
     Action. La produzione attuale (vecchia dashboard, 3,7 MB) resta com'è
     finché non deployamo noi.
+
+---
+
+## 🏁 Chiusura (16/7/2026)
+
+Tutte le 5 fasi complete. In produzione: dashboard nuova su
+polymarket-zonafanta.vercel.app (con tracker), alert Telegram attivo
+3x/giorno, CI validate→build→deploy su push a main, branch `preview` per
+verifiche senza toccare la produzione.
+
+Flusso operativo a regime (docs/COME_AGGIORNARE.md):
+screen insights → data/posts.json → validate.py → build.py → push.
+
+Code residue NON bloccanti:
+- dubbi dati storici in docs/DATI_MANCANTI.md (A2 conferma screen, A4, A5,
+  A8) — si chiudono quando l'utente guarda gli screenshot;
+- incollare il testo nuovo della skill nel progetto Claude (fonte viva).

@@ -127,7 +127,7 @@ nessun bot in ascolto.
       lo standalone resta zero-fetch. Si rivaluta il porting solo se il
       tracker andrà comunque rimesso mano per altri motivi.
 
-- [ ] **5.3** (post-Fase 5) Preparare il testo aggiornato della skill
+- [x] **5.3** (post-Fase 5) Preparare il testo aggiornato della skill
       `zonafanta-polymarket-report` per il progetto Claude (fonte viva):
       nuovo flusso `posts.json → validate → build`, i due output, alert,
       CI/deploy. Poi riallineare la copia in `skills/`. NON aggiornare solo

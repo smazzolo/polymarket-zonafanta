@@ -13,17 +13,14 @@ perché Claude Code abbia il contesto in casa.
 
 | cartella | scopo | copiata il | versione sorgente del |
 |---|---|---|---|
-| `zonafanta-polymarket-report` | reporting e dashboard performance (questo progetto) | 15/7/2026 | 30/6/2026 |
+| `zonafanta-polymarket-report` | reporting e dashboard performance (questo progetto) | riscritta 16/7/2026 | da incollare nel progetto Claude |
 | `polymarket-zonafanta` | contenuti editoriali e pitch B2B (+ references: glossario, TOV, template) | 15/7/2026 | 4/5/2026 |
 | `richiesta-mercato-antonio` | richieste di apertura nuovi mercati Polymarket ad Antonio | 15/7/2026 | 9/6/2026 |
 
-## ⚠️ Nota importante su `zonafanta-polymarket-report`
+## Nota su `zonafanta-polymarket-report`
 
-La copia (30/6) descrive ancora la **vecchia struttura** del progetto:
-`assets/dati.json` come fonte, `scripts/embed_cover.py`, generazione di
-`assets/dashboard.html`. Da metà luglio 2026 la struttura è quella di questa
-repo: **`data/posts.json`** unica fonte, `scripts/validate.py` + `scripts/build.py`,
-output `dashboard/index.html` (vedi `docs/COME_AGGIORNARE.md`).
-
-→ La skill nel progetto Claude andrebbe aggiornata al nuovo flusso; quando
-succede, riallineare anche questa copia.
+Copia **riscritta il 16/7/2026** per il nuovo flusso (`posts.json` → validate
+→ build → CI/deploy, alert senza stato, tracker JS). Il testo aggiornato è
+stato consegnato all'utente per l'incolla nel progetto Claude: finché non lo
+incolla lì, la fonte viva è ancora la versione vecchia (30/6) — questa copia
+è avanti, non indietro.

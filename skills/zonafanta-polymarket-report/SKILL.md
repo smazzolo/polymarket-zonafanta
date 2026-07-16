@@ -6,136 +6,180 @@ description: >
   SKILL ogni volta che l'utente: carica uno screenshot insights di un post
   ZonaFanta×Polymarket, chiede di aggiornare i dati delle performance, chiede di
   aggiornare like/commenti/condivisioni, dice "aggiorna la dashboard", "rigenera
-  il report", "aggiorna i dati del post", "controlla i numeri live", "fai il
-  refresh dei dati pubblici", carica lo screen-cover di un post, o aggiunge un
-  nuovo post alla collaborazione. Attivare anche per: dashboard Polymarket,
-  report ZonaFanta, reach post sponsorizzati, insights Instagram collab,
-  finestre 24h/3g/7g/30g, floor 100K/post e 1.5M aggregato. NON usare per
-  contenuti editoriali ZonaFanta o pitch (quella è la skill polymarket-zonafanta).
+  il report", "aggiorna posts.json", "fai il deploy della dashboard", "controlla
+  i numeri live", "fai il refresh dei dati pubblici", carica le slide di un post,
+  o aggiunge un nuovo post alla collaborazione. Attivare anche per: dashboard
+  Polymarket, report ZonaFanta, reach post sponsorizzati, insights Instagram
+  collab, finestre 24h/3g/7g/30g, floor 100K/post e 1.5M aggregato, alert
+  Telegram insights. NON usare per contenuti editoriali ZonaFanta o pitch
+  (quella è la skill polymarket-zonafanta).
 ---
 
 # ZonaFanta × Polymarket — Report & Dashboard
 
-Questa skill mantiene la dashboard performance della collaborazione ZonaFanta × Polymarket.
-La **fonte di verità unica** è `assets/dati.json`. La dashboard HTML è solo una vista
-generata da quel file. Non si modifica mai l'HTML a mano: si aggiorna il JSON e si rigenera.
+La skill lavora sulla repo **github.com/smazzolo/polymarket-zonafanta**.
+La **fonte di verità unica** è **`data/posts.json`**: tutto il resto — la
+dashboard, `CONTESTO_PROGETTO.md`, `dati.md` — è **generato** da
+`scripts/build.py` e non si modifica MAI a mano (qualsiasi modifica manuale
+agli output viene sovrascritta al build successivo).
 
 ## REGOLA D'ORO (non negoziabile)
-- **Mai inventare, stimare o proiettare numeri.** Tutti i dati insights (reach, views,
-  salvati, dm, sondaggi) arrivano SOLO da screenshot insights caricati dall'utente.
+- **Mai inventare, stimare o proiettare numeri.** Tutti i dati insights (reach,
+  views, salvati, dm, sondaggi) arrivano SOLO da screenshot insights caricati
+  dall'utente.
 - Valore non disponibile = `null` nel JSON → mostrato come `n/d` in dashboard.
-- I contatori pubblici (like, commenti, condivisioni) si possono leggere da Chrome
-  aprendo il post: quelli sì, li aggiorno io.
-- La **reach** è la metrica primaria. Le 4 finestre temporali (`g1`/`g3`/`g7`/`g30`)
-  corrispondono a +24h / +3 giorni / +7 giorni / +30 giorni dalla pubblicazione.
+  Mai `0` se non è un vero zero letto dallo screen.
+- I contatori pubblici (like, commenti, condivisioni) si possono leggere da
+  Chrome aprendo il post: quelli sì, li aggiorno io.
+- La **reach** è la metrica primaria. Le 4 finestre temporali
+  (`g1`/`g3`/`g7`/`g30`) = +24h / +3g / +7g / +30g dalla pubblicazione.
+  **Convenzione fissa**: il giorno di pubblicazione è il **giorno 0** →
+  la finestra gN scade a `data pubblicazione + N giorni`.
 
 ## Accordo corrente — Collab Estiva (floor)
-- **12 post totali**, ~1 a settimana, fino al 31/08/2026.
-- **Floor singolo: 100.000 views per post** — non compensabile tra post, ogni post deve
-  raggiungerlo indipendentemente.
+- **12 post totali**, ~1 a settimana.
+- **Floor singolo: 100.000 views per post** — non compensabile tra post.
 - **Floor aggregato: 1.500.000 views totali** sui 12 post.
-- Se a fine ciclo uno dei due floor non è raggiunto → si aggiungono post fino a fine
-  agosto per chiudere il gap.
-- I 5 post della collab precedente (`collab:"storico"`) restano in dashboard solo come
-  riferimento storico: **esclusi** dai calcoli dei floor estiva.
+- Se a fine ciclo un floor non è raggiunto → post aggiuntivi fino al 30/08/2026.
+- I 5 post `collab:"storico"` restano in dashboard come riferimento:
+  **esclusi** dai calcoli dei floor estiva.
+
+## Architettura e flusso (com'è fatta davvero)
+
+```
+data/posts.json ──► scripts/validate.py ──► scripts/build.py ──► 2 output:
+ (UNICA fonte        (cancello: se trova       │
+  editabile)          errori, il build         ├─ dashboard/index.html  ← STANDALONE
+                      NON parte)               │   zero fetch, funziona da file://,
+                                               │   SENZA tracker: è il file da
+                                               │   inviare ad Antonio così com'è
+                                               └─ CONTESTO_PROGETTO.md + dati.md
+
+push su GitHub ──► CI (GitHub Actions):
+  · branch `preview` → preview.yml → deploy Vercel di PREVIEW (url temporaneo)
+  · branch `main`    → deploy.yml  → validate+build+deploy in PRODUZIONE
+                       (build.py --deploy: standalone + tracker + api/ → Vercel)
+```
+
+- **Due versioni, un solo build**: lo standalone resta senza tracker e senza
+  fetch; la versione deployata su `polymarket-zonafanta.vercel.app` ha in più
+  il **tracker Telegram** (client iniettato + serverless `api/track.js`,
+  **in JavaScript** — decisione ferma del 16/7/2026, non riscriverlo in Python).
+- **Alert Telegram senza stato** (`scripts/alert.py` + `alert.yml`): 3 girate
+  al giorno (9/14/20 ora italiana, doppio cron UTC + check Europe/Rome, immune
+  al cambio d'ora). Se una finestra è scaduta e ancora tutta `null` manda UN
+  messaggio raggruppato; appena `posts.json` viene aggiornato si spegne da
+  solo. Nessuna finestra scoperta = nessun messaggio. Credenziali SOLO da env
+  (`TELEGRAM_BOT_TOKEN`/`TELEGRAM_CHAT_ID`), util condivisa in
+  `scripts/telegram_util.py`.
+- L'auto-deploy Git di Vercel è disattivato da `vercel.json`: si deploya SOLO
+  via GitHub Actions.
+- Docs nella repo: `docs/SCHEMA_DATI.md` (schema campo per campo),
+  `docs/KPI_RULES.md`, `docs/COME_AGGIORNARE.md`, `STATO_PROGETTO.md`.
 
 ## Regola KPI: dove si leggono (NON CHIEDERE — CERCA NEL FEED)
-Per ogni post l'utente gira DUE screen: la **vista insight** (Panoramica) e la **vista
-feed/post**. Ogni KPI ha la sua fonte fissa. **Non chiedere mai conferma di un valore che
-sta in uno dei due screen: cercalo prima di chiedere.** Chiedere un dato già presente
-negli screen è un errore.
+Per ogni post l'utente gira DUE screen: la **vista insight** (Panoramica) e la
+**vista feed/post**. Ogni KPI ha la sua fonte fissa. **Non chiedere mai
+conferma di un valore che sta in uno dei due screen: cercalo prima di chiedere.**
 
 Mappa fonte per KPI (memorizzala, è fissa):
 - **reach** (Account raggiunti) → vista insight
 - **views** (Visualizzazioni) → vista insight
 - **commenti** → numero ufficiale dalla barra azioni (vista insight o feed)
 - **salvati** (icona segnalibro) → vista insight
-- **condivisioni** → **vista FEED**, icona aereo/aeroplanino nella barra azioni del post.
-  ⚠️ Sulla vista insight la stessa icona aereo significa "Invii in DM": NON confonderle.
+- **condivisioni** → **vista FEED**, icona aereo/aeroplanino nella barra azioni.
+  ⚠️ Sulla vista insight la stessa icona significa "Invii in DM": NON confonderle.
 - **dm** (Invii in DM) → **vista INSIGHT**, icona aeroplanino.
   Se mostra **"--", il valore è 0 (zero)**, mai n/d. Mai chiedere conferma.
-- **sondaggi** (Risposte ai sondaggi) → **vista FEED**, riga **"Risposte: N · Visualizza"**
-  sotto la caption. Quel numero È il valore sondaggi del post. Leggilo da lì.
+- **sondaggi** → **vista FEED**, riga **"Risposte: N · Visualizza"** sotto la caption.
 
-Regola operativa: condivisioni e sondaggi stanno **sempre nello screen del feed**.
-Se un valore sembra mancare, **NON chiedere: rileggi lo screen del feed** (icona aereo per
-condivisioni, riga "Risposte: N" per sondaggi). Si chiede SOLO se manca proprio lo screen
-del feed, non se manca il numero dentro uno screen che hai già.
+Regola operativa: condivisioni e sondaggi stanno **sempre nello screen del
+feed**. Se un valore sembra mancare, **NON chiedere: rileggi lo screen del
+feed**. Si chiede SOLO se manca proprio lo screen, non il numero dentro uno
+screen che hai già. **dm e sondaggi sono obbligatori per ogni finestra loggata.**
+
+Coerenza: i contatori sono cumulativi, tra g1→g3→g7→g30 (→overall) non devono
+scendere. `validate.py` **blocca** se calano reach o views (errore di
+caricamento certo: colonne o finestre invertite); un calo sugli altri KPI è un
+avviso da verificare sugli screen, mai da "aggiustare" a mente.
 
 ## I tre task della skill
 
 ### TASK A — Refresh dati pubblici da Chrome (like/commenti/condivisioni)
-Quando l'utente chiede di aggiornare i numeri live / pubblici:
-1. Apri ogni post con il tool Chrome (`navigate` all'url del post, poi `screenshot`).
-   Gli url sono nel campo `url` di ogni post in `dati.json`.
-2. Leggi dalla barra azioni del post i tre contatori pubblici: like, commenti, condivisioni.
-3. Aggiorna nel JSON, per ogni post, il blocco `pubblici` con i nuovi valori e metti
-   `aggiornato` alla data odierna.
-4. Rigenera la dashboard (vedi "Rigenerare").
-NOTA: questi sono dati PUBBLICI, non insights. In dashboard restano etichettati come tali.
+1. Apri ogni post con il tool Chrome (url nel campo `url` di ogni post in
+   `data/posts.json`).
+2. Leggi dalla barra azioni i tre contatori pubblici.
+3. Aggiorna il blocco `pubblici` di ogni post con i valori e `aggiornato` =
+   data odierna.
+4. Valida, rigenera, pubblica (vedi sotto).
+NOTA: sono dati PUBBLICI, non insights: in dashboard restano etichettati così.
 
 ### TASK B — Inserimento insights guidato (da screenshot)
-Quando l'utente carica uno screenshot insights di un post:
-1. **Identifica il post**: chiedi (o deduci) di QUALE post si tratta. Aiutati con la data,
-   il mercato, o il titolo. In `dati.json` ogni post ha `n`, `titolo`, `mercato`, `data`.
-2. **Identifica la finestra**: chiedi (o deduci dalla data di pubblicazione vs oggi) se lo
-   snapshot è +24h (`g1`), +3g (`g3`), +7g (`g7`) o +30g (`g30`).
-   - Se la data dello screen non è chiara, CHIEDI. Non assegnare a caso.
-3. **Estrai i KPI usando la mappa fonte fissa** (vedi "Regola KPI: dove si leggono").
-   In sintesi: reach/views/salvati/dm dalla vista insight; condivisioni e sondaggi dalla
-   vista feed (icona aereo = condivisioni; riga "Risposte: N" = sondaggi). dm "--" = 0.
-   **Non chiedere un valore che è in uno dei due screen: cercalo.**
-4. **Scrivi tutto ciò che è leggibile dai due screen.** Resta `null` solo ciò che non
-   compare in nessuno dei due. Non riempire a stima. Non chiedere conferma di valori già
-   presenti negli screen.
-5. Aggiorna nel JSON il blocco `insights.<finestra>` del post giusto.
-6. Conferma all'utente cosa hai inserito e cosa è rimasto `n/d`, poi rigenera.
+1. **Identifica il post**: deduci (o chiedi) quale — aiutati con data, mercato,
+   titolo (`n`, `titolo`, `mercato.nome`, `data` in `posts.json`).
+2. **Identifica la finestra**: g1/g3/g7/g30, deducendo dalla data di
+   pubblicazione vs data dello screen (ricorda: pubblicazione = giorno 0).
+   Se non è chiara, CHIEDI: mai assegnare a caso.
+3. **Estrai i KPI con la mappa fonte fissa.** dm "--" = 0.
+4. **Scrivi tutto ciò che è leggibile.** Resta `null` solo ciò che non compare
+   in nessuno dei due screen.
+5. Aggiorna `insights.<finestra>` del post giusto in `data/posts.json`.
+6. Conferma cosa hai inserito e cosa resta `n/d`, poi valida-rigenera-pubblica.
 
-### TASK C — Cover reale del post (sostituire il mockup)
-Quando l'utente carica lo screen-cover (la copertina/prima slide) di un post:
-1. Identifica il post (come Task B).
-2. Converti l'immagine in base64 (data URI) e scrivila nel campo `cover_base64` del post.
-   Formato: `"data:image/png;base64,XXXX"` (o image/jpeg). Usa lo script
-   `scripts/embed_cover.py <dati.json> <n_post> <path_immagine>` se utile.
-3. Rigenera. Il template usa `cover_base64` se presente, altrimenti disegna il mockup SVG.
+### TASK C — Slide del post (carosello)
+Le slide sono **normali file immagine** in `assets/post-NN/` (`01.jpg`,
+`02.jpg`… nell'ordine del carosello), elencate nel campo `slides` del post.
+Niente base64 nel JSON. Vanno bene gli originali: al build vengono compressi
+automaticamente (480px, JPEG q60); gli originali restano come fonte.
+Se mancano slide, `validate.py` lo segnala.
 
-## Aggiungere un nuovo post alla collaborazione
-Inserisci un nuovo oggetto nell'array `posts` di `dati.json`, copiando la struttura di un
-post esistente. Campi: `n` (numero progressivo), `tipo` (`"media"` o `"shot"`), `data`
-(ISO `YYYY-MM-DD`), `titolo`, `mercato`, `url`, `cover_base64` (`null` all'inizio),
-`pubblici` (leggi da Chrome), `insights` (tutte e 4 le finestre a `null`).
-Aggiorna `meta.ultimo_aggiornamento`. Poi rigenera.
+## Aggiungere un nuovo post
+Nuovo oggetto nell'array `posts` di `data/posts.json` (schema completo in
+`docs/SCHEMA_DATI.md`): `n` (progressivo, mai riusato), `titolo`, `tipo`
+(`"media"`|`"shot"`), `collab:"estiva"`, `data` (ISO), `url`,
+`mercato` = **oggetto** `{nome, url, nota}` (url = link al mercato Polymarket;
+nota = quote/volume, testo libero), `slides` (file in `assets/post-NN/`),
+`insights` con tutte e 4 le finestre a `null`, `overall: null`,
+`pubblici` (da Chrome), `note: null`.
+NON esiste più `ultimo_aggiornamento` da aggiornare: la data la mette il build.
 
-## Rigenerare la dashboard
-Dopo OGNI modifica al JSON:
+## Validare, rigenerare, pubblicare
+Dopo OGNI modifica a `data/posts.json`:
 ```bash
-cd scripts && python build_dashboard.py
+python3 scripts/validate.py     # controlla: se ci sono ERRORI, fermati e correggi
+python3 scripts/build.py        # rigenera i 2 output (esegue di nuovo validate)
 ```
-Genera `assets/dashboard.html` (singolo file standalone, dati embeddati, deployabile su
-Vercel). Poi presenta il file all'utente con `present_files`.
-**Dopo ogni rigenerazione consegna SEMPRE entrambe le preview, desktop e mobile** (stesso
-file, CSS responsive). Mai saltare la preview mobile.
+- `dashboard/index.html` è lo standalone da mostrare/inviare ad Antonio.
+- Per pubblicare online: commit + push. Su `main` la CI valida, builda e
+  deploya in produzione. Per modifiche da verificare prima: push sul branch
+  `preview` → URL temporaneo di preview, la produzione non si tocca.
+- Presenta sempre la dashboard rigenerata all'utente, desktop E mobile.
 
-## Struttura del JSON (riferimento)
+## Struttura del JSON (riferimento rapido — dettagli in docs/SCHEMA_DATI.md)
 ```
-meta: { cliente, referente, publisher, canale, ultimo_aggiornamento,
-        floor_post_views(100000), floor_aggregato_views(1500000), n_post_previsti(12),
-        scadenza, collab_attiva, nota_metrica_primaria }
+meta: { cliente, referente, publisher, canale, profilo_ig, logo(path),
+        collab_attiva, ritmo, floor_singolo_views(100000),
+        floor_aggregato_views(1500000), post_previsti(12), scadenza }
 posts[]: {
-  n, tipo("media"|"shot"), collab("estiva"|"storico"), data(ISO), titolo, mercato, url,
-  cover_base64(null|dataURI),
+  n, titolo, tipo("media"|"shot"), collab("estiva"|"storico"), data(ISO), url,
+  mercato: { nome, url, nota },
+  slides: ["assets/post-NN/01.jpg", ...],
+  insights: { g1|g3|g7|g30: { reach, views, commenti, condivisioni, salvati, dm, sondaggi } },
+  overall: null | { ...7 KPI..., aggiornato(ISO) },   ← lettura extra "a oggi"; vince sui calcoli
   pubblici: { like, commenti, condivisioni, aggiornato(ISO) },
-  insights: { g1|g3|g7|g30: { reach, views, commenti, condivisioni, salvati, dm, sondaggi } }
+  note: null | testo
 }
 ```
 
 ## Note importanti
-- **Tono cliente**: tutto ciò che finisce in dashboard è per Antonio/Polymarket. Asciutto,
-  professionale, niente emoji decorative, niente corporate speak.
-- **Calcolo floor**: i floor (100K/post + 1.5M aggregato) si calcolano SOLO sui post
-  `collab:"estiva"`. I 5 post `collab:"storico"` restano visibili come riferimento ma
-  sono esclusi dai conteggi. Il campo `tipo` ("media"/"shot") è solo descrittivo, non
-  cambia il calcolo dei floor.
-- **Replicabilità futura**: la struttura è pensata per essere riusata con altri clienti
-  cambiando `meta` e `posts`. Non astrarre oltre finché non serve.
-- Aggiorna sempre `meta.ultimo_aggiornamento` a ogni intervento.
+- **Tono cliente**: tutto ciò che finisce in dashboard è per Antonio/Polymarket.
+  Asciutto, professionale, niente emoji decorative, niente corporate speak.
+- **Calcolo floor**: solo sui post `collab:"estiva"`; il valore "overall" di un
+  post = blocco `overall` se presente, altrimenti la finestra più recente
+  loggata. Tutti i derivati (floor %, gap, aggregati) li calcola `build.py`:
+  non scriverli mai nel JSON, non calcolarli mai nel JavaScript della dashboard.
+- Il campo `tipo` ("media"/"shot") è solo descrittivo.
+- **Mai toccare a mano**: `dashboard/index.html`, `CONTESTO_PROGETTO.md`,
+  `dati.md` (output di build) e i file in `dashboard/src/` salvo richieste
+  esplicite di modifica grafica.
+- Dubbi aperti sui dati storici: `docs/DATI_MANCANTI.md`.
