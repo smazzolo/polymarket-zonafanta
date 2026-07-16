@@ -1,33 +1,39 @@
-# Promemoria Telegram — 3 girate al giorno alle 9:00 / 14:00 / 20:00 ORA ITALIANA.
+# Promemoria Telegram — 3 girate al giorno: mattina / pomeriggio / sera.
 #
-# GitHub Actions schedula solo in UTC e non conosce l'ora legale, quindi:
-# - il cron copre ENTRAMBI gli orari possibili (CEST = UTC+2 d'estate,
-#   CET = UTC+1 d'inverno) → 6 trigger al giorno;
-# - il primo step controlla l'ora reale a Europe/Rome e prosegue SOLO se è
-#   una delle tre ore giuste → sempre esattamente 3 girate/giorno, tutto
-#   l'anno, senza toccare nulla al cambio d'ora.
+# I cron di GitHub Actions sono BEST-EFFORT: possono partire in ritardo anche
+# di più di un'ora (e per un workflow appena creato la prima girata può
+# saltare del tutto). Perciò:
+# - UN solo set di trigger (7/12/18 UTC): ogni voce di cron scatta al massimo
+#   una volta al giorno → mai più di 3 messaggi/giorno, per costruzione;
+# - il primo step accetta la run se l'ora a Europe/Rome cade nella FINESTRA
+#   dello slot (mattina 08–10, pomeriggio 13–15, sera 19–21): così una run in
+#   ritardo fino a ~2h passa comunque, e il cambio ora legale/solare sposta
+#   l'orario di ±1h dentro la stessa finestra senza toccare nulla.
+#   (Estate: girate ~9/14/20. Inverno: ~8/13/19.)
 name: alert-insights
 
 on:
   schedule:
-    - cron: "0 7,12,18 * * *"   # 9/14/20 quando l'Italia è in ora legale (UTC+2)
-    - cron: "0 8,13,19 * * *"   # 9/14/20 quando l'Italia è in ora solare (UTC+1)
+    - cron: "0 7,12,18 * * *"
   workflow_dispatch: {}          # lancio manuale per test
 
 jobs:
   alert:
     runs-on: ubuntu-latest
     steps:
-      - name: È l'ora giusta in Italia?
+      - name: Siamo nella finestra giusta (ora italiana)?
         id: ora
         run: |
-          ORA=$(TZ=Europe/Rome date +%H)
+          ORA=$(TZ=Europe/Rome date +%-H)
           echo "Ora a Roma: $ORA"
-          if [ "$ORA" = "09" ] || [ "$ORA" = "14" ] || [ "$ORA" = "20" ] || [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] \
+             || { [ "$ORA" -ge 8 ] && [ "$ORA" -le 10 ]; } \
+             || { [ "$ORA" -ge 13 ] && [ "$ORA" -le 15 ]; } \
+             || { [ "$ORA" -ge 19 ] && [ "$ORA" -le 21 ]; }; then
             echo "esegui=true" >> "$GITHUB_OUTPUT"
           else
             echo "esegui=false" >> "$GITHUB_OUTPUT"
-            echo "Trigger dell'altro fuso: salto (comportamento atteso al cambio d'ora)."
+            echo "Run fuori finestra (ritardo estremo del cron?): salto."
           fi
 
       - name: Checkout
