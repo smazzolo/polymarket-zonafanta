@@ -15,7 +15,6 @@ name: alert-insights
 on:
   schedule:
     - cron: "0 7,12,18 * * *"
-    - cron: "50 13 16 7 *"   # TEST una tantum del 16/7 (15:50 Roma) — RIMUOVERE dopo la verifica
   workflow_dispatch: {}          # lancio manuale per test
 
 jobs:
