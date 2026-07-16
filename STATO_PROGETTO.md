@@ -94,9 +94,10 @@ La lista task completa è in `TODO.md`; l'audit dati della migrazione in
     verde → PRODUZIONE LIVE: polymarket-zonafanta.vercel.app serve la
     dashboard nuova (verificato: 1,5MB, dati nuovi, tracker attivo).
     Con main popolato si attiva anche il cron dell'alert (3x/giorno).
-  · Post-produzione: fix mobile richiesto dall'utente (tabelle KPI delle
-    card ora scorrono in orizzontale con nome KPI sticky) → in preview
-    (commit f6d59f7), in attesa di prova su telefono e ok per promuovere.
+  · Fix mobile (16/7): tabelle KPI delle card scorrevoli con nome KPI
+    sticky + min-width:0 sulle colonne griglia + body senza overflow
+    orizzontale. Verificato con misure DOM (0 overflow, 12/12 tabelle
+    scrollabili) e su telefono dall'utente → ✅ IN PRODUZIONE (686c58f).
 - Ricognizione del 15/7 sera:
   · GitHub secrets: NESSUNO presente → mancano tutti e 5
     (VERCEL_TOKEN/ORG_ID/PROJECT_ID, TELEGRAM_BOT_TOKEN/CHAT_ID). STOP qui.
