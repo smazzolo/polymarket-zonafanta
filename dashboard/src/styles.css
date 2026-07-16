@@ -234,6 +234,11 @@
   .market{font-size:12px;color:var(--muted);margin-bottom:15px;line-height:1.45;border-left:2px solid var(--green);padding-left:11px;}
   .market b{color:var(--ink);font-weight:700;}
 
+  /* tabella KPI delle card: su schermi stretti scorre in orizzontale
+     invece di schiacciarsi (stesso pattern della tabella dati compatta) */
+  .kpi-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;}
+  .kpi-scroll::-webkit-scrollbar{height:6px;}
+  .kpi-scroll::-webkit-scrollbar-thumb{background:var(--line-2);border-radius:99px;}
   table{width:100%;border-collapse:collapse;font-size:12px;}
   thead th{text-align:right;font-size:10px;text-transform:uppercase;letter-spacing:0.03em;color:var(--faint);font-weight:700;padding:0 0 9px;border-bottom:1px solid var(--line-2);}
   thead th:first-child{text-align:left;}
@@ -388,5 +393,11 @@
     .csplit-card.open .acc-caret{transform:rotate(180deg);}
     .feed-post{grid-template-columns:1fr;}
     .ig-side{border-right:none;border-bottom:1px solid var(--ig-border);}
+    /* tabella KPI delle card: colonne a larghezza leggibile + scroll,
+       col nome del KPI fisso a sinistra mentre i dati scorrono sotto */
+    .kpi-scroll table{min-width:560px;}
+    .kpi-scroll td.kpi-name,.kpi-scroll thead th:first-child{
+      position:sticky;left:0;z-index:1;background:var(--card);padding-right:12px;}
+    .kpi-scroll td.val{padding-left:14px;}
   }
   @media (max-width:420px){.th-num{font-size:52px;}.win-row .v{font-size:12.5px;}.win-label{font-size:8px;}}

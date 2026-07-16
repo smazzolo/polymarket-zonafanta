@@ -542,7 +542,7 @@ function renderPost(p){
         <div class="data-meta">${fmtDate(p.data)}</div></div>
         <span class="tag ${tagClass}">${tagLabel}</span></div>
       <span class="market">Mercato: <b>${mercatoHTML(p)}</b></span>
-      <table><thead><tr><th>KPI insights</th>${WINDOWS.map(([,l])=>`<th>${l}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table>
+      <div class="kpi-scroll"><table><thead><tr><th>KPI insights</th>${WINDOWS.map(([,l])=>`<th>${l}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>
       ${noteRow}
       <a class="ig-btn" data-link="ig-post" data-post="post-${p.n}" href="${p.url}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>Apri post su Instagram</a>
       </div></div>`;
