@@ -1,0 +1,824 @@
+{
+  "meta": {
+    "cliente": "Polymarket Italia",
+    "referente": "Antonio",
+    "publisher": "ZonaFanta",
+    "canale": "Instagram - post a feed",
+    "profilo_ig": "https://www.instagram.com/zonafanta/",
+    "logo": "assets/logo.png",
+    "collab_attiva": "estiva",
+    "ritmo": "~1 a settimana (flessibile: a volte 2, a volte 0)",
+    "floor_singolo_views": 100000,
+    "floor_aggregato_views": 1500000,
+    "post_previsti": 12,
+    "scadenza": "2026-08-30"
+  },
+  "posts": [
+    {
+      "n": 1,
+      "titolo": "La Roma andrà in Champions League - fuori due tra Milan, Juventus e Como",
+      "tipo": "shot",
+      "collab": "storico",
+      "data": "2026-05-04",
+      "url": "https://www.instagram.com/p/DX9CML2DRlj/?img_index=1",
+      "mercato": {
+        "nome": "Roma in Champions - 29% Polymarket",
+        "url": null,
+        "nota": null
+      },
+      "slides": [
+        "assets/post-01/01.jpg"
+      ],
+      "insights": {
+        "g1": {
+          "reach": 162612,
+          "views": 353713,
+          "commenti": 50,
+          "condivisioni": 6,
+          "salvati": 99,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g3": {
+          "reach": 194496,
+          "views": 405069,
+          "commenti": 68,
+          "condivisioni": 9,
+          "salvati": 117,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g7": {
+          "reach": 196402,
+          "views": 408899,
+          "commenti": 69,
+          "condivisioni": 9,
+          "salvati": 119,
+          "dm": 448,
+          "sondaggi": 1601
+        },
+        "g30": {
+          "reach": 198054,
+          "views": 410340,
+          "commenti": 75,
+          "condivisioni": 9,
+          "salvati": 122,
+          "dm": 450,
+          "sondaggi": null
+        }
+      },
+      "overall": {
+        "reach": 198054,
+        "views": 410340,
+        "commenti": 75,
+        "condivisioni": 9,
+        "salvati": 122,
+        "dm": 450,
+        "sondaggi": 1637,
+        "aggiornato": "2026-06-08"
+      },
+      "pubblici": {
+        "like": 7858,
+        "commenti": 75,
+        "condivisioni": 9,
+        "aggiornato": "2026-06-08"
+      },
+      "note": null
+    },
+    {
+      "n": 2,
+      "titolo": "La Lazio vincerà la Coppa Italia? Sarri può far succedere il miracolo?",
+      "tipo": "media",
+      "collab": "storico",
+      "data": "2026-05-12",
+      "url": "https://www.instagram.com/p/DYPGeq7DWOs/?img_index=1",
+      "mercato": {
+        "nome": "Vincente Coppa Italia",
+        "url": null,
+        "nota": null
+      },
+      "slides": [
+        "assets/post-02/01.jpg",
+        "assets/post-02/02.jpg",
+        "assets/post-02/03.jpg",
+        "assets/post-02/04.jpg",
+        "assets/post-02/05.jpg"
+      ],
+      "insights": {
+        "g1": {
+          "reach": 63857,
+          "views": 144761,
+          "commenti": 48,
+          "condivisioni": 10,
+          "salvati": 70,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g3": {
+          "reach": 74005,
+          "views": 168833,
+          "commenti": 64,
+          "condivisioni": 11,
+          "salvati": 84,
+          "dm": 554,
+          "sondaggi": 488
+        },
+        "g7": {
+          "reach": 74509,
+          "views": 171053,
+          "commenti": 67,
+          "condivisioni": 10,
+          "salvati": 82,
+          "dm": 554,
+          "sondaggi": 494
+        },
+        "g30": {
+          "reach": 75015,
+          "views": 172775,
+          "commenti": 67,
+          "condivisioni": 10,
+          "salvati": 82,
+          "dm": null,
+          "sondaggi": null
+        }
+      },
+      "overall": null,
+      "pubblici": {
+        "like": 3234,
+        "commenti": 67,
+        "condivisioni": 10,
+        "aggiornato": "2026-06-08"
+      },
+      "note": null
+    },
+    {
+      "n": 3,
+      "titolo": "L'ultima giornata che vale una stagione - Cremonese vs Lecce",
+      "tipo": "media",
+      "collab": "storico",
+      "data": "2026-05-18",
+      "url": "https://www.instagram.com/p/DYeeDlnjSz9/?img_index=1",
+      "mercato": {
+        "nome": "Salvezza - Di Francesco / Cremonese",
+        "url": null,
+        "nota": null
+      },
+      "slides": [
+        "assets/post-03/01.jpg",
+        "assets/post-03/02.jpg",
+        "assets/post-03/03.jpg"
+      ],
+      "insights": {
+        "g1": {
+          "reach": 84846,
+          "views": 182121,
+          "commenti": 79,
+          "condivisioni": 12,
+          "salvati": 64,
+          "dm": 206,
+          "sondaggi": 1921
+        },
+        "g3": {
+          "reach": 100980,
+          "views": 210500,
+          "commenti": 106,
+          "condivisioni": 14,
+          "salvati": 79,
+          "dm": 277,
+          "sondaggi": 2285
+        },
+        "g7": {
+          "reach": 111526,
+          "views": 237677,
+          "commenti": 122,
+          "condivisioni": 16,
+          "salvati": 86,
+          "dm": 319,
+          "sondaggi": 2537
+        },
+        "g30": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        }
+      },
+      "overall": {
+        "reach": 112648,
+        "views": 239146,
+        "commenti": 122,
+        "condivisioni": 16,
+        "salvati": 88,
+        "dm": 319,
+        "sondaggi": 2537,
+        "aggiornato": "2026-06-08"
+      },
+      "pubblici": {
+        "like": 5545,
+        "commenti": 122,
+        "condivisioni": 16,
+        "aggiornato": "2026-06-08"
+      },
+      "note": null
+    },
+    {
+      "n": 4,
+      "titolo": "Ve lo avevamo detto - la Roma è in Champions",
+      "tipo": "media",
+      "collab": "storico",
+      "data": "2026-05-25",
+      "url": "https://www.instagram.com/p/DYwlaQfjbI2/?img_index=1",
+      "mercato": {
+        "nome": "Roma / Milan / Juve in Champions",
+        "url": null,
+        "nota": null
+      },
+      "slides": [
+        "assets/post-04/01.jpg",
+        "assets/post-04/02.jpg",
+        "assets/post-04/03.jpg",
+        "assets/post-04/04.jpg",
+        "assets/post-04/05.jpg",
+        "assets/post-04/06.jpg"
+      ],
+      "insights": {
+        "g1": {
+          "reach": 58325,
+          "views": 132299,
+          "commenti": 22,
+          "condivisioni": 10,
+          "salvati": 47,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g3": {
+          "reach": 61334,
+          "views": 141599,
+          "commenti": 22,
+          "condivisioni": 11,
+          "salvati": 51,
+          "dm": 197,
+          "sondaggi": 204
+        },
+        "g7": {
+          "reach": 64890,
+          "views": 150267,
+          "commenti": 30,
+          "condivisioni": 11,
+          "salvati": 55,
+          "dm": 203,
+          "sondaggi": 223
+        },
+        "g30": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        }
+      },
+      "overall": {
+        "reach": 65948,
+        "views": 152041,
+        "commenti": 30,
+        "condivisioni": 11,
+        "salvati": 55,
+        "dm": 203,
+        "sondaggi": 223,
+        "aggiornato": "2026-06-08"
+      },
+      "pubblici": {
+        "like": 3583,
+        "commenti": 30,
+        "condivisioni": 11,
+        "aggiornato": "2026-06-08"
+      },
+      "note": null
+    },
+    {
+      "n": 5,
+      "titolo": "Messi, Ronaldo e Neymar hanno quasi le stesse probabilità di vincere il Mondiale",
+      "tipo": "media",
+      "collab": "storico",
+      "data": "2026-06-04",
+      "url": "https://www.instagram.com/p/DZKQHELDbIg/?img_index=1",
+      "mercato": {
+        "nome": "Chi vince il Mondiale",
+        "url": null,
+        "nota": null
+      },
+      "slides": [
+        "assets/post-05/01.jpg",
+        "assets/post-05/02.jpg",
+        "assets/post-05/03.jpg",
+        "assets/post-05/04.jpg",
+        "assets/post-05/05.jpg",
+        "assets/post-05/06.jpg"
+      ],
+      "insights": {
+        "g1": {
+          "reach": 37692,
+          "views": 84025,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": 36,
+          "sondaggi": 154
+        },
+        "g3": {
+          "reach": 46707,
+          "views": 107052,
+          "commenti": 36,
+          "condivisioni": 11,
+          "salvati": 23,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g7": {
+          "reach": 53367,
+          "views": 132072,
+          "commenti": 36,
+          "condivisioni": 11,
+          "salvati": 24,
+          "dm": null,
+          "sondaggi": 193
+        },
+        "g30": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        }
+      },
+      "overall": null,
+      "pubblici": {
+        "like": 1585,
+        "commenti": 36,
+        "condivisioni": 11,
+        "aggiornato": "2026-06-08"
+      },
+      "note": null
+    },
+    {
+      "n": 6,
+      "titolo": "Il Mondiale non è roba per la Serie A",
+      "tipo": "media",
+      "collab": "estiva",
+      "data": "2026-06-16",
+      "url": "https://www.instagram.com/zonafanta/",
+      "mercato": {
+        "nome": "Chi sarà il vincitore della Coppa del Mondo?",
+        "url": null,
+        "nota": "Marocco 2% · Sports · Soccer"
+      },
+      "slides": [
+        "assets/post-06/01.jpg",
+        "assets/post-06/02.jpg",
+        "assets/post-06/03.jpg",
+        "assets/post-06/04.jpg",
+        "assets/post-06/05.jpg",
+        "assets/post-06/06.jpg",
+        "assets/post-06/07.jpg"
+      ],
+      "insights": {
+        "g1": {
+          "reach": 195663,
+          "views": 347819,
+          "commenti": 167,
+          "condivisioni": 28,
+          "salvati": 264,
+          "dm": 747,
+          "sondaggi": 1564
+        },
+        "g3": {
+          "reach": 228194,
+          "views": 410267,
+          "commenti": 190,
+          "condivisioni": 34,
+          "salvati": 301,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g7": {
+          "reach": 276443,
+          "views": 490278,
+          "commenti": 201,
+          "condivisioni": null,
+          "salvati": 372,
+          "dm": 859,
+          "sondaggi": 2115
+        },
+        "g30": {
+          "reach": 290371,
+          "views": 507259,
+          "commenti": 203,
+          "condivisioni": 38,
+          "salvati": 389,
+          "dm": 904,
+          "sondaggi": 2220
+        }
+      },
+      "overall": null,
+      "pubblici": {
+        "like": 15487,
+        "commenti": 201,
+        "condivisioni": 859,
+        "aggiornato": "2026-06-30"
+      },
+      "note": null
+    },
+    {
+      "n": 7,
+      "titolo": "Dove si trasferirà Dušan Vlahović?",
+      "tipo": "media",
+      "collab": "estiva",
+      "data": "2026-06-22",
+      "url": "https://www.instagram.com/p/DZ4pkCvDWQn/?img_index=1",
+      "mercato": {
+        "nome": "Dove si trasferirà Dušan Vlahović?",
+        "url": null,
+        "nota": "Arsenal 48% · Bayern 48% · Napoli 48% · Milan 43%"
+      },
+      "slides": [
+        "assets/post-07/01.png",
+        "assets/post-07/02.png",
+        "assets/post-07/03.png"
+      ],
+      "insights": {
+        "g1": {
+          "reach": 56504,
+          "views": 130501,
+          "commenti": 28,
+          "condivisioni": 9,
+          "salvati": 24,
+          "dm": 121,
+          "sondaggi": 212
+        },
+        "g3": {
+          "reach": 65896,
+          "views": 153595,
+          "commenti": 31,
+          "condivisioni": 8,
+          "salvati": 26,
+          "dm": 162,
+          "sondaggi": 234
+        },
+        "g7": {
+          "reach": 68019,
+          "views": 158754,
+          "commenti": 32,
+          "condivisioni": null,
+          "salvati": 29,
+          "dm": 162,
+          "sondaggi": 244
+        },
+        "g30": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        }
+      },
+      "overall": null,
+      "pubblici": {
+        "like": 1829,
+        "commenti": 32,
+        "condivisioni": 162,
+        "aggiornato": "2026-06-30"
+      },
+      "note": null
+    },
+    {
+      "n": 8,
+      "titolo": "Secondo Polymarket Messi è il favorito per la classifica marcatori",
+      "tipo": "media",
+      "collab": "estiva",
+      "data": "2026-06-24",
+      "url": "https://www.instagram.com/p/DZ9wmyHDUIP/?img_index=1",
+      "mercato": {
+        "nome": "World Cup Golden Boot Winner",
+        "url": null,
+        "nota": "Messi 38% · Mbappé 31% · Haaland 10% · Kane 8% · vol. $30.190.827"
+      },
+      "slides": [
+        "assets/post-08/01.jpg",
+        "assets/post-08/02.jpg",
+        "assets/post-08/03.jpg",
+        "assets/post-08/04.jpg"
+      ],
+      "insights": {
+        "g1": {
+          "reach": 78056,
+          "views": 165211,
+          "commenti": 38,
+          "condivisioni": 13,
+          "salvati": 77,
+          "dm": 0,
+          "sondaggi": 312
+        },
+        "g3": {
+          "reach": 85717,
+          "views": 180594,
+          "commenti": 39,
+          "condivisioni": 14,
+          "salvati": 87,
+          "dm": 0,
+          "sondaggi": 334
+        },
+        "g7": {
+          "reach": 98701,
+          "views": 200861,
+          "commenti": 40,
+          "condivisioni": 15,
+          "salvati": 97,
+          "dm": 0,
+          "sondaggi": 372
+        },
+        "g30": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        }
+      },
+      "overall": null,
+      "pubblici": {
+        "like": 4843,
+        "commenti": 40,
+        "condivisioni": 15,
+        "aggiornato": "2026-07-01"
+      },
+      "note": null
+    },
+    {
+      "n": 9,
+      "titolo": "Il Marocco vince ai rigori, il Paraguay vince ai rigori - e noi non scendiamo dal carro",
+      "tipo": "media",
+      "collab": "estiva",
+      "data": "2026-06-30",
+      "url": "https://www.instagram.com/p/DaNSB4QDetC/",
+      "mercato": {
+        "nome": "World Cup Winner",
+        "url": null,
+        "nota": "Marocco 4% · era 2% · Paraguay 0% · vol. $3.521.234.234"
+      },
+      "slides": [
+        "assets/post-09/01.jpg",
+        "assets/post-09/02.jpg",
+        "assets/post-09/03.jpg",
+        "assets/post-09/04.jpg",
+        "assets/post-09/05.jpg",
+        "assets/post-09/06.jpg",
+        "assets/post-09/07.jpg",
+        "assets/post-09/08.jpg",
+        "assets/post-09/09.jpg"
+      ],
+      "insights": {
+        "g1": {
+          "reach": 41588,
+          "views": 105490,
+          "commenti": 28,
+          "condivisioni": 5,
+          "salvati": 16,
+          "dm": 212,
+          "sondaggi": 115
+        },
+        "g3": {
+          "reach": 43607,
+          "views": 115373,
+          "commenti": 28,
+          "condivisioni": 4,
+          "salvati": 18,
+          "dm": 213,
+          "sondaggi": 121
+        },
+        "g7": {
+          "reach": 46935,
+          "views": 124478,
+          "commenti": 28,
+          "condivisioni": 4,
+          "salvati": 20,
+          "dm": 213,
+          "sondaggi": 115
+        },
+        "g30": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        }
+      },
+      "overall": null,
+      "pubblici": {
+        "like": 1793,
+        "commenti": 28,
+        "condivisioni": 4,
+        "aggiornato": "2026-07-15"
+      },
+      "note": null
+    },
+    {
+      "n": 10,
+      "titolo": "Il miglior assistman al mondo riuscirà a fare un gol al Mondiale?",
+      "tipo": "media",
+      "collab": "estiva",
+      "data": "2026-07-01",
+      "url": "https://www.instagram.com/p/DaP_oviDRZc/",
+      "mercato": {
+        "nome": "World Cup: Player to score Michael Olise",
+        "url": null,
+        "nota": "71% · vol. $986.375"
+      },
+      "slides": [
+        "assets/post-10/01.jpg"
+      ],
+      "insights": {
+        "g1": {
+          "reach": 49407,
+          "views": 124635,
+          "commenti": 7,
+          "condivisioni": null,
+          "salvati": 33,
+          "dm": 108,
+          "sondaggi": 97
+        },
+        "g3": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g7": {
+          "reach": 59173,
+          "views": 149185,
+          "commenti": 7,
+          "condivisioni": null,
+          "salvati": 41,
+          "dm": 117,
+          "sondaggi": 111
+        },
+        "g30": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        }
+      },
+      "overall": null,
+      "pubblici": {
+        "like": 2603,
+        "commenti": 7,
+        "condivisioni": 117,
+        "aggiornato": "2026-07-15"
+      },
+      "note": null
+    },
+    {
+      "n": 11,
+      "titolo": "Haaland è il Majin Bu di questo Mondiale: ora è il cattivo da battere?",
+      "tipo": "media",
+      "collab": "estiva",
+      "data": "2026-07-06",
+      "url": "https://www.instagram.com/p/DacqyRAjWTu/",
+      "mercato": {
+        "nome": "La Norvegia raggiungerà la finale?",
+        "url": null,
+        "nota": null
+      },
+      "slides": [
+        "assets/post-11/01.jpg"
+      ],
+      "insights": {
+        "g1": {
+          "reach": 67514,
+          "views": 152298,
+          "commenti": 20,
+          "condivisioni": null,
+          "salvati": 63,
+          "dm": 108,
+          "sondaggi": 177
+        },
+        "g3": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g7": {
+          "reach": 76766,
+          "views": 176094,
+          "commenti": 21,
+          "condivisioni": null,
+          "salvati": 72,
+          "dm": 461,
+          "sondaggi": 233
+        },
+        "g30": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        }
+      },
+      "overall": null,
+      "pubblici": {
+        "like": 3688,
+        "commenti": 21,
+        "condivisioni": 461,
+        "aggiornato": "2026-07-15"
+      },
+      "note": null
+    },
+    {
+      "n": 12,
+      "titolo": "Semifinaliste Mondiale",
+      "tipo": "media",
+      "collab": "estiva",
+      "data": "2026-07-13",
+      "url": "https://www.instagram.com/p/Dauzu2EjZB5/",
+      "mercato": {
+        "nome": "Coppa del Mondo: la Spagna raggiungerà la finale",
+        "url": null,
+        "nota": "41% · vol. $12.616.213"
+      },
+      "slides": [
+        "assets/post-12/01.jpg"
+      ],
+      "insights": {
+        "g1": {
+          "reach": 47992,
+          "views": 119883,
+          "commenti": 15,
+          "condivisioni": null,
+          "salvati": 30,
+          "dm": 171,
+          "sondaggi": 233
+        },
+        "g3": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g7": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g30": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        }
+      },
+      "overall": null,
+      "pubblici": {
+        "like": 1896,
+        "commenti": 15,
+        "condivisioni": 171,
+        "aggiornato": "2026-07-15"
+      },
+      "note": null
+    }
+  ]
+}

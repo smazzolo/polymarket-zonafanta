@@ -1,0 +1,40 @@
+# Deploy di PREVIEW — su push sul branch "preview".
+# Identico a deploy.yml ma SENZA --prod: genera un URL temporaneo che non
+# tocca la produzione (polymarket-zonafanta.vercel.app resta com'è).
+# Serve per verificare la dashboard nuova prima della promozione.
+name: preview
+
+on:
+  push:
+    branches: [preview]
+  workflow_dispatch: {}
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Dipendenze build (Pillow per la compressione slide)
+        run: pip install Pillow
+
+      - name: Validate + build + assembla versione deploy
+        run: python3 scripts/build.py --deploy .deploy
+
+      - name: Deploy di preview su Vercel (NO produzione)
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        run: |
+          npm install -g vercel
+          cd .deploy
+          URL=$(vercel deploy --yes --token "${{ secrets.VERCEL_TOKEN }}")
+          echo "URL di preview: $URL"
+          echo "### 🔍 Preview deployata" >> "$GITHUB_STEP_SUMMARY"
+          echo "$URL" >> "$GITHUB_STEP_SUMMARY"

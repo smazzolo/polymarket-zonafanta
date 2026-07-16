@@ -15,7 +15,7 @@ Vincoli non negoziabili validi per ogni fase:
 
 ## Fase 1 — Fondamenta dati
 
-- [ ] **1.1** Definire lo schema di `data/posts.json`. Per ogni post: numero,
+- [x] **1.1** Definire lo schema di `data/posts.json`. Per ogni post: numero,
       titolo, data pubblicazione, tag `collab` (`estiva` | `storico`), mercato
       Polymarket di riferimento, url del post. Per ogni finestra temporale
       (`g1`, `g3`, `g7`, `g30`): reach, views, commenti, condivisioni, salvati,
@@ -23,12 +23,12 @@ Vincoli non negoziabili validi per ogni fase:
       canale, floor singolo, floor aggregato, n. post previsti, scadenza).
       Campo assente/non noto = `null` (mai 0 se non è realmente 0).
 
-- [ ] **1.2** Migrare i dati esistenti dentro `data/posts.json`: prendere come
+- [x] **1.2** Migrare i dati esistenti dentro `data/posts.json`: prendere come
       fonte il JSON embedded nell'`index.html` live e `dati.md`. Se i due
       divergono, segnalarlo e NON scegliere in autonomia: chiedere quale sia
       corretto. I 5 post `storico` vanno importati ma esclusi dai calcoli floor.
 
-- [ ] **1.3** Scrivere `scripts/validate.py`. Deve:
+- [x] **1.3** Scrivere `scripts/validate.py`. Deve:
       - ricalcolare il floor aggregato (somma views overall dei post `estiva`,
         dove "overall" = finestra insight più recente disponibile per post)
       - verificare il floor singolo 100K per ogni post `estiva`
@@ -36,7 +36,7 @@ Vincoli non negoziabili validi per ogni fase:
         loggate ma non lo sono)
       - uscire con exit code ≠ 0 se trova incoerenze bloccanti
 
-- [ ] **1.4** Scrivere `scripts/build.py`. Da `data/posts.json`:
+- [x] **1.4** Scrivere `scripts/build.py`. Da `data/posts.json`:
       - calcola valori derivati (floor aggregato %, gap verso 1.5M, aggregati
         reach/views per finestra, reach media per post)
       - inietta i dati in `dashboard/index.html` (vedi Fase 2)
@@ -46,16 +46,16 @@ Vincoli non negoziabili validi per ogni fase:
 
 ## Fase 2 — Dashboard
 
-- [ ] **2.1** Refactor `dashboard/index.html`: rimuovere i dati embedded a mano;
+- [x] **2.1** Refactor `dashboard/index.html`: rimuovere i dati embedded a mano;
       i dati arrivano dal build (`build.py` li inietta in un blocco
       `<script id="data" type="application/json">`). Il file resta autonomo:
       deve funzionare anche aperto da `file://`, senza fetch esterni.
 
-- [ ] **2.2** Vista aggregata in alto: reach totale + reach media/post
+- [x] **2.2** Vista aggregata in alto: reach totale + reach media/post
       segmentate per finestra (g1/g3/g7/g30), più progress verso il floor
       (aggregato 1.5M e singolo 100K). Questa è la sezione più importante.
 
-- [ ] **2.3** Scheda per ogni post: tutti i KPI nelle 4 finestre, con mercato
+- [x] **2.3** Scheda per ogni post: tutti i KPI nelle 4 finestre, con mercato
       Polymarket e link al post. Verificare rendering desktop (1440×900) e
       mobile (390×844).
 
@@ -63,12 +63,12 @@ Vincoli non negoziabili validi per ogni fase:
 
 ## Fase 3 — Skill e documentazione
 
-- [ ] **3.1** Copiare in `skills/` le 3 skill rilevanti
+- [x] **3.1** Copiare in `skills/` le 3 skill rilevanti
       (`zonafanta-polymarket-report`, `polymarket-zonafanta`,
       `richiesta-mercato-antonio`). Nel README di `skills/` scrivere che sono
       copie di riferimento e che la fonte viva è il progetto Claude.
 
-- [ ] **3.2** Scrivere `docs/KPI_RULES.md` con le regole di lettura insights:
+- [x] **3.2** Scrivere `docs/KPI_RULES.md` con le regole di lettura insights:
       - Condivisioni = icona aeroplanino nella action bar del post
       - Sondaggi = riga "Risposte: N · Visualizza" sotto la caption
       - Se l'aeroplanino negli insights mostra "--" → DM = 0 (non n/d)
@@ -76,31 +76,62 @@ Vincoli non negoziabili validi per ogni fase:
         obbligatori per ogni finestra
       - Reach = metrica primaria (nord stella)
 
-- [ ] **3.3** Scrivere `docs/COME_AGGIORNARE.md`: il ciclo completo
+- [x] **3.3** Scrivere `docs/COME_AGGIORNARE.md`: il ciclo completo
       screen insights → posts.json → validate → build → deploy.
 
 ---
 
-## Fase 4 — Alert Telegram
+## Fase 4 — Alert Telegram (specifica definitiva del 15/7/2026)
 
-- [ ] **4.1** Scrivere `scripts/alert.py`. Per ogni post legge la data di
-      pubblicazione, calcola quali finestre (g1/g3/g7/g30) scadono **oggi** e
-      non sono ancora loggate in `posts.json`, e invia un messaggio Telegram:
-      es. "Sono passati 7g dalla pubblicazione di [titolo]. Servono gli insights
-      per aggiornare il report." Token e chat_id da variabili d'ambiente
-      (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`), mai hardcoded.
-      Nessuna finestra scaduta oggi = nessun messaggio (non spammare).
+Design **senza conferma manuale e senza stato**: la fonte di verità è
+`posts.json`. Una finestra scaduta e ancora vuota genera il promemoria; appena
+gli insights vengono caricati in `posts.json`, alla girata successiva la
+finestra risulta loggata e l'alert si spegne da solo. Nessuno stato salvato,
+nessun bot in ascolto.
 
-- [ ] **4.2** `.github/workflows/alert.yml`: cron giornaliero (una volta al
-      mattino) che esegue `alert.py` usando i secrets.
+- [x] **4.1** Scrivere `scripts/alert.py`:
+      - per ogni post calcola le finestre (g1/g3/g7/g30) **scadute** con la
+        convenzione fissata: giorno di pubblicazione = g0, scadenza = data
+        pubblicazione + N giorni (identica a `validate.py`)
+      - finestra scaduta e NON loggata (tutti i KPI null) → va nel promemoria;
+        continua a segnalarla a ogni girata finché resta vuota
+      - messaggio concreto e azionabile: "Sono passati 7g dalla pubblicazione
+        di [titolo] (pubblicato il [data]). Servono gli insights della finestra
+        g7 per aggiornare il report."
+      - più post/finestre insieme → UN solo messaggio raggruppato e ordinato;
+        un post con più finestre vuote compare una volta sola con l'elenco
+        delle finestre mancanti (anti-rumore)
+      - nessuna finestra scaduta-e-vuota → nessun messaggio (mai spam a vuoto)
+      - token e chat_id da env (`TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`),
+        mai hardcoded
+
+- [x] **4.2** `.github/workflows/alert.yml`: cron **3 volte al giorno**
+      (mattina/pomeriggio/sera ~9:00/14:00/20:00 ora italiana; GitHub Actions
+      usa UTC → convertire, attenzione a ora legale/solare) che esegue
+      `alert.py` con i secrets.
 
 ---
 
 ## Fase 5 — CI/CD
 
-- [ ] **5.1** `.github/workflows/deploy.yml`: su ogni push su `main`, esegue
+- [x] **5.1** `.github/workflows/deploy.yml`: su ogni push su `main`, esegue
       `validate.py`; se passa, esegue `build.py` e deploya `dashboard/index.html`
       su Vercel. Se `validate.py` fallisce, il deploy NON parte.
+
+- [x] **5.2** Tracker: DECISO (15/7) — resta `api/track.js` in JS com'è.
+      Il porting Python rifarebbe ~376 righe collaudate per un beneficio
+      estetico, contro il principio "riduci il rischio di rompere"; la
+      duplicazione evitata è minima e stabile (una chiamata sendMessage) e
+      le credenziali sono già unificate a contratto (stesse env TELEGRAM_*).
+      La CI lo inietta SOLO nella versione deployata (fatto in 5.1);
+      lo standalone resta zero-fetch. Si rivaluta il porting solo se il
+      tracker andrà comunque rimesso mano per altri motivi.
+
+- [ ] **5.3** (post-Fase 5) Preparare il testo aggiornato della skill
+      `zonafanta-polymarket-report` per il progetto Claude (fonte viva):
+      nuovo flusso `posts.json → validate → build`, i due output, alert,
+      CI/deploy. Poi riallineare la copia in `skills/`. NON aggiornare solo
+      la copia nella repo: darebbe istruzioni vecchie alla prossima sessione.
 
 ---
 
