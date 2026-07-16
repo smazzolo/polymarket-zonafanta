@@ -90,7 +90,13 @@ La lista task completa è in `TODO.md`; l'audit dati della migrazione in
     ✅ UI completa, ✅ interazioni (pill→2,54M/12 post), ✅ /api/track
     funzionante end-to-end (debug 200, messaggi Telegram arrivati),
     ✅ produzione intatta (3,7MB vecchia)
-  · ⏳ IN ATTESA: ok esplicito dell'utente → merge/push su main → produzione.
+  · ✅ OK utente ricevuto il 16/7 → merge su main (74e0369) → deploy.yml
+    verde → PRODUZIONE LIVE: polymarket-zonafanta.vercel.app serve la
+    dashboard nuova (verificato: 1,5MB, dati nuovi, tracker attivo).
+    Con main popolato si attiva anche il cron dell'alert (3x/giorno).
+  · Post-produzione: fix mobile richiesto dall'utente (tabelle KPI delle
+    card ora scorrono in orizzontale con nome KPI sticky) → in preview
+    (commit f6d59f7), in attesa di prova su telefono e ok per promuovere.
 - Ricognizione del 15/7 sera:
   · GitHub secrets: NESSUNO presente → mancano tutti e 5
     (VERCEL_TOKEN/ORG_ID/PROJECT_ID, TELEGRAM_BOT_TOKEN/CHAT_ID). STOP qui.
