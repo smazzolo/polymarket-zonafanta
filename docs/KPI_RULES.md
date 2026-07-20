@@ -24,16 +24,22 @@ contrattuali però si misurano in **views** (100K per post / 1,5M aggregato).
 | `reach` | insights → "Account raggiunti" | metrica primaria |
 | `views` | insights → visualizzazioni | base dei floor |
 | `commenti` | insights o contatore pubblico del post | |
-| `condivisioni` | **icona aeroplanino nella action bar del post** (contatore pubblico) | NON confonderla con gli invii in DM |
+| `condivisioni` | **icona repost ↻ del post** (ricondivisioni) | ordine di grandezza: unità/decine |
 | `salvati` | insights → segnalibro | |
-| `dm` | insights → aeroplanino (invii in DM) | vedi regola "--" sotto |
+| `dm` | **aeroplanino nella action bar del post** (contatore pubblico) | accordo interno con Polymarket: si legge dalla feed, NON dall'aeroplanino insights · vedi regola "--" sotto |
 | `sondaggi` | riga **"Risposte: N · Visualizza" sotto la caption** del post | |
 
 ## La regola del "--" (unica eccezione al n/d)
 
-Se negli insights l'aeroplanino mostra **"--"**, significa zero invii:
+Se l'aeroplanino mostra **"--"** o nessun numero, significa zero invii:
 si scrive **`dm = 0`**, NON `n/d`. È l'unico caso in cui un trattino
 sullo screen diventa uno zero nel file.
+
+> Correzione del 20/7/2026: la prima versione di questa tabella invertiva
+> `dm` e `condivisioni` (dm dagli insights, condivisioni dall'aeroplanino
+> pubblico). La mappatura giusta è quella sopra — conferma nei dati storici:
+> le `condivisioni` loggate sono sempre unità/decine (repost ↻), i `dm`
+> centinaia (aeroplanino feed).
 
 ## KPI obbligatori
 

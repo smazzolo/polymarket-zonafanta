@@ -793,13 +793,13 @@
           "sondaggi": null
         },
         "g7": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
-          "sondaggi": null
+          "reach": 53486,
+          "views": 149105,
+          "commenti": 17,
+          "condivisioni": 3,
+          "salvati": 34,
+          "dm": 245,
+          "sondaggi": 0
         },
         "g30": {
           "reach": null,
@@ -813,12 +813,12 @@
       },
       "overall": null,
       "pubblici": {
-        "like": 1896,
-        "commenti": 15,
-        "condivisioni": 171,
-        "aggiornato": "2026-07-15"
+        "like": 2037,
+        "commenti": 17,
+        "condivisioni": 245,
+        "aggiornato": "2026-07-20"
       },
-      "note": null
+      "note": "Sondaggio rimosso prima della g7 (chat eliminata): le 233 risposte di g1 sono reali, da g7 il contatore non esiste più → 0."
     }
   ]
 }
