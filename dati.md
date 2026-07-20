@@ -208,3 +208,19 @@ https://www.instagram.com/p/Dauzu2EjZB5/
 | sondaggi | 233 | n/d | 0 | n/d |
 
 Pubblici (al 2026-07-20): like 2.037 · commenti 17 · condivisioni 245
+
+## #13 — Lamine Yamal ha 19 anni e potrebbe già vincere il suo primo Pallone d'Oro
+
+`estiva` · pubblicato 2026-07-20 · media · mercato: Vincitore del Pallone d'Oro 2026
+https://www.instagram.com/p/DbAte4ADdTi/
+
+| KPI | g1 | g3 | g7 | g30 |
+|-----|---|---|---|---|
+| reach | n/d | n/d | n/d | n/d |
+| views | n/d | n/d | n/d | n/d |
+| commenti | n/d | n/d | n/d | n/d |
+| condivisioni | n/d | n/d | n/d | n/d |
+| salvati | n/d | n/d | n/d | n/d |
+| dm | n/d | n/d | n/d | n/d |
+| sondaggi | n/d | n/d | n/d | n/d |
+

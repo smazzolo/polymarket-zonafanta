@@ -819,6 +819,66 @@
         "aggiornato": "2026-07-20"
       },
       "note": "Sondaggio rimosso prima della g7 (chat eliminata): le 233 risposte di g1 sono reali, da g7 il contatore non esiste più → 0."
+    },
+    {
+      "n": 13,
+      "titolo": "Lamine Yamal ha 19 anni e potrebbe già vincere il suo primo Pallone d'Oro",
+      "tipo": "media",
+      "collab": "estiva",
+      "data": "2026-07-20",
+      "url": "https://www.instagram.com/p/DbAte4ADdTi/",
+      "mercato": {
+        "nome": "Vincitore del Pallone d'Oro 2026",
+        "url": null,
+        "nota": "Yamal/Kane 36% · vol. $11.090.578"
+      },
+      "slides": [
+        "assets/post-13/01.jpg",
+        "assets/post-13/02.jpg",
+        "assets/post-13/03.jpg",
+        "assets/post-13/04.jpg"
+      ],
+      "insights": {
+        "g1": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g3": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g7": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g30": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        }
+      },
+      "overall": null,
+      "pubblici": null,
+      "note": null
     }
   ]
 }
