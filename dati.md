@@ -207,7 +207,7 @@ https://www.instagram.com/p/Dauzu2EjZB5/
 | dm | 171 | n/d | 245 | n/d |
 | sondaggi | 233 | n/d | 0 | n/d |
 
-Pubblici (al 2026-07-20): like 2.037 · commenti 17 · condivisioni 245
+Pubblici (al 2026-07-21): like 2.046 · commenti 17 · condivisioni 245
 
 ## #13 — Lamine Yamal ha 19 anni e potrebbe già vincere il suo primo Pallone d'Oro
 
