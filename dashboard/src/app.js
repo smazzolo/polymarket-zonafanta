@@ -6,7 +6,8 @@ const DATA = JSON.parse(document.getElementById("data").textContent);
 const DERIV = DATA.derivati;
 const WINDOWS=[["g1","+24h"],["g3","+3 giorni"],["g7","+7 giorni"],["g30","+30 giorni"],["overall","Overall a oggi"]];
 const WIN_BOX=[["g1","+24h"],["g3","+3 giorni"],["g7","+7 giorni"],["g30","+30 giorni"]];
-function getKPI(p,w,key){ return w==="overall" ? (p.overall?p.overall[key]:null) : p.insights[w][key]; }
+// "overall" in card = dato più recente disponibile (p.best, calcolato in build.py)
+function getKPI(p,w,key){ return w==="overall" ? p.best[key] : p.insights[w][key]; }
 const KPIS=[["reach","Reach (copertura)",true],["views","Visualizzazioni"],["commenti","Commenti"],["condivisioni","Condivisioni"],["salvati","Salvati"],["dm","Invii in DM"],["sondaggi","Risposte sondaggi"]];
 const fmt=v=>(v===null||v===undefined)?"n/d":v.toLocaleString("it-IT");
 const isND=v=>v===null||v===undefined;
@@ -524,8 +525,12 @@ function renderPost(p){
     const rows=KPIS.map(([key,name,primary])=>`<tr class="${primary?'primary':''}"><td class="kpi-name">${name}</td>
       ${WINDOWS.map(([w])=>{const v=getKPI(p,w,key);
         if(w==="g7" && isND(v) && p.g7_attesa) return `<td class="val nd att">*</td>`;
-        const cls = w==="overall" ? "val over" : "val";
-        return `<td class="${cls} ${isND(v)?'nd':''}">${fmt(v)}</td>`;}).join("")}</tr>`).join("");
+        if(w==="overall"){
+          const s=(p.best_src||{})[key];
+          const tag=(!isND(v)&&s)?`<small class="ov-src">${s.w==="overall"?"letto":s.w} · ${fmtDate(s.data)}</small>`:"";
+          return `<td class="val over ${isND(v)?'nd':''}">${fmt(v)}${tag}</td>`;
+        }
+        return `<td class="val ${isND(v)?'nd':''}">${fmt(v)}</td>`;}).join("")}</tr>`).join("");
     const noteRow = attese.length ? `<div class="g30-note">* in arrivo: ${attese.join(" · ")}</div>` : "";
     const isStorico = p.collab==="storico";
     const tagLabel = isStorico ? "Storico" : "Collab estiva";

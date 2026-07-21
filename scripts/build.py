@@ -26,7 +26,7 @@ import base64
 import io
 import json
 import sys
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -66,6 +66,23 @@ def best_post(p):
     """Il "dato più recente" di ogni KPI: overall se presente, poi g30→g7→g3→g1.
     UNICA implementazione (via validate.valore_overall): il JS non la duplica."""
     return {k: validate.valore_overall(p, k) for k in KPIS}
+
+
+def best_src(p):
+    """Per ogni KPI: fonte del best e data del rilevamento — overall.aggiornato
+    se viene dal blocco overall, altrimenti la scadenza nominale della finestra."""
+    pub = date.fromisoformat(p["data"])
+    out = {}
+    for k in KPIS:
+        _, src = validate.fonte_overall(p, k)
+        if src is None:
+            out[k] = None
+        elif src == "overall":
+            out[k] = {"w": "overall", "data": p["overall"].get("aggiornato")}
+        else:
+            scade = pub + timedelta(days=validate.WINDOW_DAYS[src])
+            out[k] = {"w": src, "data": scade.isoformat()}
+    return out
 
 
 def calcola_derivati(meta, posts):
@@ -167,6 +184,7 @@ def build_html(meta, posts, derivati):
         peso_slide += sum(len(s) for s in q["slides_datauri"])
         q["n_collab"] = n_collab[p["n"]]
         q["best"] = best_post(p)
+        q["best_src"] = best_src(p)
         v = q["best"]["views"]
         q["floor_ok"] = (v is not None and v >= floor_sing)
         # intensità 0..1 di quanto supera il floor (per la tinta della timeline)

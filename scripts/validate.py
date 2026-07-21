@@ -214,16 +214,22 @@ def main():
     return report(dati)
 
 
-def valore_overall(p, kpi):
-    """Il dato 'overall' di un post: blocco overall se c'è, altrimenti la
-    finestra loggata più recente. È LA definizione usata per i floor."""
+def fonte_overall(p, kpi):
+    """(valore, fonte) del dato 'overall' di un post: fonte è "overall" se
+    viene dal blocco overall, altrimenti la finestra loggata più recente."""
     if p["overall"] and p["overall"].get(kpi) is not None:
-        return p["overall"][kpi]
+        return p["overall"][kpi], "overall"
     for w in reversed(WINDOWS):
         v = p["insights"][w].get(kpi)
         if v is not None:
-            return v
-    return None
+            return v, w
+    return None, None
+
+
+def valore_overall(p, kpi):
+    """Il dato 'overall' di un post: blocco overall se c'è, altrimenti la
+    finestra loggata più recente. È LA definizione usata per i floor."""
+    return fonte_overall(p, kpi)[0]
 
 
 def report(dati):

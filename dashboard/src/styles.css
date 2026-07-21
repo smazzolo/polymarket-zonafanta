@@ -255,6 +255,7 @@
   tr.primary td.val{font-weight:800;}
   td.val.nd{color:var(--nd);font-weight:500;}
   td.val.over{font-weight:800;color:var(--green-deep);background:var(--green-soft);}
+  td.val.over small.ov-src{display:block;font-size:9px;font-weight:600;opacity:.65;letter-spacing:.02em;white-space:nowrap;}
   td.val.att{color:var(--faint);}
   tbody tr:last-child td{border-bottom:none;}
   .g30-note{font-size:10px;color:var(--faint);margin-top:9px;}
