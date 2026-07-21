@@ -840,13 +840,13 @@
       ],
       "insights": {
         "g1": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
-          "sondaggi": null
+          "reach": 93471,
+          "views": 212813,
+          "commenti": 134,
+          "condivisioni": 25,
+          "salvati": 137,
+          "dm": 1353,
+          "sondaggi": 1940
         },
         "g3": {
           "reach": null,
@@ -877,7 +877,12 @@
         }
       },
       "overall": null,
-      "pubblici": null,
+      "pubblici": {
+        "like": 6444,
+        "commenti": 130,
+        "condivisioni": 1353,
+        "aggiornato": "2026-07-21"
+      },
       "note": null
     }
   ]

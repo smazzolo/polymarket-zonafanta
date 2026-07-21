@@ -1,4 +1,4 @@
-<!-- OUTPUT GENERATO da scripts/build.py il 2026-07-20 — NON MODIFICARE A MANO.
+<!-- OUTPUT GENERATO da scripts/build.py il 2026-07-21 — NON MODIFICARE A MANO.
      La fonte è data/posts.json. -->
 
 # Dati completi — ZonaFanta × Polymarket Italia
@@ -216,11 +216,12 @@ https://www.instagram.com/p/DbAte4ADdTi/
 
 | KPI | g1 | g3 | g7 | g30 |
 |-----|---|---|---|---|
-| reach | n/d | n/d | n/d | n/d |
-| views | n/d | n/d | n/d | n/d |
-| commenti | n/d | n/d | n/d | n/d |
-| condivisioni | n/d | n/d | n/d | n/d |
-| salvati | n/d | n/d | n/d | n/d |
-| dm | n/d | n/d | n/d | n/d |
-| sondaggi | n/d | n/d | n/d | n/d |
+| reach | 93.471 | n/d | n/d | n/d |
+| views | 212.813 | n/d | n/d | n/d |
+| commenti | 134 | n/d | n/d | n/d |
+| condivisioni | 25 | n/d | n/d | n/d |
+| salvati | 137 | n/d | n/d | n/d |
+| dm | 1.353 | n/d | n/d | n/d |
+| sondaggi | 1.940 | n/d | n/d | n/d |
 
+Pubblici (al 2026-07-21): like 6.444 · commenti 130 · condivisioni 1.353

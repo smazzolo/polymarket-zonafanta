@@ -1,4 +1,4 @@
-<!-- OUTPUT GENERATO da scripts/build.py il 2026-07-20 — NON MODIFICARE A MANO.
+<!-- OUTPUT GENERATO da scripts/build.py il 2026-07-21 — NON MODIFICARE A MANO.
      La fonte è data/posts.json. -->
 
 # Contesto progetto — ZonaFanta × Polymarket Italia
@@ -13,11 +13,11 @@
 - **Floor aggregato:** 1.500.000 views totali sulla collab
 - **Recupero:** se un floor non è raggiunto a fine ciclo, si aggiungono post fino al 2026-08-30
 
-## Stato floor (al 2026-07-20)
+## Stato floor (al 2026-07-21)
 
-- **Aggregato:** 1.465.736 / 1.500.000 views
-  (**97.7%**, gap 34.264) — 7/8 post con dato
-- **Reach media per post:** 99.064
+- **Aggregato:** 1.678.549 / 1.500.000 views
+  (**111.9%**, gap 0) — 8/8 post con dato
+- **Reach media per post:** 98.365
 
 | n | titolo | pubblicato | views (overall) | floor 100K |
 |---|--------|-----------|-----------------|------------|
@@ -28,6 +28,6 @@
 | 10 | Il miglior assistman al mondo riuscirà a fare un gol al Mond | 2026-07-01 | 149.185 | ✓ |
 | 11 | Haaland è il Majin Bu di questo Mondiale: ora è il cattivo d | 2026-07-06 | 176.094 | ✓ |
 | 12 | Semifinaliste Mondiale | 2026-07-13 | 149.105 | ✓ |
-| 13 | Lamine Yamal ha 19 anni e potrebbe già vincere il suo primo  | 2026-07-20 | n/d | ✗ |
+| 13 | Lamine Yamal ha 19 anni e potrebbe già vincere il suo primo  | 2026-07-20 | 212.813 | ✓ |
 
 *I 5 post `storico` (collab precedente) sono tracciati in dashboard ma esclusi dai floor.*
