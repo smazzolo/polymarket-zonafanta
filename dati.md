@@ -41,54 +41,54 @@ Pubblici (al 2026-06-08): like 3.234 · commenti 67 · condivisioni 10
 
 ## #3 — L'ultima giornata che vale una stagione - Cremonese vs Lecce
 
-`storico` · pubblicato 2026-05-18 · media · mercato: Salvezza - Di Francesco / Cremonese · overall letto il 2026-06-08
+`storico` · pubblicato 2026-05-18 · media · mercato: Salvezza - Di Francesco / Cremonese · overall letto il 2026-07-21
 https://www.instagram.com/p/DYeeDlnjSz9/?img_index=1
 
 | KPI | g1 | g3 | g7 | g30 | overall |
 |-----|---|---|---|---|---|
-| reach | 84.846 | 100.980 | 111.526 | n/d | 112.648 |
-| views | 182.121 | 210.500 | 237.677 | n/d | 239.146 |
-| commenti | 79 | 106 | 122 | n/d | 122 |
-| condivisioni | 12 | 14 | 16 | n/d | 16 |
-| salvati | 64 | 79 | 86 | n/d | 88 |
-| dm | 206 | 277 | 319 | n/d | 319 |
+| reach | 84.846 | 100.980 | 111.526 | 112.648 | 112.648 |
+| views | 182.121 | 210.500 | 237.677 | 239.183 | 239.183 |
+| commenti | 79 | 106 | 122 | 122 | 122 |
+| condivisioni | 12 | 14 | 16 | 15 | 15 |
+| salvati | 64 | 79 | 86 | 88 | 88 |
+| dm | 206 | 277 | 319 | 321 | 321 |
 | sondaggi | 1.921 | 2.285 | 2.537 | n/d | 2.537 |
 
-Pubblici (al 2026-06-08): like 5.545 · commenti 122 · condivisioni 16
+Pubblici (al 2026-07-21): like 5.544 · commenti 122 · condivisioni 15
 
 ## #4 — Ve lo avevamo detto - la Roma è in Champions
 
-`storico` · pubblicato 2026-05-25 · media · mercato: Roma / Milan / Juve in Champions · overall letto il 2026-06-08
+`storico` · pubblicato 2026-05-25 · media · mercato: Roma / Milan / Juve in Champions · overall letto il 2026-07-21
 https://www.instagram.com/p/DYwlaQfjbI2/?img_index=1
 
 | KPI | g1 | g3 | g7 | g30 | overall |
 |-----|---|---|---|---|---|
-| reach | 58.325 | 61.334 | 64.890 | n/d | 65.948 |
-| views | 132.299 | 141.599 | 150.267 | n/d | 152.041 |
-| commenti | 22 | 22 | 30 | n/d | 30 |
-| condivisioni | 10 | 11 | 11 | n/d | 11 |
-| salvati | 47 | 51 | 55 | n/d | 55 |
-| dm | n/d | 197 | 203 | n/d | 203 |
+| reach | 58.325 | 61.334 | 64.890 | 65.993 | 65.993 |
+| views | 132.299 | 141.599 | 150.267 | 152.118 | 152.118 |
+| commenti | 22 | 22 | 30 | 30 | 30 |
+| condivisioni | 10 | 11 | 11 | 11 | 11 |
+| salvati | 47 | 51 | 55 | 55 | 55 |
+| dm | n/d | 197 | 203 | 203 | 203 |
 | sondaggi | n/d | 204 | 223 | n/d | 223 |
 
-Pubblici (al 2026-06-08): like 3.583 · commenti 30 · condivisioni 11
+Pubblici (al 2026-07-21): like 3.584 · commenti 30 · condivisioni 11
 
 ## #5 — Messi, Ronaldo e Neymar hanno quasi le stesse probabilità di vincere il Mondiale
 
-`storico` · pubblicato 2026-06-04 · media · mercato: Chi vince il Mondiale
+`storico` · pubblicato 2026-06-04 · media · mercato: Chi vince il Mondiale · overall letto il 2026-07-21
 https://www.instagram.com/p/DZKQHELDbIg/?img_index=1
 
-| KPI | g1 | g3 | g7 | g30 |
-|-----|---|---|---|---|
-| reach | 37.692 | 46.707 | 53.367 | n/d |
-| views | 84.025 | 107.052 | 132.072 | n/d |
-| commenti | n/d | 36 | 36 | n/d |
-| condivisioni | n/d | 11 | 11 | n/d |
-| salvati | n/d | 23 | 24 | n/d |
-| dm | 36 | n/d | n/d | n/d |
-| sondaggi | 154 | n/d | 193 | n/d |
+| KPI | g1 | g3 | g7 | g30 | overall |
+|-----|---|---|---|---|---|
+| reach | 37.692 | 46.707 | 53.367 | 54.477 | 54.477 |
+| views | 84.025 | 107.052 | 132.072 | 135.479 | 135.479 |
+| commenti | n/d | 36 | 36 | 35 | 35 |
+| condivisioni | n/d | 11 | 11 | 11 | 11 |
+| salvati | n/d | 23 | 24 | 24 | 24 |
+| dm | 36 | n/d | n/d | 44 | 44 |
+| sondaggi | 154 | n/d | 193 | n/d | n/d |
 
-Pubblici (al 2026-06-08): like 1.585 · commenti 36 · condivisioni 11
+Pubblici (al 2026-07-21): like 1.660 · commenti 35 · condivisioni 11
 
 ## #6 — Il Mondiale non è roba per la Serie A
 

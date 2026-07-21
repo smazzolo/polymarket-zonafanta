@@ -197,30 +197,30 @@
           "sondaggi": 2537
         },
         "g30": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
+          "reach": 112648,
+          "views": 239183,
+          "commenti": 122,
+          "condivisioni": 15,
+          "salvati": 88,
+          "dm": 321,
           "sondaggi": null
         }
       },
       "overall": {
         "reach": 112648,
-        "views": 239146,
+        "views": 239183,
         "commenti": 122,
-        "condivisioni": 16,
+        "condivisioni": 15,
         "salvati": 88,
-        "dm": 319,
+        "dm": 321,
         "sondaggi": 2537,
-        "aggiornato": "2026-06-08"
+        "aggiornato": "2026-07-21"
       },
       "pubblici": {
-        "like": 5545,
+        "like": 5544,
         "commenti": 122,
-        "condivisioni": 16,
-        "aggiornato": "2026-06-08"
+        "condivisioni": 15,
+        "aggiornato": "2026-07-21"
       },
       "note": null
     },
@@ -273,30 +273,30 @@
           "sondaggi": 223
         },
         "g30": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
+          "reach": 65993,
+          "views": 152118,
+          "commenti": 30,
+          "condivisioni": 11,
+          "salvati": 55,
+          "dm": 203,
           "sondaggi": null
         }
       },
       "overall": {
-        "reach": 65948,
-        "views": 152041,
+        "reach": 65993,
+        "views": 152118,
         "commenti": 30,
         "condivisioni": 11,
         "salvati": 55,
         "dm": 203,
         "sondaggi": 223,
-        "aggiornato": "2026-06-08"
+        "aggiornato": "2026-07-21"
       },
       "pubblici": {
-        "like": 3583,
+        "like": 3584,
         "commenti": 30,
         "condivisioni": 11,
-        "aggiornato": "2026-06-08"
+        "aggiornato": "2026-07-21"
       },
       "note": null
     },
@@ -349,21 +349,30 @@
           "sondaggi": 193
         },
         "g30": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
+          "reach": 54477,
+          "views": 135479,
+          "commenti": 35,
+          "condivisioni": 11,
+          "salvati": 24,
+          "dm": 44,
           "sondaggi": null
         }
       },
-      "overall": null,
-      "pubblici": {
-        "like": 1585,
-        "commenti": 36,
+      "overall": {
+        "reach": 54477,
+        "views": 135479,
+        "commenti": 35,
         "condivisioni": 11,
-        "aggiornato": "2026-06-08"
+        "salvati": 24,
+        "dm": 44,
+        "sondaggi": null,
+        "aggiornato": "2026-07-21"
+      },
+      "pubblici": {
+        "like": 1660,
+        "commenti": 35,
+        "condivisioni": 11,
+        "aggiornato": "2026-07-21"
       },
       "note": null
     },
