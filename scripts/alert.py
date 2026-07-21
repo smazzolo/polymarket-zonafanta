@@ -58,10 +58,12 @@ def componi_messaggio(scoperti, oggi):
         giorni = (oggi - pub).days
         lista = " e ".join(
             f"{w} (scaduta il {fmt_data(scade)})" for w, scade in vuote)
+        link = f"\n  ↳ {p['url']}" if p.get("url") else ""
         righe.append(
             f"• Sono passati {giorni}g dalla pubblicazione di "
             f"“{p['titolo']}” (pubblicato il {fmt_data(pub)}). "
             f"Servono gli insights della finestra {lista} per aggiornare il report."
+            f"{link}"
         )
     righe.append("\nAggiorna data/posts.json e l'alert si spegne da solo.")
     return "\n".join(righe)
