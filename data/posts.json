@@ -490,21 +490,21 @@
           "sondaggi": 244
         },
         "g30": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
-          "sondaggi": null
+          "reach": 69683,
+          "views": 162155,
+          "commenti": 32,
+          "condivisioni": 8,
+          "salvati": 30,
+          "dm": 162,
+          "sondaggi": 246
         }
       },
       "overall": null,
       "pubblici": {
-        "like": 1829,
+        "like": 1897,
         "commenti": 32,
-        "condivisioni": 162,
-        "aggiornato": "2026-06-30"
+        "condivisioni": 8,
+        "aggiornato": "2026-07-22"
       },
       "note": null
     },

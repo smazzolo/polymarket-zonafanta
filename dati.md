@@ -1,4 +1,4 @@
-<!-- OUTPUT GENERATO da scripts/build.py il 2026-07-21 — NON MODIFICARE A MANO.
+<!-- OUTPUT GENERATO da scripts/build.py il 2026-07-22 — NON MODIFICARE A MANO.
      La fonte è data/posts.json. -->
 
 # Dati completi — ZonaFanta × Polymarket Italia
@@ -114,15 +114,15 @@ https://www.instagram.com/p/DZ4pkCvDWQn/?img_index=1
 
 | KPI | g1 | g3 | g7 | g30 |
 |-----|---|---|---|---|
-| reach | 56.504 | 65.896 | 68.019 | n/d |
-| views | 130.501 | 153.595 | 158.754 | n/d |
-| commenti | 28 | 31 | 32 | n/d |
-| condivisioni | 9 | 8 | n/d | n/d |
-| salvati | 24 | 26 | 29 | n/d |
-| dm | 121 | 162 | 162 | n/d |
-| sondaggi | 212 | 234 | 244 | n/d |
+| reach | 56.504 | 65.896 | 68.019 | 69.683 |
+| views | 130.501 | 153.595 | 158.754 | 162.155 |
+| commenti | 28 | 31 | 32 | 32 |
+| condivisioni | 9 | 8 | n/d | 8 |
+| salvati | 24 | 26 | 29 | 30 |
+| dm | 121 | 162 | 162 | 162 |
+| sondaggi | 212 | 234 | 244 | 246 |
 
-Pubblici (al 2026-06-30): like 1.829 · commenti 32 · condivisioni 162
+Pubblici (al 2026-07-22): like 1.897 · commenti 32 · condivisioni 8
 
 ## #8 — Secondo Polymarket Messi è il favorito per la classifica marcatori
 
