@@ -863,13 +863,13 @@
           "sondaggi": 1940
         },
         "g3": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
-          "sondaggi": null
+          "reach": 99525,
+          "views": 230091,
+          "commenti": 159,
+          "condivisioni": 26,
+          "salvati": 149,
+          "dm": 1449,
+          "sondaggi": 2147
         },
         "g7": {
           "reach": null,
@@ -892,10 +892,10 @@
       },
       "overall": null,
       "pubblici": {
-        "like": 6444,
-        "commenti": 130,
-        "condivisioni": 1353,
-        "aggiornato": "2026-07-21"
+        "like": 7074,
+        "commenti": 159,
+        "condivisioni": 26,
+        "aggiornato": "2026-07-23"
       },
       "note": null
     }

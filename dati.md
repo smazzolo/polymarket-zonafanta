@@ -216,12 +216,12 @@ https://www.instagram.com/p/DbAte4ADdTi/
 
 | KPI | g1 | g3 | g7 | g30 |
 |-----|---|---|---|---|
-| reach | 93.471 | n/d | n/d | n/d |
-| views | 212.813 | n/d | n/d | n/d |
-| commenti | 134 | n/d | n/d | n/d |
-| condivisioni | 25 | n/d | n/d | n/d |
-| salvati | 137 | n/d | n/d | n/d |
-| dm | 1.353 | n/d | n/d | n/d |
-| sondaggi | 1.940 | n/d | n/d | n/d |
+| reach | 93.471 | 99.525 | n/d | n/d |
+| views | 212.813 | 230.091 | n/d | n/d |
+| commenti | 134 | 159 | n/d | n/d |
+| condivisioni | 25 | 26 | n/d | n/d |
+| salvati | 137 | 149 | n/d | n/d |
+| dm | 1.353 | 1.449 | n/d | n/d |
+| sondaggi | 1.940 | 2.147 | n/d | n/d |
 
-Pubblici (al 2026-07-21): like 6.444 · commenti 130 · condivisioni 1.353
+Pubblici (al 2026-07-23): like 7.074 · commenti 159 · condivisioni 26
