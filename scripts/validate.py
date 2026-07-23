@@ -73,6 +73,29 @@ def logged(block):
     return any(block.get(k) is not None for k in KPIS)
 
 
+def parse_irrecuperabili(meta):
+    """Legge meta.irrecuperabili = ["10:g3", ...] → (set di (n, finestra), errori).
+    Sono finestre che Instagram non mostra più: l'alert le ignora e non contano
+    come buco. Campo opzionale: assente → set vuoto. Condiviso con alert.py."""
+    raw = meta.get("irrecuperabili") if isinstance(meta, dict) else None
+    coppie, errs = set(), []
+    if raw is None:
+        return coppie, errs
+    if not isinstance(raw, list):
+        errs.append('meta.irrecuperabili deve essere una lista di stringhe "n:finestra"')
+        return coppie, errs
+    for item in raw:
+        if not isinstance(item, str) or ":" not in item:
+            errs.append(f'meta.irrecuperabili: voce non valida {item!r} (serve "n:finestra", es. "10:g3")')
+            continue
+        sn, w = (x.strip() for x in item.split(":", 1))
+        if not sn.isdigit() or w not in WINDOWS:
+            errs.append(f'meta.irrecuperabili: voce non valida {item!r} (n intero, finestra in {WINDOWS})')
+            continue
+        coppie.add((int(sn), w))
+    return coppie, errs
+
+
 def main():
     oggi = date.today()
 
@@ -101,6 +124,10 @@ def main():
     logo = meta.get("logo")
     if logo and not (ROOT / logo).is_file():
         err(f"meta.logo: file non trovato: {logo}")
+
+    irrec, irrec_errs = parse_irrecuperabili(meta)
+    for e in irrec_errs:
+        err(e)
 
     posts = dati.get("posts")
     if not isinstance(posts, list) or not posts:
@@ -171,6 +198,16 @@ def main():
             elif pub and agg < pub:
                 err(f"{dove}: overall.aggiornato ({agg}) precedente alla pubblicazione ({pub})")
 
+    # ---- irrecuperabili: devono riferirsi a finestre esistenti e VUOTE -------
+    by_n = {p.get("n"): p for p in posts if isinstance(p.get("n"), int)}
+    for n, w in sorted(irrec):
+        p = by_n.get(n)
+        if p is None:
+            err(f"meta.irrecuperabili: post n={n} inesistente")
+        elif isinstance(p.get("insights"), dict) and isinstance(p["insights"].get(w), dict) \
+                and logged(p["insights"][w]):
+            err(f"meta.irrecuperabili {n}:{w}: la finestra ha dati — togli il flag")
+
     if errori:
         # struttura rotta: inutile proseguire con i controlli sui valori
         return report(dati)
@@ -200,6 +237,8 @@ def main():
         n = p["n"]
         pub = date.fromisoformat(p["data"])
         for w in WINDOWS:
+            if (n, w) in irrec:
+                continue  # finestra persa marcata irrecuperabile: non è un buco
             scade = pub + timedelta(days=WINDOW_DAYS[w])
             block = p["insights"][w]
             mancanti = [k for k in KPIS if block.get(k) is None]
@@ -251,6 +290,11 @@ def report(dati):
         print(f"\n⚠ AVVISI ({len(avvisi)}) — non bloccano, ma vanno sistemati:\n")
         for a in avvisi:
             print(f"  - {a}")
+
+    irrec = parse_irrecuperabili(meta)[0]
+    if irrec:
+        voci = ", ".join(f"{n}:{w}" for n, w in sorted(irrec))
+        print(f"\n♻️  IRRECUPERABILI ({len(irrec)}) — finestre perse, ignorate dall'alert: {voci}")
 
     # ---- floor (solo se la struttura è sana) --------------------------------
     if not errori and posts:

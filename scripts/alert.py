@@ -41,14 +41,16 @@ def _vuota(block):
     return not any(block.get(k) is not None for k in validate.KPIS)
 
 
-def finestre_scadute(posts, oggi):
+def finestre_scadute(posts, oggi, irrec=frozenset()):
     """Per ogni post: (post, [(finestra, scadenza, giorni_ritardo), ...])
-    per le finestre scadute e completamente vuote. Ordinati per n."""
+    per le finestre scadute e vuote. Salta quelle marcate irrecuperabili."""
     out = []
     for p in sorted(posts, key=lambda x: x["n"]):
         pub = date.fromisoformat(p["data"])
         vuote = []
         for w in validate.WINDOWS:
+            if (p["n"], w) in irrec:
+                continue
             scade = pub + timedelta(days=validate.WINDOW_DAYS[w])
             if scade <= oggi and _vuota(p["insights"][w]):
                 vuote.append((w, scade, (oggi - scade).days))
@@ -57,17 +59,30 @@ def finestre_scadute(posts, oggi):
     return out
 
 
-def finestre_in_arrivo(posts, oggi):
+def finestre_in_arrivo(posts, oggi, irrec=frozenset()):
     """Finestre future ancora vuote: [(post, finestra, scadenza, giorni_mancanti)]
-    ordinate per data (prima le più vicine)."""
+    ordinate per data (prima le più vicine). Salta le irrecuperabili."""
     out = []
     for p in posts:
         pub = date.fromisoformat(p["data"])
         for w in validate.WINDOWS:
+            if (p["n"], w) in irrec:
+                continue
             scade = pub + timedelta(days=validate.WINDOW_DAYS[w])
             if scade > oggi and _vuota(p["insights"][w]):
                 out.append((p, w, scade, (scade - oggi).days))
     return sorted(out, key=lambda x: x[2])
+
+
+def finestre_perse(posts, irrec):
+    """[(post, finestra)] per le finestre marcate irrecuperabili, per il footer
+    muto. Ordinate per n e ordine finestra."""
+    by_n = {p["n"]: p for p in posts}
+    out = []
+    for n, w in sorted(irrec, key=lambda x: (x[0], validate.WINDOWS.index(x[1]))):
+        if n in by_n:
+            out.append((by_n[n], w))
+    return out
 
 
 def fmt_data(d):
@@ -86,7 +101,7 @@ def titolo_breve(t, n=46):
     return t if len(t) <= n else t[: n - 1].rstrip() + "…"
 
 
-def componi_messaggio(scadute, in_arrivo, oggi):
+def componi_messaggio(scadute, in_arrivo, perse, oggi):
     R = ["📊 ZonaFanta × Polymarket — promemoria insights", f"🗓 {fmt_data(oggi)}"]
 
     if scadute:
@@ -109,6 +124,10 @@ def componi_messaggio(scadute, in_arrivo, oggi):
             if p.get("url"):
                 R.append(f"   ↳ {p['url']}")
 
+    if perse:
+        voci = ", ".join(f"{p['n']}:{w}" for p, w in perse)
+        R += ["", f"♻️ Perse (Instagram non le mostra più, non serve cercarle): {voci}"]
+
     R += ["", "Aggiorna data/posts.json e l'alert si spegne da solo."]
     return "\n".join(R)
 
@@ -119,8 +138,10 @@ def main(argv):
     dati = json.loads((ROOT / "data" / "posts.json").read_text(encoding="utf-8"))
     oggi = date.today()
 
-    scadute = finestre_scadute(dati["posts"], oggi)
-    in_arrivo = finestre_in_arrivo(dati["posts"], oggi)
+    irrec = validate.parse_irrecuperabili(dati.get("meta") or {})[0]
+    scadute = finestre_scadute(dati["posts"], oggi, irrec)
+    in_arrivo = finestre_in_arrivo(dati["posts"], oggi, irrec)
+    perse = finestre_perse(dati["posts"], irrec)
     imminenti = [x for x in in_arrivo if x[3] <= PREAVVISO_INVIO]
 
     if not scadute and not imminenti:
@@ -128,7 +149,7 @@ def main(argv):
         print(f"Niente di scaduto né di imminente{prossima}: nessun messaggio (come da specifica).")
         return 0
 
-    msg = componi_messaggio(scadute, in_arrivo, oggi)
+    msg = componi_messaggio(scadute, in_arrivo, perse, oggi)
     n_scad = sum(len(v) for _, v in scadute)
     print(f"{len(scadute)} post con arretrato ({n_scad} finestre), "
           f"{len(in_arrivo)} prossime foto ({len(imminenti)} entro {PREAVVISO_INVIO}g).")

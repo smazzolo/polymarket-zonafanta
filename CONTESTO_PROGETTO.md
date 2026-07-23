@@ -1,4 +1,4 @@
-<!-- OUTPUT GENERATO da scripts/build.py il 2026-07-22 — NON MODIFICARE A MANO.
+<!-- OUTPUT GENERATO da scripts/build.py il 2026-07-23 — NON MODIFICARE A MANO.
      La fonte è data/posts.json. -->
 
 # Contesto progetto — ZonaFanta × Polymarket Italia
@@ -13,7 +13,7 @@
 - **Floor aggregato:** 1.500.000 views totali sulla collab
 - **Recupero:** se un floor non è raggiunto a fine ciclo, si aggiungono post fino al 2026-08-30
 
-## Stato floor (al 2026-07-22)
+## Stato floor (al 2026-07-23)
 
 - **Aggregato:** 1.681.950 / 1.500.000 views
   (**112.1%**, gap 0) — 8/8 post con dato

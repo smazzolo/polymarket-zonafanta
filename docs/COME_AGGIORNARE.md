@@ -85,8 +85,24 @@ git push
 Col push su GitHub la CI rifà validate + build e deploya su Vercel
 (Fase 5; finché non è attiva, il deploy va fatto a mano da Vercel).
 Ogni giorno un controllo automatico (Fase 4) manda un promemoria Telegram
-se una finestra è scaduta e non è ancora stata caricata: si spegne da solo
-appena aggiorni `posts.json`.
+diviso in **DA FOTOGRAFARE ORA** (finestre scadute e vuote) e **PROSSIME FOTO**
+(quelle future, con il countdown "tra N giorni"): si spegne da solo appena
+aggiorni `posts.json`.
+
+### Finestre perse (Instagram non le mostra più)
+
+Quando una finestra scade senza che tu sia riuscito a fotografarla e non è più
+recuperabile (Instagram mostra solo il totale corrente, non lo storico gN),
+marcala in `meta.irrecuperabili` così l'alert smette di reclamarla:
+
+```json
+"irrecuperabili": ["10:g3", "11:g3", "12:g3"]
+```
+
+Formato `"n:finestra"`. Quelle voci spariscono da "DA FOTOGRAFARE ORA" e finiscono
+in un footer muto ("♻️ Perse"). `validate.py` controlla che la voce punti a un
+post esistente e a una finestra **ancora vuota** (se la finestra ha dati, il flag
+va tolto).
 
 ---
 
