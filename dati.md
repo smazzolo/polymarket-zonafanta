@@ -137,7 +137,7 @@ https://www.instagram.com/p/DZ9wmyHDUIP/?img_index=1
 | condivisioni | 13 | 14 | 15 | 19 |
 | salvati | 77 | 87 | 97 | 119 |
 | dm | 0 | 0 | 0 | 170 |
-| sondaggi | 312 | 334 | 372 | n/d |
+| sondaggi | 312 | 334 | 372 | 435 |
 
 Pubblici (al 2026-07-27): like 5.647 · commenti 42 · condivisioni 19
 
