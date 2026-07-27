@@ -560,21 +560,21 @@
           "sondaggi": 372
         },
         "g30": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
+          "reach": 116329,
+          "views": 225588,
+          "commenti": 42,
+          "condivisioni": 19,
+          "salvati": 119,
+          "dm": 170,
           "sondaggi": null
         }
       },
       "overall": null,
       "pubblici": {
-        "like": 4843,
-        "commenti": 40,
-        "condivisioni": 15,
-        "aggiornato": "2026-07-01"
+        "like": 5647,
+        "commenti": 42,
+        "condivisioni": 19,
+        "aggiornato": "2026-07-27"
       },
       "note": null
     },
@@ -644,7 +644,7 @@
         "like": 1793,
         "commenti": 28,
         "condivisioni": 4,
-        "aggiornato": "2026-07-15"
+        "aggiornato": "2026-07-27"
       },
       "note": null
     },
@@ -703,10 +703,10 @@
       },
       "overall": null,
       "pubblici": {
-        "like": 2603,
+        "like": 2605,
         "commenti": 7,
-        "condivisioni": 117,
-        "aggiornato": "2026-07-15"
+        "condivisioni": 6,
+        "aggiornato": "2026-07-27"
       },
       "note": null
     },
@@ -872,13 +872,13 @@
           "sondaggi": 2147
         },
         "g7": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
-          "sondaggi": null
+          "reach": 103845,
+          "views": 238090,
+          "commenti": 160,
+          "condivisioni": 27,
+          "salvati": 153,
+          "dm": 1482,
+          "sondaggi": 2191
         },
         "g30": {
           "reach": null,
@@ -892,10 +892,10 @@
       },
       "overall": null,
       "pubblici": {
-        "like": 7074,
-        "commenti": 159,
-        "condivisioni": 26,
-        "aggiornato": "2026-07-23"
+        "like": 7237,
+        "commenti": 160,
+        "condivisioni": 27,
+        "aggiornato": "2026-07-27"
       },
       "note": null
     }

@@ -1,4 +1,4 @@
-<!-- OUTPUT GENERATO da scripts/build.py il 2026-07-23 — NON MODIFICARE A MANO.
+<!-- OUTPUT GENERATO da scripts/build.py il 2026-07-27 — NON MODIFICARE A MANO.
      La fonte è data/posts.json. -->
 
 # Dati completi — ZonaFanta × Polymarket Italia
@@ -131,15 +131,15 @@ https://www.instagram.com/p/DZ9wmyHDUIP/?img_index=1
 
 | KPI | g1 | g3 | g7 | g30 |
 |-----|---|---|---|---|
-| reach | 78.056 | 85.717 | 98.701 | n/d |
-| views | 165.211 | 180.594 | 200.861 | n/d |
-| commenti | 38 | 39 | 40 | n/d |
-| condivisioni | 13 | 14 | 15 | n/d |
-| salvati | 77 | 87 | 97 | n/d |
-| dm | 0 | 0 | 0 | n/d |
+| reach | 78.056 | 85.717 | 98.701 | 116.329 |
+| views | 165.211 | 180.594 | 200.861 | 225.588 |
+| commenti | 38 | 39 | 40 | 42 |
+| condivisioni | 13 | 14 | 15 | 19 |
+| salvati | 77 | 87 | 97 | 119 |
+| dm | 0 | 0 | 0 | 170 |
 | sondaggi | 312 | 334 | 372 | n/d |
 
-Pubblici (al 2026-07-01): like 4.843 · commenti 40 · condivisioni 15
+Pubblici (al 2026-07-27): like 5.647 · commenti 42 · condivisioni 19
 
 ## #9 — Il Marocco vince ai rigori, il Paraguay vince ai rigori - e noi non scendiamo dal carro
 
@@ -156,7 +156,7 @@ https://www.instagram.com/p/DaNSB4QDetC/
 | dm | 212 | 213 | 213 | n/d |
 | sondaggi | 115 | 121 | 115 | n/d |
 
-Pubblici (al 2026-07-15): like 1.793 · commenti 28 · condivisioni 4
+Pubblici (al 2026-07-27): like 1.793 · commenti 28 · condivisioni 4
 
 ## #10 — Il miglior assistman al mondo riuscirà a fare un gol al Mondiale?
 
@@ -173,7 +173,7 @@ https://www.instagram.com/p/DaP_oviDRZc/
 | dm | 108 | n/d | 117 | n/d |
 | sondaggi | 97 | n/d | 111 | n/d |
 
-Pubblici (al 2026-07-15): like 2.603 · commenti 7 · condivisioni 117
+Pubblici (al 2026-07-27): like 2.605 · commenti 7 · condivisioni 6
 
 ## #11 — Haaland è il Majin Bu di questo Mondiale: ora è il cattivo da battere?
 
@@ -216,12 +216,12 @@ https://www.instagram.com/p/DbAte4ADdTi/
 
 | KPI | g1 | g3 | g7 | g30 |
 |-----|---|---|---|---|
-| reach | 93.471 | 99.525 | n/d | n/d |
-| views | 212.813 | 230.091 | n/d | n/d |
-| commenti | 134 | 159 | n/d | n/d |
-| condivisioni | 25 | 26 | n/d | n/d |
-| salvati | 137 | 149 | n/d | n/d |
-| dm | 1.353 | 1.449 | n/d | n/d |
-| sondaggi | 1.940 | 2.147 | n/d | n/d |
+| reach | 93.471 | 99.525 | 103.845 | n/d |
+| views | 212.813 | 230.091 | 238.090 | n/d |
+| commenti | 134 | 159 | 160 | n/d |
+| condivisioni | 25 | 26 | 27 | n/d |
+| salvati | 137 | 149 | 153 | n/d |
+| dm | 1.353 | 1.449 | 1.482 | n/d |
+| sondaggi | 1.940 | 2.147 | 2.191 | n/d |
 
-Pubblici (al 2026-07-23): like 7.074 · commenti 159 · condivisioni 26
+Pubblici (al 2026-07-27): like 7.237 · commenti 160 · condivisioni 27
