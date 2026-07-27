@@ -143,35 +143,35 @@ Pubblici (al 2026-07-27): like 5.647 · commenti 42 · condivisioni 19
 
 ## #9 — Il Marocco vince ai rigori, il Paraguay vince ai rigori - e noi non scendiamo dal carro
 
-`estiva` · pubblicato 2026-06-30 · media · mercato: World Cup Winner
+`estiva` · pubblicato 2026-06-30 · media · mercato: World Cup Winner · overall letto il 2026-07-27
 https://www.instagram.com/p/DaNSB4QDetC/
 
-| KPI | g1 | g3 | g7 | g30 |
-|-----|---|---|---|---|
-| reach | 41.588 | 43.607 | 46.935 | n/d |
-| views | 105.490 | 115.373 | 124.478 | n/d |
-| commenti | 28 | 28 | 28 | n/d |
-| condivisioni | 5 | 4 | 4 | n/d |
-| salvati | 16 | 18 | 20 | n/d |
-| dm | 212 | 213 | 213 | n/d |
-| sondaggi | 115 | 121 | 115 | n/d |
+| KPI | g1 | g3 | g7 | g30 | overall |
+|-----|---|---|---|---|---|
+| reach | 41.588 | 43.607 | 46.935 | n/d | 47.071 |
+| views | 105.490 | 115.373 | 124.478 | n/d | 124.648 |
+| commenti | 28 | 28 | 28 | n/d | 28 |
+| condivisioni | 5 | 4 | 4 | n/d | 4 |
+| salvati | 16 | 18 | 20 | n/d | 21 |
+| dm | 212 | 213 | 213 | n/d | 213 |
+| sondaggi | 115 | 121 | 115 | n/d | n/d |
 
 Pubblici (al 2026-07-27): like 1.793 · commenti 28 · condivisioni 4
 
 ## #10 — Il miglior assistman al mondo riuscirà a fare un gol al Mondiale?
 
-`estiva` · pubblicato 2026-07-01 · media · mercato: World Cup: Player to score Michael Olise
+`estiva` · pubblicato 2026-07-01 · media · mercato: World Cup: Player to score Michael Olise · overall letto il 2026-07-27
 https://www.instagram.com/p/DaP_oviDRZc/
 
-| KPI | g1 | g3 | g7 | g30 |
-|-----|---|---|---|---|
-| reach | 49.407 | n/d | 59.173 | n/d |
-| views | 124.635 | n/d | 149.185 | n/d |
-| commenti | 7 | n/d | 7 | n/d |
-| condivisioni | n/d | n/d | n/d | n/d |
-| salvati | 33 | n/d | 41 | n/d |
-| dm | 108 | n/d | 117 | n/d |
-| sondaggi | 97 | n/d | 111 | n/d |
+| KPI | g1 | g3 | g7 | g30 | overall |
+|-----|---|---|---|---|---|
+| reach | 49.407 | n/d | 59.173 | n/d | n/d |
+| views | 124.635 | n/d | 149.185 | n/d | n/d |
+| commenti | 7 | n/d | 7 | n/d | 7 |
+| condivisioni | n/d | n/d | n/d | n/d | 6 |
+| salvati | 33 | n/d | 41 | n/d | n/d |
+| dm | 108 | n/d | 117 | n/d | 117 |
+| sondaggi | 97 | n/d | 111 | n/d | 111 |
 
 Pubblici (al 2026-07-27): like 2.605 · commenti 7 · condivisioni 6
 
