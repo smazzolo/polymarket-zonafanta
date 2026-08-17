@@ -15,8 +15,7 @@
     "irrecuperabili": [
       "10:g3",
       "11:g3",
-      "12:g3",
-      "14:g1"
+      "12:g3"
     ]
   },
   "posts": [
@@ -931,13 +930,13 @@
       ],
       "insights": {
         "g1": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
-          "sondaggi": null
+          "reach": 82344,
+          "views": 183977,
+          "commenti": 45,
+          "condivisioni": 6,
+          "salvati": 93,
+          "dm": 149,
+          "sondaggi": 424
         },
         "g3": {
           "reach": null,
@@ -967,23 +966,14 @@
           "sondaggi": null
         }
       },
-      "overall": {
-        "reach": 82344,
-        "views": 183977,
-        "commenti": 45,
-        "condivisioni": 6,
-        "salvati": 93,
-        "dm": 149,
-        "sondaggi": 424,
-        "aggiornato": "2026-08-17"
-      },
+      "overall": null,
       "pubblici": {
         "like": 4510,
         "commenti": 45,
         "condivisioni": 6,
         "aggiornato": "2026-08-17"
       },
-      "note": "Prima lettura fatta il 17/8 ~10:57, cioè ~46h dopo la pubblicazione (15/8 12:45): fuori dalla finestra g1 (scaduta il 16/8), quindi messa in overall e g1 marcata irrecuperabile. Nello screen insight il box reach era etichettato 'Visualizzazioni' (glitch IG): reach 82.344 letto dal box di destra, come negli screen precedenti. Repost: feed 6 vs insight 7 (screen a 1 minuto di distanza) → tenuto 6 (feed, KPI_RULES). Aeroplanino insight '--', dm 149 dal feed."
+      "note": "g1 = lettura del 17/8 ~10:57 (~46h dopo la pubblicazione del 15/8 12:45, quindi in ritardo rispetto alle 24h) — scelta utente 17/8 sera: vale come g1. Box insight: sinistra views 183.977, destra reach 82.344. Repost: feed 6 vs insight 7 (1 minuto dopo) → tenuto 6 (feed, KPI_RULES). Aeroplanino insight '--', dm 149 dal feed."
     }
   ]
 }

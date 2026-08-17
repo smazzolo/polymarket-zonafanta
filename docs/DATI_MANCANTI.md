@@ -111,8 +111,8 @@ Aggiunto il 17/8/2026 dagli screen in `~/Downloads/post poly 15:08`.
   ~46h dopo, cioè **oltre la g1** (scaduta il 16/8) e prima della g3 (18/8).
   Scelta applicata: lettura messa nel blocco `overall` (aggiornato 17/8),
   `g1` lasciata vuota e marcata `14:g1` in `meta.irrecuperabili`.
-  **Da decidere (utente):** se la si vuole considerare "la g1" va spostata da
-  `overall` a `insights.g1` e tolto il flag — un minuto di lavoro.
+  **Deciso il 17/8 sera (utente): vale come g1** → spostata in `insights.g1`,
+  flag `14:g1` tolto, `overall` azzerato.
 - **Repost (condivisioni)**: nel feed l'icona ↻ segnava **6**, nello screen
   insight (1 minuto dopo) **7**. Tenuto 6 (KPI_RULES: si legge dal post).
   Se al prossimo screen il feed dice ≥7, aggiornare.

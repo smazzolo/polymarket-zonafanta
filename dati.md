@@ -228,17 +228,17 @@ Pubblici (al 2026-08-17): like 7.485 · commenti 161 · condivisioni 27
 
 ## #14 — -7 giorni alla Serie A: il Como ha il 4% di Scudetto
 
-`estiva` · pubblicato 2026-08-15 · media · mercato: Serie A: Campione 2027 · overall letto il 2026-08-17
+`estiva` · pubblicato 2026-08-15 · media · mercato: Serie A: Campione 2027
 https://www.instagram.com/p/DcDtENsjVDk/
 
-| KPI | g1 | g3 | g7 | g30 | overall |
-|-----|---|---|---|---|---|
-| reach | n/d | n/d | n/d | n/d | 82.344 |
-| views | n/d | n/d | n/d | n/d | 183.977 |
-| commenti | n/d | n/d | n/d | n/d | 45 |
-| condivisioni | n/d | n/d | n/d | n/d | 6 |
-| salvati | n/d | n/d | n/d | n/d | 93 |
-| dm | n/d | n/d | n/d | n/d | 149 |
-| sondaggi | n/d | n/d | n/d | n/d | 424 |
+| KPI | g1 | g3 | g7 | g30 |
+|-----|---|---|---|---|
+| reach | 82.344 | n/d | n/d | n/d |
+| views | 183.977 | n/d | n/d | n/d |
+| commenti | 45 | n/d | n/d | n/d |
+| condivisioni | 6 | n/d | n/d | n/d |
+| salvati | 93 | n/d | n/d | n/d |
+| dm | 149 | n/d | n/d | n/d |
+| sondaggi | 424 | n/d | n/d | n/d |
 
 Pubblici (al 2026-08-17): like 4.510 · commenti 45 · condivisioni 6
