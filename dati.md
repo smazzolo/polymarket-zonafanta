@@ -143,37 +143,37 @@ Pubblici (al 2026-07-27): like 5.647 · commenti 42 · condivisioni 19
 
 ## #9 — Il Marocco vince ai rigori, il Paraguay vince ai rigori - e noi non scendiamo dal carro
 
-`estiva` · pubblicato 2026-06-30 · media · mercato: World Cup Winner · overall letto il 2026-07-27
+`estiva` · pubblicato 2026-06-30 · media · mercato: World Cup Winner
 https://www.instagram.com/p/DaNSB4QDetC/
 
-| KPI | g1 | g3 | g7 | g30 | overall |
-|-----|---|---|---|---|---|
-| reach | 41.588 | 43.607 | 46.935 | n/d | 47.071 |
-| views | 105.490 | 115.373 | 124.478 | n/d | 124.648 |
-| commenti | 28 | 28 | 28 | n/d | 28 |
-| condivisioni | 5 | 4 | 4 | n/d | 4 |
-| salvati | 16 | 18 | 20 | n/d | 21 |
-| dm | 212 | 213 | 213 | n/d | 213 |
-| sondaggi | 115 | 121 | 115 | n/d | n/d |
+| KPI | g1 | g3 | g7 | g30 |
+|-----|---|---|---|---|
+| reach | 41.588 | 43.607 | 46.935 | n/d |
+| views | 105.490 | 115.373 | 124.478 | 124.790 |
+| commenti | 28 | 28 | 28 | 28 |
+| condivisioni | 5 | 4 | 4 | 4 |
+| salvati | 16 | 18 | 20 | n/d |
+| dm | 212 | 213 | 213 | 213 |
+| sondaggi | 115 | 121 | 115 | 124 |
 
-Pubblici (al 2026-07-27): like 1.793 · commenti 28 · condivisioni 4
+Pubblici (al 2026-08-17): like 1.793 · commenti 28 · condivisioni 4
 
 ## #10 — Il miglior assistman al mondo riuscirà a fare un gol al Mondiale?
 
-`estiva` · pubblicato 2026-07-01 · media · mercato: World Cup: Player to score Michael Olise · overall letto il 2026-07-27
+`estiva` · pubblicato 2026-07-01 · media · mercato: World Cup: Player to score Michael Olise
 https://www.instagram.com/p/DaP_oviDRZc/
 
-| KPI | g1 | g3 | g7 | g30 | overall |
-|-----|---|---|---|---|---|
-| reach | 49.407 | n/d | 59.173 | n/d | n/d |
-| views | 124.635 | n/d | 149.185 | n/d | n/d |
-| commenti | 7 | n/d | 7 | n/d | 7 |
-| condivisioni | n/d | n/d | n/d | n/d | 6 |
-| salvati | 33 | n/d | 41 | n/d | n/d |
-| dm | 108 | n/d | 117 | n/d | 117 |
-| sondaggi | 97 | n/d | 111 | n/d | 111 |
+| KPI | g1 | g3 | g7 | g30 |
+|-----|---|---|---|---|
+| reach | 49.407 | n/d | 59.173 | n/d |
+| views | 124.635 | n/d | 149.185 | 149.715 |
+| commenti | 7 | n/d | 7 | 7 |
+| condivisioni | n/d | n/d | n/d | 6 |
+| salvati | 33 | n/d | 41 | 41 |
+| dm | 108 | n/d | 117 | 117 |
+| sondaggi | 97 | n/d | 111 | n/d |
 
-Pubblici (al 2026-07-27): like 2.605 · commenti 7 · condivisioni 6
+Pubblici (al 2026-08-17): like 2.606 · commenti 7 · condivisioni 6
 
 ## #11 — Haaland è il Majin Bu di questo Mondiale: ora è il cattivo da battere?
 
@@ -183,14 +183,14 @@ https://www.instagram.com/p/DacqyRAjWTu/
 | KPI | g1 | g3 | g7 | g30 |
 |-----|---|---|---|---|
 | reach | 67.514 | n/d | 76.766 | n/d |
-| views | 152.298 | n/d | 176.094 | n/d |
-| commenti | 20 | n/d | 21 | n/d |
-| condivisioni | n/d | n/d | n/d | n/d |
-| salvati | 63 | n/d | 72 | n/d |
-| dm | 108 | n/d | 461 | n/d |
-| sondaggi | 177 | n/d | 233 | n/d |
+| views | 152.298 | n/d | 176.094 | 177.683 |
+| commenti | 20 | n/d | 21 | 21 |
+| condivisioni | n/d | n/d | n/d | 16 |
+| salvati | 63 | n/d | 72 | 72 |
+| dm | 108 | n/d | 461 | 461 |
+| sondaggi | 177 | n/d | 233 | 233 |
 
-Pubblici (al 2026-07-15): like 3.688 · commenti 21 · condivisioni 461
+Pubblici (al 2026-08-17): like 3.704 · commenti 21 · condivisioni 16
 
 ## #12 — Semifinaliste Mondiale
 
@@ -200,31 +200,31 @@ https://www.instagram.com/p/Dauzu2EjZB5/
 | KPI | g1 | g3 | g7 | g30 |
 |-----|---|---|---|---|
 | reach | 47.992 | n/d | 53.486 | n/d |
-| views | 119.883 | n/d | 149.105 | n/d |
-| commenti | 15 | n/d | 17 | n/d |
-| condivisioni | n/d | n/d | 3 | n/d |
-| salvati | 30 | n/d | 34 | n/d |
-| dm | 171 | n/d | 245 | n/d |
-| sondaggi | 233 | n/d | 0 | n/d |
+| views | 119.883 | n/d | 149.105 | 152.686 |
+| commenti | 15 | n/d | 17 | 17 |
+| condivisioni | n/d | n/d | 3 | 2 |
+| salvati | 30 | n/d | 34 | 34 |
+| dm | 171 | n/d | 245 | 245 |
+| sondaggi | 233 | n/d | 0 | 0 |
 
-Pubblici (al 2026-07-21): like 2.046 · commenti 17 · condivisioni 245
+Pubblici (al 2026-08-17): like 2.063 · commenti 17 · condivisioni 2
 
 ## #13 — Lamine Yamal ha 19 anni e potrebbe già vincere il suo primo Pallone d'Oro
 
-`estiva` · pubblicato 2026-07-20 · media · mercato: Vincitore del Pallone d'Oro 2026
+`estiva` · pubblicato 2026-07-20 · media · mercato: Vincitore del Pallone d'Oro 2026 · overall letto il 2026-08-17
 https://www.instagram.com/p/DbAte4ADdTi/
 
-| KPI | g1 | g3 | g7 | g30 |
-|-----|---|---|---|---|
-| reach | 93.471 | 99.525 | 103.845 | n/d |
-| views | 212.813 | 230.091 | 238.090 | n/d |
-| commenti | 134 | 159 | 160 | n/d |
-| condivisioni | 25 | 26 | 27 | n/d |
-| salvati | 137 | 149 | 153 | n/d |
-| dm | 1.353 | 1.449 | 1.482 | n/d |
-| sondaggi | 1.940 | 2.147 | 2.191 | n/d |
+| KPI | g1 | g3 | g7 | g30 | overall |
+|-----|---|---|---|---|---|
+| reach | 93.471 | 99.525 | 103.845 | n/d | n/d |
+| views | 212.813 | 230.091 | 238.090 | n/d | 244.646 |
+| commenti | 134 | 159 | 160 | n/d | 161 |
+| condivisioni | 25 | 26 | 27 | n/d | 27 |
+| salvati | 137 | 149 | 153 | n/d | 152 |
+| dm | 1.353 | 1.449 | 1.482 | n/d | 1.509 |
+| sondaggi | 1.940 | 2.147 | 2.191 | n/d | n/d |
 
-Pubblici (al 2026-07-27): like 7.237 · commenti 160 · condivisioni 27
+Pubblici (al 2026-08-17): like 7.485 · commenti 161 · condivisioni 27
 
 ## #14 — -7 giorni alla Serie A: il Como ha il 4% di Scudetto
 

@@ -119,10 +119,36 @@ Aggiunto il 17/8/2026 dagli screen in `~/Downloads/post poly 15:08`.
 - **Etichetta box insight**: entrambi i box del riepilogo erano etichettati
   "Visualizzazioni" (glitch IG). Letto per posizione come in tutti gli screen
   precedenti: sinistra = views 183.977, destra = reach 82.344 (rapporto 2,2×
-  coerente con gli altri post).
+  coerente con gli altri post). ⚠️ **Rimesso in dubbio il 17/8 pomeriggio**:
+  vedi A10 — sugli screen degli altri post lo stesso box NON è la reach.
+  Il valore 82.344 resta in `overall.reach` finché l'utente non decide.
 - Slide: in cartella 6 file (`6s_` compreso), i pallini del carosello nello
   screen sono 5 con gli ultimi due rimpiccioliti (= più di 5 slide) → caricate
   tutte e 6.
+
+### A10. Box "Visualizzazioni" di destra negli insight (17/8 pomeriggio): NON è la reach → reach g30 n9–n13 lasciata n/d
+
+Screen del 17/8 ore 16:43–16:46 (`~/Downloads/Nuova cartella con elementi 2`,
+IMG_9161–9170) dei post 9, 10, 11, 12, 13. In tutti il riepilogo insight
+mostra due box entrambi etichettati "Visualizzazioni" (il 27/7 il box di
+destra si chiamava "Account raggiunti"). Il valore di destra confrontato con
+l'ultima reach nota:
+
+| post | box destra 17/8 | ultima reach nota | delta |
+|---|---|---|---|
+| n9 | 20.604 | 47.071 (27/7) | −56% ← impossibile per una reach |
+| n10 | 56.210 | 59.173 (g7) | −5% |
+| n11 | 74.310 | 76.766 (g7) | −3% |
+| n12 | 56.051 | 53.486 (g7) | +5% |
+| n13 | 103.173 | 103.845 (g7) | −0,6% |
+| n14 (mattina) | 82.344 | — | caricato come reach in A9 |
+
+Un cumulativo non può calare: quel box **non è più la reach** (o non lo è
+sempre). Applicato: `reach = null` in g30 di n9/n10/n11/n12 e in overall di
+n13; i valori del box sono conservati qui e nelle `note` dei post.
+**Da decidere (utente):** cos'è quel box (chiedere/guardare la tab "Pubblico"
+degli insight, dove IG mostra "Account raggiunti") e se la reach 82.344 del
+post 14 va tenuta o azzerata. Quando la reach vera è leggibile, inserirla.
 
 ---
 

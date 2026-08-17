@@ -632,31 +632,22 @@
         },
         "g30": {
           "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
+          "views": 124790,
+          "commenti": 28,
+          "condivisioni": 4,
           "salvati": null,
-          "dm": null,
-          "sondaggi": null
+          "dm": 213,
+          "sondaggi": 124
         }
       },
-      "overall": {
-        "reach": 47071,
-        "views": 124648,
-        "commenti": 28,
-        "condivisioni": 4,
-        "salvati": 21,
-        "dm": 213,
-        "sondaggi": null,
-        "aggiornato": "2026-07-27"
-      },
+      "overall": null,
       "pubblici": {
         "like": 1793,
         "commenti": 28,
         "condivisioni": 4,
-        "aggiornato": "2026-07-27"
+        "aggiornato": "2026-08-17"
       },
-      "note": null
+      "note": "g30 letta il 17/8 (18 gg dopo la scadenza, post a plateau). Reach n/d: nello screen insight del 17/8 il box che prima era 'Account raggiunti' è etichettato 'Visualizzazioni' e vale 20.604, incompatibile con la reach 47.071 letta il 27/7 → non è reach, lasciato n/d (dubbio A10). Salvati non nello screen. La lettura del 27/7 (reach 47.071, salvati 21, in overall) è stata sostituita dalla g30: overall azzerato."
     },
     {
       "n": 10,
@@ -703,31 +694,22 @@
         },
         "g30": {
           "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
+          "views": 149715,
+          "commenti": 7,
+          "condivisioni": 6,
+          "salvati": 41,
+          "dm": 117,
           "sondaggi": null
         }
       },
-      "overall": {
-        "reach": null,
-        "views": null,
-        "commenti": 7,
-        "condivisioni": 6,
-        "salvati": null,
-        "dm": 117,
-        "sondaggi": 111,
-        "aggiornato": "2026-07-27"
-      },
+      "overall": null,
       "pubblici": {
-        "like": 2605,
+        "like": 2606,
         "commenti": 7,
         "condivisioni": 6,
-        "aggiornato": "2026-07-27"
+        "aggiornato": "2026-08-17"
       },
-      "note": null
+      "note": "g30 letta il 17/8 (17 gg dopo la scadenza). Reach n/d: box insight ambiguo (56.210 etichettato 'Visualizzazioni', sotto la reach g7 59.173 → non può essere reach, dubbio A10). Sondaggi non visibili nello screen (caption tagliata). Lettura feed del 27/7 (overall) sostituita dalla g30."
     },
     {
       "n": 11,
@@ -774,22 +756,22 @@
         },
         "g30": {
           "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
-          "sondaggi": null
+          "views": 177683,
+          "commenti": 21,
+          "condivisioni": 16,
+          "salvati": 72,
+          "dm": 461,
+          "sondaggi": 233
         }
       },
       "overall": null,
       "pubblici": {
-        "like": 3688,
+        "like": 3704,
         "commenti": 21,
-        "condivisioni": 461,
-        "aggiornato": "2026-07-15"
+        "condivisioni": 16,
+        "aggiornato": "2026-08-17"
       },
-      "note": null
+      "note": "g30 letta il 17/8 (12 gg dopo la scadenza). Reach n/d: box insight ambiguo (74.310, sotto la reach g7 76.766, dubbio A10). pubblici.condivisioni corretto: era 461 (= dm/aeroplanino), il repost ↻ vale 16."
     },
     {
       "n": 12,
@@ -836,22 +818,22 @@
         },
         "g30": {
           "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
-          "sondaggi": null
+          "views": 152686,
+          "commenti": 17,
+          "condivisioni": 2,
+          "salvati": 34,
+          "dm": 245,
+          "sondaggi": 0
         }
       },
       "overall": null,
       "pubblici": {
-        "like": 2046,
+        "like": 2063,
         "commenti": 17,
-        "condivisioni": 245,
-        "aggiornato": "2026-07-21"
+        "condivisioni": 2,
+        "aggiornato": "2026-08-17"
       },
-      "note": "Sondaggio rimosso prima della g7 (chat eliminata): le 233 risposte di g1 sono reali, da g7 il contatore non esiste più → 0."
+      "note": "Sondaggio rimosso prima della g7 (chat eliminata): le 233 risposte di g1 sono reali, da g7 il contatore non esiste più → 0. g30 letta il 17/8 (5 gg dopo la scadenza): nessuna riga 'Risposte' nel feed → sondaggi 0 come g7. Repost ↻ 2 (era 3 a g7: un repost tolto, avviso). Reach n/d: box insight ambiguo (56.051, dubbio A10). pubblici.condivisioni corretto: era 245 (= dm), il repost vale 2."
     },
     {
       "n": 13,
@@ -909,14 +891,23 @@
           "sondaggi": null
         }
       },
-      "overall": null,
-      "pubblici": {
-        "like": 7237,
-        "commenti": 160,
+      "overall": {
+        "reach": null,
+        "views": 244646,
+        "commenti": 161,
         "condivisioni": 27,
-        "aggiornato": "2026-07-27"
+        "salvati": 152,
+        "dm": 1509,
+        "sondaggi": null,
+        "aggiornato": "2026-08-17"
       },
-      "note": null
+      "pubblici": {
+        "like": 7485,
+        "commenti": 161,
+        "condivisioni": 27,
+        "aggiornato": "2026-08-17"
+      },
+      "note": "Lettura del 17/8 (28 gg, g30 scade il 19/8) messa in overall e non in g30. Reach n/d: box insight ambiguo (103.173, sotto la reach g7 103.845, dubbio A10). Salvati 152 (era 153 a g7, avviso). Sondaggi non nello screen (caption tagliata)."
     },
     {
       "n": 14,
