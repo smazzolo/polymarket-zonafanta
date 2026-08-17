@@ -148,7 +148,7 @@ https://www.instagram.com/p/DaNSB4QDetC/
 
 | KPI | g1 | g3 | g7 | g30 |
 |-----|---|---|---|---|
-| reach | 41.588 | 43.607 | 46.935 | n/d |
+| reach | 41.588 | 43.607 | 46.935 | 20.604 |
 | views | 105.490 | 115.373 | 124.478 | 124.790 |
 | commenti | 28 | 28 | 28 | 28 |
 | condivisioni | 5 | 4 | 4 | 4 |
@@ -165,7 +165,7 @@ https://www.instagram.com/p/DaP_oviDRZc/
 
 | KPI | g1 | g3 | g7 | g30 |
 |-----|---|---|---|---|
-| reach | 49.407 | n/d | 59.173 | n/d |
+| reach | 49.407 | n/d | 59.173 | 56.210 |
 | views | 124.635 | n/d | 149.185 | 149.715 |
 | commenti | 7 | n/d | 7 | 7 |
 | condivisioni | n/d | n/d | n/d | 6 |
@@ -182,7 +182,7 @@ https://www.instagram.com/p/DacqyRAjWTu/
 
 | KPI | g1 | g3 | g7 | g30 |
 |-----|---|---|---|---|
-| reach | 67.514 | n/d | 76.766 | n/d |
+| reach | 67.514 | n/d | 76.766 | 74.310 |
 | views | 152.298 | n/d | 176.094 | 177.683 |
 | commenti | 20 | n/d | 21 | 21 |
 | condivisioni | n/d | n/d | n/d | 16 |
@@ -199,7 +199,7 @@ https://www.instagram.com/p/Dauzu2EjZB5/
 
 | KPI | g1 | g3 | g7 | g30 |
 |-----|---|---|---|---|
-| reach | 47.992 | n/d | 53.486 | n/d |
+| reach | 47.992 | n/d | 53.486 | 56.051 |
 | views | 119.883 | n/d | 149.105 | 152.686 |
 | commenti | 15 | n/d | 17 | 17 |
 | condivisioni | n/d | n/d | 3 | 2 |
@@ -216,7 +216,7 @@ https://www.instagram.com/p/DbAte4ADdTi/
 
 | KPI | g1 | g3 | g7 | g30 | overall |
 |-----|---|---|---|---|---|
-| reach | 93.471 | 99.525 | 103.845 | n/d | n/d |
+| reach | 93.471 | 99.525 | 103.845 | n/d | 103.173 |
 | views | 212.813 | 230.091 | 238.090 | n/d | 244.646 |
 | commenti | 134 | 159 | 160 | n/d | 161 |
 | condivisioni | 25 | 26 | 27 | n/d | 27 |

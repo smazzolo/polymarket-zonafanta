@@ -17,7 +17,7 @@
 
 - **Aggregato:** 1.928.499 / 1.500.000 views
   (**128.6%**, gap 0) — 9/9 post con dato
-- **Reach media per post:** 99.881
+- **Reach media per post:** 96.564
 
 | n | titolo | pubblicato | views (overall) | floor 100K |
 |---|--------|-----------|-----------------|------------|

@@ -51,10 +51,16 @@ Gli altri KPI, se non leggibili dagli screen disponibili, restano `n/d` —
 ## Coerenza tra finestre
 
 I contatori sono cumulativi: tra g1 → g3 → g7 → g30 (→ overall) non
-dovrebbero mai scendere. `validate.py` **blocca il build** se calano
-`reach` o `views` (impossibile: è un errore di caricamento — controlla di
-non aver invertito due colonne o due finestre); un calo sugli altri KPI
-genera un avviso da verificare sugli screen, mai da "correggere" a mente.
+dovrebbero mai scendere. `validate.py` **blocca il build** se calano le
+`views` (impossibile: è un errore di caricamento — controlla di non aver
+invertito due colonne o due finestre); un calo sugli altri KPI, **reach
+compresa** (dal 17/8/2026: IG la ricalcola anche al ribasso, es. post 9
+47.071 → 20.604), genera un avviso da verificare sugli screen, mai da
+"correggere" a mente.
+
+Nota sul riepilogo insight: dal 17/8/2026 IG etichetta entrambi i box
+"Visualizzazioni". Si leggono per posizione: **sinistra = views, destra =
+reach** (era "Account raggiunti") — regola confermata dall'utente.
 
 ## Contatori pubblici ≠ insights
 

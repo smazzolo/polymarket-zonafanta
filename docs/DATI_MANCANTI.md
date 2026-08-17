@@ -121,12 +121,12 @@ Aggiunto il 17/8/2026 dagli screen in `~/Downloads/post poly 15:08`.
   precedenti: sinistra = views 183.977, destra = reach 82.344 (rapporto 2,2×
   coerente con gli altri post). ⚠️ **Rimesso in dubbio il 17/8 pomeriggio**:
   vedi A10 — sugli screen degli altri post lo stesso box NON è la reach.
-  Il valore 82.344 resta in `overall.reach` finché l'utente non decide.
+  **Chiuso il 17/8 sera dall'utente: il box destro È la reach**, 82.344 confermato.
 - Slide: in cartella 6 file (`6s_` compreso), i pallini del carosello nello
   screen sono 5 con gli ultimi due rimpiccioliti (= più di 5 slide) → caricate
   tutte e 6.
 
-### A10. Box "Visualizzazioni" di destra negli insight (17/8 pomeriggio): NON è la reach → reach g30 n9–n13 lasciata n/d
+### A10. Box "Visualizzazioni" di destra negli insight (17/8): è la reach — RISOLTO dall'utente, ma la reach IG cala
 
 Screen del 17/8 ore 16:43–16:46 (`~/Downloads/Nuova cartella con elementi 2`,
 IMG_9161–9170) dei post 9, 10, 11, 12, 13. In tutti il riepilogo insight
@@ -143,12 +143,12 @@ l'ultima reach nota:
 | n13 | 103.173 | 103.845 (g7) | −0,6% |
 | n14 (mattina) | 82.344 | — | caricato come reach in A9 |
 
-Un cumulativo non può calare: quel box **non è più la reach** (o non lo è
-sempre). Applicato: `reach = null` in g30 di n9/n10/n11/n12 e in overall di
-n13; i valori del box sono conservati qui e nelle `note` dei post.
-**Da decidere (utente):** cos'è quel box (chiedere/guardare la tab "Pubblico"
-degli insight, dove IG mostra "Account raggiunti") e se la reach 82.344 del
-post 14 va tenuta o azzerata. Quando la reach vera è leggibile, inserirla.
+**Decisione utente (17/8 sera): il box destro è la reach**, come sempre (letto
+per posizione, vedi KPI_RULES). Valori caricati in g30 di n9/n10/n11/n12 e
+overall di n13; n14 82.344 confermato. Conseguenza: la reach IG **può calare**
+nel tempo (ricalcolo lato IG) → `validate.py` non la tratta più come errore
+bloccante ma come avviso (solo le views restano bloccanti). Il calo di n9
+(−56%) resta anomalo e va tenuto d'occhio al prossimo screen.
 
 ---
 
