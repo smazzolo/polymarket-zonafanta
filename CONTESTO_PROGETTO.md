@@ -1,4 +1,4 @@
-<!-- OUTPUT GENERATO da scripts/build.py il 2026-07-27 — NON MODIFICARE A MANO.
+<!-- OUTPUT GENERATO da scripts/build.py il 2026-08-17 — NON MODIFICARE A MANO.
      La fonte è data/posts.json. -->
 
 # Contesto progetto — ZonaFanta × Polymarket Italia
@@ -13,11 +13,11 @@
 - **Floor aggregato:** 1.500.000 views totali sulla collab
 - **Recupero:** se un floor non è raggiunto a fine ciclo, si aggiungono post fino al 2026-08-30
 
-## Stato floor (al 2026-07-27)
+## Stato floor (al 2026-08-17)
 
-- **Aggregato:** 1.732.124 / 1.500.000 views
-  (**115.5%**, gap 0) — 8/8 post con dato
-- **Reach media per post:** 102.090
+- **Aggregato:** 1.916.101 / 1.500.000 views
+  (**127.7%**, gap 0) — 9/9 post con dato
+- **Reach media per post:** 99.896
 
 | n | titolo | pubblicato | views (overall) | floor 100K |
 |---|--------|-----------|-----------------|------------|
@@ -29,5 +29,6 @@
 | 11 | Haaland è il Majin Bu di questo Mondiale: ora è il cattivo d | 2026-07-06 | 176.094 | ✓ |
 | 12 | Semifinaliste Mondiale | 2026-07-13 | 149.105 | ✓ |
 | 13 | Lamine Yamal ha 19 anni e potrebbe già vincere il suo primo  | 2026-07-20 | 238.090 | ✓ |
+| 14 | -7 giorni alla Serie A: il Como ha il 4% di Scudetto | 2026-08-15 | 183.977 | ✓ |
 
 *I 5 post `storico` (collab precedente) sono tracciati in dashboard ma esclusi dai floor.*

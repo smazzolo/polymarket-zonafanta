@@ -15,7 +15,8 @@
     "irrecuperabili": [
       "10:g3",
       "11:g3",
-      "12:g3"
+      "12:g3",
+      "14:g1"
     ]
   },
   "posts": [
@@ -916,6 +917,82 @@
         "aggiornato": "2026-07-27"
       },
       "note": null
+    },
+    {
+      "n": 14,
+      "titolo": "-7 giorni alla Serie A: il Como ha il 4% di Scudetto",
+      "tipo": "media",
+      "collab": "estiva",
+      "data": "2026-08-15",
+      "url": "https://www.instagram.com/p/DcDtENsjVDk/",
+      "mercato": {
+        "nome": "Serie A: Campione 2027",
+        "url": "https://polymarket.com/it/event/serie-a-2027-champion-20260701200118390",
+        "nota": "Como 4% · Inter 51% · Juventus 14% · Napoli 14% · vol. $91.854"
+      },
+      "slides": [
+        "assets/post-14/01.png",
+        "assets/post-14/02.png",
+        "assets/post-14/03.png",
+        "assets/post-14/04.png",
+        "assets/post-14/05.png",
+        "assets/post-14/06.png"
+      ],
+      "insights": {
+        "g1": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g3": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g7": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g30": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        }
+      },
+      "overall": {
+        "reach": 82344,
+        "views": 183977,
+        "commenti": 45,
+        "condivisioni": 6,
+        "salvati": 93,
+        "dm": 149,
+        "sondaggi": 424,
+        "aggiornato": "2026-08-17"
+      },
+      "pubblici": {
+        "like": 4510,
+        "commenti": 45,
+        "condivisioni": 6,
+        "aggiornato": "2026-08-17"
+      },
+      "note": "Prima lettura fatta il 17/8 ~10:57, cioè ~46h dopo la pubblicazione (15/8 12:45): fuori dalla finestra g1 (scaduta il 16/8), quindi messa in overall e g1 marcata irrecuperabile. Nello screen insight il box reach era etichettato 'Visualizzazioni' (glitch IG): reach 82.344 letto dal box di destra, come negli screen precedenti. Repost: feed 6 vs insight 7 (screen a 1 minuto di distanza) → tenuto 6 (feed, KPI_RULES). Aeroplanino insight '--', dm 149 dal feed."
     }
   ]
 }

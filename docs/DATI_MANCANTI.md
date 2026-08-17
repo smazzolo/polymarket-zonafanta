@@ -102,6 +102,28 @@ vengono chiusi sugli screen.
 - **n5**: lettura old = giorno 4, sotto la g7 → inutilizzabile come overall.
   Collegata ad A4 (è probabilmente la fonte dei dm/sondaggi finiti in g1).
 
+### A9. Post 14 (Como 4% Scudetto, 15/8): prima lettura fuori finestra + repost 6 vs 7
+
+Aggiunto il 17/8/2026 dagli screen in `~/Downloads/post poly 15:08`.
+
+- **Finestra**: pubblicazione 15/8 alle 12:45 (orario decodificato dallo
+  shortcode IG, verificato sul post 13). Gli screen sono del 17/8 ~10:57 →
+  ~46h dopo, cioè **oltre la g1** (scaduta il 16/8) e prima della g3 (18/8).
+  Scelta applicata: lettura messa nel blocco `overall` (aggiornato 17/8),
+  `g1` lasciata vuota e marcata `14:g1` in `meta.irrecuperabili`.
+  **Da decidere (utente):** se la si vuole considerare "la g1" va spostata da
+  `overall` a `insights.g1` e tolto il flag — un minuto di lavoro.
+- **Repost (condivisioni)**: nel feed l'icona ↻ segnava **6**, nello screen
+  insight (1 minuto dopo) **7**. Tenuto 6 (KPI_RULES: si legge dal post).
+  Se al prossimo screen il feed dice ≥7, aggiornare.
+- **Etichetta box insight**: entrambi i box del riepilogo erano etichettati
+  "Visualizzazioni" (glitch IG). Letto per posizione come in tutti gli screen
+  precedenti: sinistra = views 183.977, destra = reach 82.344 (rapporto 2,2×
+  coerente con gli altri post).
+- Slide: in cartella 6 file (`6s_` compreso), i pallini del carosello nello
+  screen sono 5 con gli ultimi due rimpiccioliti (= più di 5 slide) → caricate
+  tutte e 6.
+
 ---
 
 ## C — BUCHI da riempire a mano (dato mancante = `n/d`, mai inventato)

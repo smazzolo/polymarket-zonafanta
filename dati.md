@@ -1,4 +1,4 @@
-<!-- OUTPUT GENERATO da scripts/build.py il 2026-07-27 — NON MODIFICARE A MANO.
+<!-- OUTPUT GENERATO da scripts/build.py il 2026-08-17 — NON MODIFICARE A MANO.
      La fonte è data/posts.json. -->
 
 # Dati completi — ZonaFanta × Polymarket Italia
@@ -225,3 +225,20 @@ https://www.instagram.com/p/DbAte4ADdTi/
 | sondaggi | 1.940 | 2.147 | 2.191 | n/d |
 
 Pubblici (al 2026-07-27): like 7.237 · commenti 160 · condivisioni 27
+
+## #14 — -7 giorni alla Serie A: il Como ha il 4% di Scudetto
+
+`estiva` · pubblicato 2026-08-15 · media · mercato: Serie A: Campione 2027 · overall letto il 2026-08-17
+https://www.instagram.com/p/DcDtENsjVDk/
+
+| KPI | g1 | g3 | g7 | g30 | overall |
+|-----|---|---|---|---|---|
+| reach | n/d | n/d | n/d | n/d | 82.344 |
+| views | n/d | n/d | n/d | n/d | 183.977 |
+| commenti | n/d | n/d | n/d | n/d | 45 |
+| condivisioni | n/d | n/d | n/d | n/d | 6 |
+| salvati | n/d | n/d | n/d | n/d | 93 |
+| dm | n/d | n/d | n/d | n/d | 149 |
+| sondaggi | n/d | n/d | n/d | n/d | 424 |
+
+Pubblici (al 2026-08-17): like 4.510 · commenti 45 · condivisioni 6
