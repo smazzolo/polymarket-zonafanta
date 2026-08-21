@@ -1,4 +1,4 @@
-<!-- OUTPUT GENERATO da scripts/build.py il 2026-08-17 — NON MODIFICARE A MANO.
+<!-- OUTPUT GENERATO da scripts/build.py il 2026-08-21 — NON MODIFICARE A MANO.
      La fonte è data/posts.json. -->
 
 # Contesto progetto — ZonaFanta × Polymarket Italia
@@ -13,10 +13,10 @@
 - **Floor aggregato:** 1.500.000 views totali sulla collab
 - **Recupero:** se un floor non è raggiunto a fine ciclo, si aggiungono post fino al 2026-08-30
 
-## Stato floor (al 2026-08-17)
+## Stato floor (al 2026-08-21)
 
 - **Aggregato:** 1.928.499 / 1.500.000 views
-  (**128.6%**, gap 0) — 9/9 post con dato
+  (**128.6%**, gap 0) — 9/10 post con dato
 - **Reach media per post:** 96.564
 
 | n | titolo | pubblicato | views (overall) | floor 100K |
@@ -30,5 +30,6 @@
 | 12 | Semifinaliste Mondiale | 2026-07-13 | 152.686 | ✓ |
 | 13 | Lamine Yamal ha 19 anni e potrebbe già vincere il suo primo  | 2026-07-20 | 244.646 | ✓ |
 | 14 | -7 giorni alla Serie A: il Como ha il 4% di Scudetto | 2026-08-15 | 183.977 | ✓ |
+| 15 | Il capocannoniere farà 20 gol... Malen che vada | 2026-08-21 | n/d | ✗ |
 
 *I 5 post `storico` (collab precedente) sono tracciati in dashboard ma esclusi dai floor.*

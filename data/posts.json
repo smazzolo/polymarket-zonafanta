@@ -974,6 +974,69 @@
         "aggiornato": "2026-08-17"
       },
       "note": "g1 = lettura del 17/8 ~10:57 (~46h dopo la pubblicazione del 15/8 12:45, quindi in ritardo rispetto alle 24h) — scelta utente 17/8 sera: vale come g1. Box insight: sinistra views 183.977, destra reach 82.344. Repost: feed 6 vs insight 7 (1 minuto dopo) → tenuto 6 (feed, KPI_RULES). Aeroplanino insight '--', dm 149 dal feed."
+    },
+    {
+      "n": 15,
+      "titolo": "Il capocannoniere farà 20 gol... Malen che vada",
+      "tipo": "media",
+      "collab": "estiva",
+      "data": "2026-08-21",
+      "url": "https://www.instagram.com/p/DcTM8DKDRPc/",
+      "mercato": {
+        "nome": "Serie A: Capocannoniere 2026-27",
+        "url": "https://polymarket.com/it/event/serie-a-top-goalscorer-2026-27",
+        "nota": "Lautaro Martínez 27% · Malen 18% · Gonçalo Ramos 13% · Thuram 9% · vol. $733"
+      },
+      "slides": [
+        "assets/post-15/01.png",
+        "assets/post-15/02.png",
+        "assets/post-15/03.png",
+        "assets/post-15/04.png",
+        "assets/post-15/05.png",
+        "assets/post-15/06.png",
+        "assets/post-15/07.png"
+      ],
+      "insights": {
+        "g1": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g3": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g7": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g30": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        }
+      },
+      "overall": null,
+      "pubblici": null,
+      "note": "Pubblicato 21/8 13:12 (ora da shortcode). Quote e volume della nota = screenshot Polymarket in slide 3 (vol. $733); API gamma al 21/8 12:30 dava outcome ancora placeholder ma volume $1.520."
     }
   ]
 }
