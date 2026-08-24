@@ -948,13 +948,13 @@
           "sondaggi": null
         },
         "g7": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
-          "sondaggi": null
+          "reach": 97335,
+          "views": 212026,
+          "commenti": 45,
+          "condivisioni": 8,
+          "salvati": 106,
+          "dm": 153,
+          "sondaggi": 457
         },
         "g30": {
           "reach": null,
@@ -968,12 +968,12 @@
       },
       "overall": null,
       "pubblici": {
-        "like": 4510,
+        "like": 4983,
         "commenti": 45,
-        "condivisioni": 6,
-        "aggiornato": "2026-08-17"
+        "condivisioni": 8,
+        "aggiornato": "2026-08-24"
       },
-      "note": "g1 = lettura del 17/8 ~10:57 (~46h dopo la pubblicazione del 15/8 12:45, quindi in ritardo rispetto alle 24h) — scelta utente 17/8 sera: vale come g1. Box insight: sinistra views 183.977, destra reach 82.344. Repost: feed 6 vs insight 7 (1 minuto dopo) → tenuto 6 (feed, KPI_RULES). Aeroplanino insight '--', dm 149 dal feed."
+      "note": "g1 = lettura del 17/8 ~10:57 (~46h dopo la pubblicazione del 15/8 12:45, quindi in ritardo rispetto alle 24h) — scelta utente 17/8 sera: vale come g1. Box insight: sinistra views 183.977, destra reach 82.344. Repost: feed 6 vs insight 7 (1 minuto dopo) → tenuto 6 (feed, KPI_RULES). Aeroplanino insight '--', dm 149 dal feed. g7 = lettura tardiva del 24/8 14:28 (scadeva 22/8 12:45, ~g9). Box insight: sinistra views 212.026, destra reach 97.335. Aeroplanino insight '--', dm 153 dal feed. Repost 8 (feed e insight concordano)."
     },
     {
       "n": 15,

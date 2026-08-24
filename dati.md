@@ -1,4 +1,4 @@
-<!-- OUTPUT GENERATO da scripts/build.py il 2026-08-21 — NON MODIFICARE A MANO.
+<!-- OUTPUT GENERATO da scripts/build.py il 2026-08-24 — NON MODIFICARE A MANO.
      La fonte è data/posts.json. -->
 
 # Dati completi — ZonaFanta × Polymarket Italia
@@ -233,15 +233,15 @@ https://www.instagram.com/p/DcDtENsjVDk/
 
 | KPI | g1 | g3 | g7 | g30 |
 |-----|---|---|---|---|
-| reach | 82.344 | n/d | n/d | n/d |
-| views | 183.977 | n/d | n/d | n/d |
-| commenti | 45 | n/d | n/d | n/d |
-| condivisioni | 6 | n/d | n/d | n/d |
-| salvati | 93 | n/d | n/d | n/d |
-| dm | 149 | n/d | n/d | n/d |
-| sondaggi | 424 | n/d | n/d | n/d |
+| reach | 82.344 | n/d | 97.335 | n/d |
+| views | 183.977 | n/d | 212.026 | n/d |
+| commenti | 45 | n/d | 45 | n/d |
+| condivisioni | 6 | n/d | 8 | n/d |
+| salvati | 93 | n/d | 106 | n/d |
+| dm | 149 | n/d | 153 | n/d |
+| sondaggi | 424 | n/d | 457 | n/d |
 
-Pubblici (al 2026-08-17): like 4.510 · commenti 45 · condivisioni 6
+Pubblici (al 2026-08-24): like 4.983 · commenti 45 · condivisioni 8
 
 ## #15 — Il capocannoniere farà 20 gol... Malen che vada
 
