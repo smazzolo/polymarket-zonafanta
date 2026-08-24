@@ -15,7 +15,10 @@
     "irrecuperabili": [
       "10:g3",
       "11:g3",
-      "12:g3"
+      "12:g3",
+      "15:g3",
+      "15:g7",
+      "15:g30"
     ]
   },
   "posts": [
@@ -881,32 +884,23 @@
           "sondaggi": 2191
         },
         "g30": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
+          "reach": 103228,
+          "views": 244862,
+          "commenti": 161,
+          "condivisioni": 27,
+          "salvati": 151,
+          "dm": 1509,
           "sondaggi": null
         }
       },
-      "overall": {
-        "reach": 103173,
-        "views": 244646,
-        "commenti": 161,
-        "condivisioni": 27,
-        "salvati": 152,
-        "dm": 1509,
-        "sondaggi": null,
-        "aggiornato": "2026-08-17"
-      },
+      "overall": null,
       "pubblici": {
         "like": 7485,
         "commenti": 161,
         "condivisioni": 27,
-        "aggiornato": "2026-08-17"
+        "aggiornato": "2026-08-24"
       },
-      "note": "Lettura del 17/8 (28 gg, g30 scade il 19/8) messa in overall e non in g30. Reach 103.173 (box destro insight, sotto la g7 103.845). Salvati 152 (era 153 a g7, avviso). Sondaggi non nello screen (caption tagliata)."
+      "note": "g30 = lettura tardiva del 24/8 16:41 (scadeva 19/8, post a plateau). Box insight: sinistra views 244.862, destra reach 103.228. Aeroplanino insight '--', dm 1.509 dal feed. Salvati 151 (era 153 a g7, avviso). Sondaggi non nello screen (caption tagliata) → null. La vecchia lettura 17/8 parcheggiata in overall è stata sostituita da questa g30 (overall azzerato). Reach sotto la g7 103.845: cala nel tempo, avviso non bloccante."
     },
     {
       "n": 14,
@@ -999,7 +993,7 @@
       "insights": {
         "g1": {
           "reach": null,
-          "views": null,
+          "views": 160000,
           "commenti": null,
           "condivisioni": null,
           "salvati": null,
@@ -1036,7 +1030,7 @@
       },
       "overall": null,
       "pubblici": null,
-      "note": "Pubblicato 21/8 13:12 (ora da shortcode). Quote e volume della nota = screenshot Polymarket in slide 3 (vol. $733); API gamma al 21/8 12:30 dava outcome ancora placeholder ma volume $1.520."
+      "note": "Pubblicato 21/8 13:12 (ora da shortcode). Quote e volume della nota = screenshot Polymarket in slide 3 (vol. $733); API gamma al 21/8 12:30 dava outcome ancora placeholder ma volume $1.520. ⚠️ POST RIMOSSO da Instagram il 22/8 (~1 giorno dopo la pubblicazione). g1: views 160.000 dettate a voce da Nick il 24/8 (lettura fatta a meno di 12h dalla pubblicazione, prima della rimozione); nessuno screenshot, altri KPI mai letti → null. g3/g7/g30 irrecuperabili (post non più online)."
     }
   ]
 }

@@ -15,9 +15,9 @@
 
 ## Stato floor (al 2026-08-24)
 
-- **Aggregato:** 1.956.548 / 1.500.000 views
-  (**130.4%**, gap 0) — 9/10 post con dato
-- **Reach media per post:** 98.230
+- **Aggregato:** 2.116.764 / 1.500.000 views
+  (**141.1%**, gap 0) — 10/10 post con dato
+- **Reach media per post:** 98.236
 
 | n | titolo | pubblicato | views (overall) | floor 100K |
 |---|--------|-----------|-----------------|------------|
@@ -28,8 +28,8 @@
 | 10 | Il miglior assistman al mondo riuscirà a fare un gol al Mond | 2026-07-01 | 149.715 | ✓ |
 | 11 | Haaland è il Majin Bu di questo Mondiale: ora è il cattivo d | 2026-07-06 | 177.683 | ✓ |
 | 12 | Semifinaliste Mondiale | 2026-07-13 | 152.686 | ✓ |
-| 13 | Lamine Yamal ha 19 anni e potrebbe già vincere il suo primo  | 2026-07-20 | 244.646 | ✓ |
+| 13 | Lamine Yamal ha 19 anni e potrebbe già vincere il suo primo  | 2026-07-20 | 244.862 | ✓ |
 | 14 | -7 giorni alla Serie A: il Como ha il 4% di Scudetto | 2026-08-15 | 212.026 | ✓ |
-| 15 | Il capocannoniere farà 20 gol... Malen che vada | 2026-08-21 | n/d | ✗ |
+| 15 | Il capocannoniere farà 20 gol... Malen che vada | 2026-08-21 | 160.000 | ✓ |
 
 *I 5 post `storico` (collab precedente) sono tracciati in dashboard ma esclusi dai floor.*

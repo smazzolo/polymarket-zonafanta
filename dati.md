@@ -211,20 +211,20 @@ Pubblici (al 2026-08-17): like 2.063 · commenti 17 · condivisioni 2
 
 ## #13 — Lamine Yamal ha 19 anni e potrebbe già vincere il suo primo Pallone d'Oro
 
-`estiva` · pubblicato 2026-07-20 · media · mercato: Vincitore del Pallone d'Oro 2026 · overall letto il 2026-08-17
+`estiva` · pubblicato 2026-07-20 · media · mercato: Vincitore del Pallone d'Oro 2026
 https://www.instagram.com/p/DbAte4ADdTi/
 
-| KPI | g1 | g3 | g7 | g30 | overall |
-|-----|---|---|---|---|---|
-| reach | 93.471 | 99.525 | 103.845 | n/d | 103.173 |
-| views | 212.813 | 230.091 | 238.090 | n/d | 244.646 |
-| commenti | 134 | 159 | 160 | n/d | 161 |
-| condivisioni | 25 | 26 | 27 | n/d | 27 |
-| salvati | 137 | 149 | 153 | n/d | 152 |
-| dm | 1.353 | 1.449 | 1.482 | n/d | 1.509 |
-| sondaggi | 1.940 | 2.147 | 2.191 | n/d | n/d |
+| KPI | g1 | g3 | g7 | g30 |
+|-----|---|---|---|---|
+| reach | 93.471 | 99.525 | 103.845 | 103.228 |
+| views | 212.813 | 230.091 | 238.090 | 244.862 |
+| commenti | 134 | 159 | 160 | 161 |
+| condivisioni | 25 | 26 | 27 | 27 |
+| salvati | 137 | 149 | 153 | 151 |
+| dm | 1.353 | 1.449 | 1.482 | 1.509 |
+| sondaggi | 1.940 | 2.147 | 2.191 | n/d |
 
-Pubblici (al 2026-08-17): like 7.485 · commenti 161 · condivisioni 27
+Pubblici (al 2026-08-24): like 7.485 · commenti 161 · condivisioni 27
 
 ## #14 — -7 giorni alla Serie A: il Como ha il 4% di Scudetto
 
@@ -251,7 +251,7 @@ https://www.instagram.com/p/DcTM8DKDRPc/
 | KPI | g1 | g3 | g7 | g30 |
 |-----|---|---|---|---|
 | reach | n/d | n/d | n/d | n/d |
-| views | n/d | n/d | n/d | n/d |
+| views | 160.000 | n/d | n/d | n/d |
 | commenti | n/d | n/d | n/d | n/d |
 | condivisioni | n/d | n/d | n/d | n/d |
 | salvati | n/d | n/d | n/d | n/d |
