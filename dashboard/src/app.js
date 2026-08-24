@@ -532,6 +532,10 @@ function renderPost(p){
         }
         return `<td class="val ${isND(v)?'nd':''}">${fmt(v)}</td>`;}).join("")}</tr>`).join("");
     const noteRow = attese.length ? `<div class="g30-note">* in arrivo: ${attese.join(" · ")}</div>` : "";
+    const rimossoRow = p.rimosso ? `<div class="removed-note">⚠️ Post rimosso da Instagram il ${fmtDate(p.rimosso)} — i dati si fermano all'ultima lettura disponibile</div>` : "";
+    const igBtn = p.rimosso
+      ? `<span class="ig-btn removed">Post non più online (rimosso il ${fmtDate(p.rimosso)})</span>`
+      : `<a class="ig-btn" data-link="ig-post" data-post="post-${p.n}" href="${p.url}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>Apri post su Instagram</a>`;
     const isStorico = p.collab==="storico";
     const tagLabel = isStorico ? "Storico" : "Collab estiva";
     const tagClass = isStorico ? "shot" : "media";
@@ -548,8 +552,8 @@ function renderPost(p){
         <span class="tag ${tagClass}">${tagLabel}</span></div>
       <span class="market">Mercato: <b>${mercatoHTML(p)}</b></span>
       <div class="kpi-scroll"><table><thead><tr><th>KPI insights</th>${WINDOWS.map(([,l])=>`<th>${l}</th>`).join("")}</tr></thead><tbody>${rows}</tbody></table></div>
-      ${noteRow}
-      <a class="ig-btn" data-link="ig-post" data-post="post-${p.n}" href="${p.url}" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>Apri post su Instagram</a>
+      ${rimossoRow}${noteRow}
+      ${igBtn}
       </div></div>`;
 }
 

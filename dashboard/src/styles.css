@@ -259,6 +259,9 @@
   td.val.att{color:var(--faint);}
   tbody tr:last-child td{border-bottom:none;}
   .g30-note{font-size:10px;color:var(--faint);margin-top:9px;}
+  .removed-note{font-size:11px;font-weight:700;color:#b3541e;background:rgba(221,120,42,0.10);border:1px solid rgba(221,120,42,0.35);border-radius:9px;padding:8px 11px;margin-top:10px;}
+  .ig-btn.removed{background:var(--line);color:var(--muted);box-shadow:none;cursor:default;}
+  .ig-btn.removed:hover{filter:none;transform:none;box-shadow:none;}
 
   .ig-btn{display:inline-flex;align-items:center;gap:8px;margin-top:16px;align-self:flex-start;padding:10px 16px;border-radius:11px;
     background:linear-gradient(95deg,#FEDA77 0%,#F58529 22%,#DD2A7B 52%,#8134AF 78%,#515BD4 100%);

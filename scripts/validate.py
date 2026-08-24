@@ -35,6 +35,10 @@ POST_RICHIESTI = [
     "n", "titolo", "tipo", "collab", "data", "url", "mercato", "slides",
     "insights", "overall", "pubblici", "note",
 ]
+# opzionali: presenti solo quando servono
+POST_OPZIONALI = [
+    "rimosso",  # data ISO in cui il post è stato tolto da Instagram
+]
 
 errori = []
 avvisi = []
@@ -150,8 +154,10 @@ def main():
             if k not in p:
                 err(f"{dove}: manca il campo '{k}'")
         for k in p:
-            if k not in POST_RICHIESTI:
+            if k not in POST_RICHIESTI and k not in POST_OPZIONALI:
                 err(f"{dove}: campo sconosciuto '{k}' (refuso?)")
+        if "rimosso" in p and not parse_iso(p["rimosso"]):
+            err(f"{dove}: 'rimosso' deve essere una data ISO, non {p['rimosso']!r}")
 
         if p.get("collab") not in COLLAB_VALIDI:
             err(f"{dove}: collab {p.get('collab')!r} non valido {sorted(COLLAB_VALIDI)}")
