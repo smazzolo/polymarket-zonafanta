@@ -104,6 +104,21 @@ in un footer muto ("♻️ Perse"). `validate.py` controlla che la voce punti a 
 post esistente e a una finestra **ancora vuota** (se la finestra ha dati, il flag
 va tolto).
 
+### Post rimosso da Instagram
+
+Se un post viene tolto da Instagram, aggiungi al post il campo `"rimosso": "YYYY-MM-DD"`
+(la data della rimozione) e metti in `meta.irrecuperabili` tutte le finestre che non
+potrai più leggere. La card della dashboard mostra un banner arancione con la data e
+sostituisce il bottone "Apri post su Instagram" con un'etichetta spenta, così chi
+guarda capisce perché i dati si fermano lì.
+
+```json
+{ "n": 15, "rimosso": "2026-08-22", ... }
+"irrecuperabili": ["15:g3", "15:g7", "15:g30"]
+```
+
+I dati già letti prima della rimozione restano validi e continuano a contare nei floor.
+
 ---
 
 ## Errori tipici e come riconoscerli

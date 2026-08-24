@@ -76,6 +76,7 @@ Unica eccezione (da `KPI_RULES.md`): se negli insights l'aeroplanino mostra
 | `overall`  | oggetto \| null  | lettura extra "a oggi", fuori dalle finestre: i 7 KPI + `aggiornato` (data lettura, obbligatoria se il blocco esiste). `null` se non c'è. Quando presente, per i calcoli vince sulle finestre |
 | `pubblici` | oggetto \| null  | dati visibili pubblicamente sul post: `like`, `commenti`, `condivisioni`, `aggiornato` (data lettura) |
 | `note`     | stringa \| null  | annotazioni libere (repost, boost, anomalie note)                    |
+| `rimosso`  | data (opzionale) | presente SOLO se il post è stato tolto da Instagram: `YYYY-MM-DD` della rimozione. La card mostra un banner e disattiva il bottone "Apri post su Instagram". Le finestre non più leggibili vanno messe in `meta.irrecuperabili` |
 
 ### I 7 KPI di ogni finestra
 
