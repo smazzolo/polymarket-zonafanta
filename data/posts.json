@@ -15,10 +15,7 @@
     "irrecuperabili": [
       "10:g3",
       "11:g3",
-      "12:g3",
-      "15:g3",
-      "15:g7",
-      "15:g30"
+      "12:g3"
     ]
   },
   "posts": [
@@ -1001,13 +998,13 @@
           "sondaggi": null
         },
         "g3": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
-          "sondaggi": null
+          "reach": 83666,
+          "views": 176047,
+          "commenti": 22,
+          "condivisioni": 8,
+          "salvati": 78,
+          "dm": 146,
+          "sondaggi": 228
         },
         "g7": {
           "reach": null,
@@ -1029,9 +1026,13 @@
         }
       },
       "overall": null,
-      "pubblici": null,
-      "note": "Pubblicato 21/8 13:12 (ora da shortcode). Quote e volume della nota = screenshot Polymarket in slide 3 (vol. $733); API gamma al 21/8 12:30 dava outcome ancora placeholder ma volume $1.520. ⚠️ POST RIMOSSO da Instagram il 22/8 (~1 giorno dopo la pubblicazione). g1: views 160.000 dettate a voce da Nick il 24/8 (lettura fatta a meno di 12h dalla pubblicazione, prima della rimozione); nessuno screenshot, altri KPI mai letti → null. g3/g7/g30 irrecuperabili (post non più online).",
-      "rimosso": "2026-08-22"
+      "pubblici": {
+        "like": 4589,
+        "commenti": 22,
+        "condivisioni": 8,
+        "aggiornato": "2026-08-25"
+      },
+      "note": "Pubblicato 21/8 13:12 (ora da shortcode). Quote e volume della nota = screenshot Polymarket in slide 3 (vol. $733); API gamma al 21/8 12:30 dava outcome ancora placeholder ma volume $1.520. Post RIMOSSO da Instagram il 22/8 e RIPUBBLICATO/tornato online: il 25/8 era di nuovo visibile (screen di Nick, 17:31). g1: views 160.000 dettate a voce da Nick il 24/8 (lettura <12h dalla pubblicazione, prima della rimozione); nessuno screen, altri KPI null. g3 = screen 25/8 17:31, tardiva di ~1 giorno (scadeva 24/8 13:12): dm 146 = aeroplanino del feed (insight mostrava '--'), sondaggi 228 = 'Risposte' sotto caption. Nell'insight i like erano 4.594 vs 4.589 del feed (scarto di cache IG, usato il feed per i pubblici). g7 (28/8) e g30 (20/9) di nuovo fotografabili, flag irrecuperabili tolti."
     }
   ]
 }
