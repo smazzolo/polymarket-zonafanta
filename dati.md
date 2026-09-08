@@ -228,37 +228,37 @@ Pubblici (al 2026-08-24): like 7.485 · commenti 161 · condivisioni 27
 
 ## #14 — -7 giorni alla Serie A: il Como ha il 4% di Scudetto
 
-`estiva` · pubblicato 2026-08-15 · media · mercato: Serie A: Campione 2027
+`estiva` · pubblicato 2026-08-15 · media · mercato: Serie A: Campione 2027 · overall letto il 2026-09-08
 https://www.instagram.com/p/DcDtENsjVDk/
 
-| KPI | g1 | g3 | g7 | g30 |
-|-----|---|---|---|---|
-| reach | 82.344 | n/d | 97.335 | n/d |
-| views | 183.977 | n/d | 212.026 | n/d |
-| commenti | 45 | n/d | 45 | n/d |
-| condivisioni | 6 | n/d | 8 | n/d |
-| salvati | 93 | n/d | 106 | n/d |
-| dm | 149 | n/d | 153 | n/d |
-| sondaggi | 424 | n/d | 457 | n/d |
+| KPI | g1 | g3 | g7 | g30 | overall |
+|-----|---|---|---|---|---|
+| reach | 82.344 | n/d | 97.335 | n/d | 99.822 |
+| views | 183.977 | n/d | 212.026 | n/d | 216.513 |
+| commenti | 45 | n/d | 45 | n/d | 45 |
+| condivisioni | 6 | n/d | 8 | n/d | 8 |
+| salvati | 93 | n/d | 106 | n/d | 105 |
+| dm | 149 | n/d | 153 | n/d | 153 |
+| sondaggi | 424 | n/d | 457 | n/d | 460 |
 
-Pubblici (al 2026-08-24): like 4.983 · commenti 45 · condivisioni 8
+Pubblici (al 2026-09-08): like 5.006 · commenti 45 · condivisioni 8
 
 ## #15 — Il capocannoniere farà 20 gol... Malen che vada
 
-`estiva` · pubblicato 2026-08-21 · media · mercato: Serie A: Capocannoniere 2026-27
+`estiva` · pubblicato 2026-08-21 · media · mercato: Serie A: Capocannoniere 2026-27 · overall letto il 2026-09-08
 https://www.instagram.com/p/DcTM8DKDRPc/
 
-| KPI | g1 | g3 | g7 | g30 |
-|-----|---|---|---|---|
-| reach | n/d | 83.666 | n/d | n/d |
-| views | 160.000 | 176.047 | n/d | n/d |
-| commenti | n/d | 22 | n/d | n/d |
-| condivisioni | n/d | 8 | n/d | n/d |
-| salvati | n/d | 78 | n/d | n/d |
-| dm | n/d | 146 | n/d | n/d |
-| sondaggi | n/d | 228 | n/d | n/d |
+| KPI | g1 | g3 | g7 | g30 | overall |
+|-----|---|---|---|---|---|
+| reach | n/d | 83.666 | n/d | n/d | 165.947 |
+| views | 160.000 | 176.047 | n/d | n/d | 309.202 |
+| commenti | n/d | 22 | n/d | n/d | 34 |
+| condivisioni | n/d | 8 | n/d | n/d | 15 |
+| salvati | n/d | 78 | n/d | n/d | 163 |
+| dm | n/d | 146 | n/d | n/d | 254 |
+| sondaggi | n/d | 228 | n/d | n/d | 537 |
 
-Pubblici (al 2026-08-25): like 4.589 · commenti 22 · condivisioni 8
+Pubblici (al 2026-09-08): like 8.809 · commenti 34 · condivisioni 15
 
 ## #16 — La classifica cannonieri dopo 3 giornate non ha senso
 

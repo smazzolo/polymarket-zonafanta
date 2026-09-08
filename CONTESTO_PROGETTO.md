@@ -15,9 +15,9 @@
 
 ## Stato floor (al 2026-09-08)
 
-- **Aggregato:** 2.132.811 / 1.500.000 views
-  (**142.2%**, gap 0) — 10/11 post con dato
-- **Reach media per post:** 96.779
+- **Aggregato:** 2.270.453 / 1.500.000 views
+  (**151.4%**, gap 0) — 10/11 post con dato
+- **Reach media per post:** 105.256
 
 | n | titolo | pubblicato | views (overall) | floor 100K |
 |---|--------|-----------|-----------------|------------|
@@ -29,8 +29,8 @@
 | 11 | Haaland è il Majin Bu di questo Mondiale: ora è il cattivo d | 2026-07-06 | 177.683 | ✓ |
 | 12 | Semifinaliste Mondiale | 2026-07-13 | 152.686 | ✓ |
 | 13 | Lamine Yamal ha 19 anni e potrebbe già vincere il suo primo  | 2026-07-20 | 244.862 | ✓ |
-| 14 | -7 giorni alla Serie A: il Como ha il 4% di Scudetto | 2026-08-15 | 212.026 | ✓ |
-| 15 | Il capocannoniere farà 20 gol... Malen che vada | 2026-08-21 | 176.047 | ✓ |
+| 14 | -7 giorni alla Serie A: il Como ha il 4% di Scudetto | 2026-08-15 | 216.513 | ✓ |
+| 15 | Il capocannoniere farà 20 gol... Malen che vada | 2026-08-21 | 309.202 | ✓ |
 | 16 | La classifica cannonieri dopo 3 giornate non ha senso | 2026-09-08 | n/d | ✗ |
 
 *I 5 post `storico` (collab precedente) sono tracciati in dashboard ma esclusi dai floor.*
