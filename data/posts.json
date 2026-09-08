@@ -1033,6 +1033,67 @@
         "aggiornato": "2026-08-25"
       },
       "note": "Pubblicato 21/8 13:12 (ora da shortcode). Quote e volume della nota = screenshot Polymarket in slide 3 (vol. $733); API gamma al 21/8 12:30 dava outcome ancora placeholder ma volume $1.520. Post RIMOSSO da Instagram il 22/8 e RIPUBBLICATO/tornato online: il 25/8 era di nuovo visibile (screen di Nick, 17:31). g1: views 160.000 dettate a voce da Nick il 24/8 (lettura <12h dalla pubblicazione, prima della rimozione); nessuno screen, altri KPI null. g3 = screen 25/8 17:31, tardiva di ~1 giorno (scadeva 24/8 13:12): dm 146 = aeroplanino del feed (insight mostrava '--'), sondaggi 228 = 'Risposte' sotto caption. Nell'insight i like erano 4.594 vs 4.589 del feed (scarto di cache IG, usato il feed per i pubblici). g7 (28/8) e g30 (20/9) di nuovo fotografabili, flag irrecuperabili tolti."
+    },
+    {
+      "n": 16,
+      "titolo": "La classifica cannonieri dopo 3 giornate non ha senso",
+      "tipo": "media",
+      "collab": "estiva",
+      "data": "2026-09-08",
+      "url": "https://www.instagram.com/p/DdBg0xFjZIJ/",
+      "mercato": {
+        "nome": "Serie A: Capocannoniere 2026-27",
+        "url": "https://polymarket.com/it/event/serie-a-top-goalscorer-2026-27",
+        "nota": "Malen 60% · Lautaro Martínez 14% · Højlund 11% · Gonçalo Ramos 9% · vol. $14.511"
+      },
+      "slides": [
+        "assets/post-16/01.png",
+        "assets/post-16/02.png",
+        "assets/post-16/03.png",
+        "assets/post-16/04.png",
+        "assets/post-16/05.png"
+      ],
+      "insights": {
+        "g1": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g3": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g7": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g30": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        }
+      },
+      "overall": null,
+      "pubblici": null,
+      "note": "Pubblicato 8/9 12:51 (ora da shortcode DdBg0xFjZIJ). 11° post su 12 della collab estiva (penultimo). Quote e volume della nota = screenshot Polymarket in slide 3 (stesso mercato del post 15; Malen passato da 18% a 60%). Slide ricavate dal post pubblico su Instagram (741x928 px, sopra il target di build) perché la cartella fornita conteneva un carosello Marathonbet. A 3 minuti dalla pubblicazione: 251 like, 0 commenti (non caricati come pubblici, lettura non significativa)."
     }
   ]
 }
