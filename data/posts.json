@@ -1074,12 +1074,12 @@
       ],
       "insights": {
         "g1": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
+          "reach": 94550,
+          "views": 222110,
+          "commenti": 19,
+          "condivisioni": 7,
+          "salvati": 90,
+          "dm": 124,
           "sondaggi": null
         },
         "g3": {
@@ -1111,8 +1111,13 @@
         }
       },
       "overall": null,
-      "pubblici": null,
-      "note": "Pubblicato 8/9 12:51 (ora da shortcode DdBg0xFjZIJ). 11° post su 12 della collab estiva (penultimo). Quote e volume della nota = screenshot Polymarket in slide 3 (stesso mercato del post 15; Malen passato da 18% a 60%). Slide ricavate dal post pubblico su Instagram (741x928 px, sopra il target di build) perché la cartella fornita conteneva un carosello Marathonbet. A 3 minuti dalla pubblicazione: 251 like, 0 commenti (non caricati come pubblici, lettura non significativa)."
+      "pubblici": {
+        "like": 5138,
+        "commenti": 19,
+        "condivisioni": 7,
+        "aggiornato": "2026-09-09"
+      },
+      "note": "Pubblicato 8/9 12:51 (ora da shortcode DdBg0xFjZIJ). 11° post su 12 della collab estiva (penultimo). Quote e volume della nota = screenshot Polymarket in slide 3 (stesso mercato del post 15; Malen passato da 18% a 60%). Slide ricavate dal post pubblico su Instagram (741x928 px, sopra il target di build) perché la cartella fornita conteneva un carosello Marathonbet. A 3 minuti dalla pubblicazione: 251 like, 0 commenti (non caricati come pubblici, lettura non significativa). g1 = screen 9/9 12:21 (~23,5h): views 222.110 · reach 94.550 (box destro) · commenti 19 · repost 7 · salvati 90 · dm 124 = aeroplanino feed (insight '--') · sondaggi null (caption troncata, 'Risposte' non visibile) · like 5.138."
     }
   ]
 }
