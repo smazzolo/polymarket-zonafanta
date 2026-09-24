@@ -1118,6 +1118,70 @@
         "aggiornato": "2026-09-09"
       },
       "note": "Pubblicato 8/9 12:51 (ora da shortcode DdBg0xFjZIJ). 11° post su 12 della collab estiva (penultimo). Quote e volume della nota = screenshot Polymarket in slide 3 (stesso mercato del post 15; Malen passato da 18% a 60%). Slide ricavate dal post pubblico su Instagram (741x928 px, sopra il target di build) perché la cartella fornita conteneva un carosello Marathonbet. A 3 minuti dalla pubblicazione: 251 like, 0 commenti (non caricati come pubblici, lettura non significativa). g1 = screen 9/9 12:21 (~23,5h): views 222.110 · reach 94.550 (box destro) · commenti 19 · repost 7 · salvati 90 · dm 124 = aeroplanino feed (insight '--') · sondaggi null (caption troncata, 'Risposte' non visibile) · like 5.138."
+    },
+    {
+      "n": 17,
+      "titolo": "Chi segnerà di più in Nations tra Kean e Haaland?",
+      "tipo": "media",
+      "collab": "estiva",
+      "data": "2026-09-24",
+      "url": "https://www.instagram.com/p/DdrTQBVjbLQ/",
+      "mercato": {
+        "nome": "UEFA Nations League 2026-27: Capocannonieri",
+        "url": "https://polymarket.com/it/event/uefa-nations-league-top-scorer-2026-27",
+        "nota": "Kylian Mbappé 27% · Moise Kean 25% · Harry Kane 17% · Erling Haaland 14%"
+      },
+      "slides": [
+        "assets/post-17/01.png",
+        "assets/post-17/02.png",
+        "assets/post-17/03.png",
+        "assets/post-17/04.png",
+        "assets/post-17/05.png",
+        "assets/post-17/06.png",
+        "assets/post-17/07.png",
+        "assets/post-17/08.png"
+      ],
+      "insights": {
+        "g1": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g3": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g7": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        },
+        "g30": {
+          "reach": null,
+          "views": null,
+          "commenti": null,
+          "condivisioni": null,
+          "salvati": null,
+          "dm": null,
+          "sondaggi": null
+        }
+      },
+      "overall": null,
+      "pubblici": null,
+      "note": "Pubblicato 24/9 18:20 (ora da shortcode DdrTQBVjbLQ). 12° e ULTIMO post della collab estiva secondo Nick (post_previsti = 12). Quote della nota = screenshot Polymarket in slide 3; la slide non riporta il volume e l'API gamma dell'evento restituisce ancora outcome placeholder (Player A/B 50%), volume evento $9.353 al 24/9. La slide 3 porta il disclaimer 'Mercato non disponibile. Contenuto a esclusivo scopo informativo.'. Insights, overall e pubblici null: caricato pochi minuti dopo la pubblicazione."
     }
   ]
 }

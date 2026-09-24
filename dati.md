@@ -1,4 +1,4 @@
-<!-- OUTPUT GENERATO da scripts/build.py il 2026-09-10 — NON MODIFICARE A MANO.
+<!-- OUTPUT GENERATO da scripts/build.py il 2026-09-24 — NON MODIFICARE A MANO.
      La fonte è data/posts.json. -->
 
 # Dati completi — ZonaFanta × Polymarket Italia
@@ -276,3 +276,19 @@ https://www.instagram.com/p/DdBg0xFjZIJ/
 | sondaggi | n/d | n/d | n/d | n/d |
 
 Pubblici (al 2026-09-09): like 5.138 · commenti 19 · condivisioni 7
+
+## #17 — Chi segnerà di più in Nations tra Kean e Haaland?
+
+`estiva` · pubblicato 2026-09-24 · media · mercato: UEFA Nations League 2026-27: Capocannonieri
+https://www.instagram.com/p/DdrTQBVjbLQ/
+
+| KPI | g1 | g3 | g7 | g30 |
+|-----|---|---|---|---|
+| reach | n/d | n/d | n/d | n/d |
+| views | n/d | n/d | n/d | n/d |
+| commenti | n/d | n/d | n/d | n/d |
+| condivisioni | n/d | n/d | n/d | n/d |
+| salvati | n/d | n/d | n/d | n/d |
+| dm | n/d | n/d | n/d | n/d |
+| sondaggi | n/d | n/d | n/d | n/d |
+

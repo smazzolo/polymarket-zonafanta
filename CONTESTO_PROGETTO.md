@@ -1,4 +1,4 @@
-<!-- OUTPUT GENERATO da scripts/build.py il 2026-09-10 — NON MODIFICARE A MANO.
+<!-- OUTPUT GENERATO da scripts/build.py il 2026-09-24 — NON MODIFICARE A MANO.
      La fonte è data/posts.json. -->
 
 # Contesto progetto — ZonaFanta × Polymarket Italia
@@ -13,10 +13,10 @@
 - **Floor aggregato:** 1.500.000 views totali sulla collab
 - **Recupero:** se un floor non è raggiunto a fine ciclo, si aggiungono post fino al 2026-08-30
 
-## Stato floor (al 2026-09-10)
+## Stato floor (al 2026-09-24)
 
 - **Aggregato:** 2.492.563 / 1.500.000 views
-  (**166.2%**, gap 0) — 11/11 post con dato
+  (**166.2%**, gap 0) — 11/12 post con dato
 - **Reach media per post:** 104.282
 
 | n | titolo | pubblicato | views (overall) | floor 100K |
@@ -32,5 +32,6 @@
 | 14 | -7 giorni alla Serie A: il Como ha il 4% di Scudetto | 2026-08-15 | 216.513 | ✓ |
 | 15 | Il capocannoniere farà 20 gol... Malen che vada | 2026-08-21 | 309.202 | ✓ |
 | 16 | La classifica cannonieri dopo 3 giornate non ha senso | 2026-09-08 | 222.110 | ✓ |
+| 17 | Chi segnerà di più in Nations tra Kean e Haaland? | 2026-09-24 | n/d | ✗ |
 
 *I 5 post `storico` (collab precedente) sono tracciati in dashboard ma esclusi dai floor.*
