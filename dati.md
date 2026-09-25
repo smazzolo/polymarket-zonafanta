@@ -1,4 +1,4 @@
-<!-- OUTPUT GENERATO da scripts/build.py il 2026-09-24 — NON MODIFICARE A MANO.
+<!-- OUTPUT GENERATO da scripts/build.py il 2026-09-25 — NON MODIFICARE A MANO.
      La fonte è data/posts.json. -->
 
 # Dati completi — ZonaFanta × Polymarket Italia
@@ -228,20 +228,20 @@ Pubblici (al 2026-08-24): like 7.485 · commenti 161 · condivisioni 27
 
 ## #14 — -7 giorni alla Serie A: il Como ha il 4% di Scudetto
 
-`estiva` · pubblicato 2026-08-15 · media · mercato: Serie A: Campione 2027 · overall letto il 2026-09-08
+`estiva` · pubblicato 2026-08-15 · media · mercato: Serie A: Campione 2027
 https://www.instagram.com/p/DcDtENsjVDk/
 
-| KPI | g1 | g3 | g7 | g30 | overall |
-|-----|---|---|---|---|---|
-| reach | 82.344 | n/d | 97.335 | n/d | 99.822 |
-| views | 183.977 | n/d | 212.026 | n/d | 216.513 |
-| commenti | 45 | n/d | 45 | n/d | 45 |
-| condivisioni | 6 | n/d | 8 | n/d | 8 |
-| salvati | 93 | n/d | 106 | n/d | 105 |
-| dm | 149 | n/d | 153 | n/d | 153 |
-| sondaggi | 424 | n/d | 457 | n/d | 460 |
+| KPI | g1 | g3 | g7 | g30 |
+|-----|---|---|---|---|
+| reach | 82.344 | n/d | 97.335 | 99.822 |
+| views | 183.977 | n/d | 212.026 | 216.805 |
+| commenti | 45 | n/d | 45 | 45 |
+| condivisioni | 6 | n/d | 8 | 8 |
+| salvati | 93 | n/d | 106 | 105 |
+| dm | 149 | n/d | 153 | 154 |
+| sondaggi | 424 | n/d | 457 | 460 |
 
-Pubblici (al 2026-09-08): like 5.006 · commenti 45 · condivisioni 8
+Pubblici (al 2026-09-25): like 5.006 · commenti 45 · condivisioni 8
 
 ## #15 — Il capocannoniere farà 20 gol... Malen che vada
 
@@ -250,32 +250,32 @@ https://www.instagram.com/p/DcTM8DKDRPc/
 
 | KPI | g1 | g3 | g7 | g30 | overall |
 |-----|---|---|---|---|---|
-| reach | n/d | 83.666 | n/d | n/d | 165.947 |
-| views | 160.000 | 176.047 | n/d | n/d | 309.202 |
-| commenti | n/d | 22 | n/d | n/d | 34 |
-| condivisioni | n/d | 8 | n/d | n/d | 15 |
-| salvati | n/d | 78 | n/d | n/d | 163 |
-| dm | n/d | 146 | n/d | n/d | 254 |
+| reach | n/d | 83.666 | n/d | 167.646 | n/d |
+| views | 160.000 | 176.047 | n/d | 312.642 | n/d |
+| commenti | n/d | 22 | n/d | 36 | n/d |
+| condivisioni | n/d | 8 | n/d | 15 | n/d |
+| salvati | n/d | 78 | n/d | 165 | n/d |
+| dm | n/d | 146 | n/d | 259 | n/d |
 | sondaggi | n/d | 228 | n/d | n/d | 537 |
 
-Pubblici (al 2026-09-08): like 8.809 · commenti 34 · condivisioni 15
+Pubblici (al 2026-09-25): like 8.926 · commenti 36 · condivisioni 15
 
 ## #16 — La classifica cannonieri dopo 3 giornate non ha senso
 
-`estiva` · pubblicato 2026-09-08 · media · mercato: Serie A: Capocannoniere 2026-27
+`estiva` · pubblicato 2026-09-08 · media · mercato: Serie A: Capocannoniere 2026-27 · overall letto il 2026-09-25
 https://www.instagram.com/p/DdBg0xFjZIJ/
 
-| KPI | g1 | g3 | g7 | g30 |
-|-----|---|---|---|---|
-| reach | 94.550 | n/d | n/d | n/d |
-| views | 222.110 | n/d | n/d | n/d |
-| commenti | 19 | n/d | n/d | n/d |
-| condivisioni | 7 | n/d | n/d | n/d |
-| salvati | 90 | n/d | n/d | n/d |
-| dm | 124 | n/d | n/d | n/d |
-| sondaggi | n/d | n/d | n/d | n/d |
+| KPI | g1 | g3 | g7 | g30 | overall |
+|-----|---|---|---|---|---|
+| reach | 94.550 | n/d | n/d | n/d | 121.684 |
+| views | 222.110 | n/d | n/d | n/d | 276.279 |
+| commenti | 19 | n/d | n/d | n/d | 19 |
+| condivisioni | 7 | n/d | n/d | n/d | 8 |
+| salvati | 90 | n/d | n/d | n/d | 102 |
+| dm | 124 | n/d | n/d | n/d | 161 |
+| sondaggi | n/d | n/d | n/d | n/d | n/d |
 
-Pubblici (al 2026-09-09): like 5.138 · commenti 19 · condivisioni 7
+Pubblici (al 2026-09-25): like 6.015 · commenti 19 · condivisioni 8
 
 ## #17 — Chi segnerà di più in Nations tra Kean e Haaland?
 
@@ -284,11 +284,12 @@ https://www.instagram.com/p/DdrTQBVjbLQ/
 
 | KPI | g1 | g3 | g7 | g30 |
 |-----|---|---|---|---|
-| reach | n/d | n/d | n/d | n/d |
-| views | n/d | n/d | n/d | n/d |
-| commenti | n/d | n/d | n/d | n/d |
-| condivisioni | n/d | n/d | n/d | n/d |
-| salvati | n/d | n/d | n/d | n/d |
-| dm | n/d | n/d | n/d | n/d |
+| reach | 39.767 | n/d | n/d | n/d |
+| views | 99.362 | n/d | n/d | n/d |
+| commenti | 22 | n/d | n/d | n/d |
+| condivisioni | 4 | n/d | n/d | n/d |
+| salvati | 16 | n/d | n/d | n/d |
+| dm | 78 | n/d | n/d | n/d |
 | sondaggi | n/d | n/d | n/d | n/d |
 
+Pubblici (al 2026-09-25): like 1.796 · commenti 22 · condivisioni 4

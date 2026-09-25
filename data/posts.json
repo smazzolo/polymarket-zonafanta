@@ -16,7 +16,10 @@
       "10:g3",
       "11:g3",
       "12:g3",
-      "15:g7"
+      "15:g7",
+      "14:g3",
+      "16:g3",
+      "16:g7"
     ]
   },
   "posts": [
@@ -949,32 +952,23 @@
           "sondaggi": 457
         },
         "g30": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
-          "sondaggi": null
+          "reach": 99822,
+          "views": 216805,
+          "commenti": 45,
+          "condivisioni": 8,
+          "salvati": 105,
+          "dm": 154,
+          "sondaggi": 460
         }
       },
-      "overall": {
-        "reach": 99822,
-        "views": 216513,
-        "commenti": 45,
-        "condivisioni": 8,
-        "salvati": 105,
-        "dm": 153,
-        "sondaggi": 460,
-        "aggiornato": "2026-09-08"
-      },
+      "overall": null,
       "pubblici": {
         "like": 5006,
         "commenti": 45,
         "condivisioni": 8,
-        "aggiornato": "2026-09-08"
+        "aggiornato": "2026-09-25"
       },
-      "note": "g1 = lettura del 17/8 ~10:57 (~46h dopo la pubblicazione del 15/8 12:45, quindi in ritardo rispetto alle 24h) — scelta utente 17/8 sera: vale come g1. Box insight: sinistra views 183.977, destra reach 82.344. Repost: feed 6 vs insight 7 (1 minuto dopo) → tenuto 6 (feed, KPI_RULES). Aeroplanino insight '--', dm 149 dal feed. g7 = lettura tardiva del 24/8 14:28 (scadeva 22/8 12:45, ~g9). Box insight: sinistra views 212.026, destra reach 97.335. Aeroplanino insight '--', dm 153 dal feed. Repost 8 (feed e insight concordano). Lettura 8/9 13:05 (giorno 24, g30 scade il 14/9) messa in overall: views 216.513 · reach 99.822 (box destro) · salvati 105 (era 106 in g7, calo IG) · dm 153 = aeroplanino feed (insight '--') · sondaggi 460 ('Risposte' sotto caption) · like 5.006."
+      "note": "g1 = lettura del 17/8 ~10:57 (~46h dopo la pubblicazione del 15/8 12:45, quindi in ritardo rispetto alle 24h) — scelta utente 17/8 sera: vale come g1. Box insight: sinistra views 183.977, destra reach 82.344. Repost: feed 6 vs insight 7 (1 minuto dopo) → tenuto 6 (feed, KPI_RULES). Aeroplanino insight '--', dm 149 dal feed. g7 = lettura tardiva del 24/8 14:28 (scadeva 22/8 12:45, ~g9). Box insight: sinistra views 212.026, destra reach 97.335. Aeroplanino insight '--', dm 153 dal feed. Repost 8 (feed e insight concordano). Lettura 8/9 13:05 (giorno 24, g30 scade il 14/9) messa in overall: views 216.513 · reach 99.822 (box destro) · salvati 105 (era 106 in g7, calo IG) · dm 153 = aeroplanino feed (insight '--') · sondaggi 460 ('Risposte' sotto caption) · like 5.006. g30 = lettura tardiva 25/9 19:25 (scadeva 14/9, plateau): views 216.805 · reach 99.822 (box destro) · salvati 105 · dm 154 = aeroplanino feed (insight '--') · sondaggi 460 ('Risposte') · like 5.006; overall 8/9 azzerato (sostituito dalla g30)."
     },
     {
       "n": 15,
@@ -1026,32 +1020,32 @@
           "sondaggi": null
         },
         "g30": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
+          "reach": 167646,
+          "views": 312642,
+          "commenti": 36,
+          "condivisioni": 15,
+          "salvati": 165,
+          "dm": 259,
           "sondaggi": null
         }
       },
       "overall": {
-        "reach": 165947,
-        "views": 309202,
-        "commenti": 34,
-        "condivisioni": 15,
-        "salvati": 163,
-        "dm": 254,
+        "reach": null,
+        "views": null,
+        "commenti": null,
+        "condivisioni": null,
+        "salvati": null,
+        "dm": null,
         "sondaggi": 537,
         "aggiornato": "2026-09-08"
       },
       "pubblici": {
-        "like": 8809,
-        "commenti": 34,
+        "like": 8926,
+        "commenti": 36,
         "condivisioni": 15,
-        "aggiornato": "2026-09-08"
+        "aggiornato": "2026-09-25"
       },
-      "note": "Pubblicato 21/8 13:12 (ora da shortcode). Quote e volume della nota = screenshot Polymarket in slide 3 (vol. $733); API gamma al 21/8 12:30 dava outcome ancora placeholder ma volume $1.520. Post RIMOSSO da Instagram il 22/8 e RIPUBBLICATO/tornato online: il 25/8 era di nuovo visibile (screen di Nick, 17:31). g1: views 160.000 dettate a voce da Nick il 24/8 (lettura <12h dalla pubblicazione, prima della rimozione); nessuno screen, altri KPI null. g3 = screen 25/8 17:31, tardiva di ~1 giorno (scadeva 24/8 13:12): dm 146 = aeroplanino del feed (insight mostrava '--'), sondaggi 228 = 'Risposte' sotto caption. Nell'insight i like erano 4.594 vs 4.589 del feed (scarto di cache IG, usato il feed per i pubblici). g7 (28/8) e g30 (20/9) di nuovo fotografabili, flag irrecuperabili tolti. Lettura 8/9 13:05 (giorno 18, g7 scaduta il 28/8 mai loggata, g30 scade il 20/9) messa in overall: views 309.202 · reach 165.947 (box destro) · commenti 34 · repost 15 · salvati 163 · dm 254 = aeroplanino feed (insight '--') · sondaggi 537 · like 8.809."
+      "note": "Pubblicato 21/8 13:12 (ora da shortcode). Quote e volume della nota = screenshot Polymarket in slide 3 (vol. $733); API gamma al 21/8 12:30 dava outcome ancora placeholder ma volume $1.520. Post RIMOSSO da Instagram il 22/8 e RIPUBBLICATO/tornato online: il 25/8 era di nuovo visibile (screen di Nick, 17:31). g1: views 160.000 dettate a voce da Nick il 24/8 (lettura <12h dalla pubblicazione, prima della rimozione); nessuno screen, altri KPI null. g3 = screen 25/8 17:31, tardiva di ~1 giorno (scadeva 24/8 13:12): dm 146 = aeroplanino del feed (insight mostrava '--'), sondaggi 228 = 'Risposte' sotto caption. Nell'insight i like erano 4.594 vs 4.589 del feed (scarto di cache IG, usato il feed per i pubblici). g7 (28/8) e g30 (20/9) di nuovo fotografabili, flag irrecuperabili tolti. Lettura 8/9 13:05 (giorno 18, g7 scaduta il 28/8 mai loggata, g30 scade il 20/9) messa in overall: views 309.202 · reach 165.947 (box destro) · commenti 34 · repost 15 · salvati 163 · dm 254 = aeroplanino feed (insight '--') · sondaggi 537 · like 8.809. g30 = lettura tardiva 25/9 19:25 (scadeva 20/9): views 312.642 · reach 167.646 (box destro) · commenti 36 · repost 15 · salvati 165 · dm 259 = aeroplanino feed (insight '--') · sondaggi non visibili (caption fuori screen) · like 8.926; overall 8/9 azzerato tranne sondaggi 537 (ultimo dato letto)."
     },
     {
       "n": 16,
@@ -1110,14 +1104,23 @@
           "sondaggi": null
         }
       },
-      "overall": null,
-      "pubblici": {
-        "like": 5138,
+      "overall": {
+        "reach": 121684,
+        "views": 276279,
         "commenti": 19,
-        "condivisioni": 7,
-        "aggiornato": "2026-09-09"
+        "condivisioni": 8,
+        "salvati": 102,
+        "dm": 161,
+        "sondaggi": null,
+        "aggiornato": "2026-09-25"
       },
-      "note": "Pubblicato 8/9 12:51 (ora da shortcode DdBg0xFjZIJ). 11° post su 12 della collab estiva (penultimo). Quote e volume della nota = screenshot Polymarket in slide 3 (stesso mercato del post 15; Malen passato da 18% a 60%). Slide ricavate dal post pubblico su Instagram (741x928 px, sopra il target di build) perché la cartella fornita conteneva un carosello Marathonbet. A 3 minuti dalla pubblicazione: 251 like, 0 commenti (non caricati come pubblici, lettura non significativa). g1 = screen 9/9 12:21 (~23,5h): views 222.110 · reach 94.550 (box destro) · commenti 19 · repost 7 · salvati 90 · dm 124 = aeroplanino feed (insight '--') · sondaggi null (caption troncata, 'Risposte' non visibile) · like 5.138."
+      "pubblici": {
+        "like": 6015,
+        "commenti": 19,
+        "condivisioni": 8,
+        "aggiornato": "2026-09-25"
+      },
+      "note": "Pubblicato 8/9 12:51 (ora da shortcode DdBg0xFjZIJ). 11° post su 12 della collab estiva (penultimo). Quote e volume della nota = screenshot Polymarket in slide 3 (stesso mercato del post 15; Malen passato da 18% a 60%). Slide ricavate dal post pubblico su Instagram (741x928 px, sopra il target di build) perché la cartella fornita conteneva un carosello Marathonbet. A 3 minuti dalla pubblicazione: 251 like, 0 commenti (non caricati come pubblici, lettura non significativa). g1 = screen 9/9 12:21 (~23,5h): views 222.110 · reach 94.550 (box destro) · commenti 19 · repost 7 · salvati 90 · dm 124 = aeroplanino feed (insight '--') · sondaggi null (caption troncata, 'Risposte' non visibile) · like 5.138. Lettura 25/9 19:25 (giorno 17: g3 dell'11/9 e g7 del 15/9 scadute mai loggate, g30 l'8/10) in overall: views 276.279 · reach 121.684 (box destro) · commenti 19 · repost 8 · salvati 102 · dm 161 = aeroplanino feed (insight '--') · sondaggi di nuovo non visibili · like 6.015."
     },
     {
       "n": 17,
@@ -1143,12 +1146,12 @@
       ],
       "insights": {
         "g1": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
-          "dm": null,
+          "reach": 39767,
+          "views": 99362,
+          "commenti": 22,
+          "condivisioni": 4,
+          "salvati": 16,
+          "dm": 78,
           "sondaggi": null
         },
         "g3": {
@@ -1180,8 +1183,13 @@
         }
       },
       "overall": null,
-      "pubblici": null,
-      "note": "Pubblicato 24/9 18:20 (ora da shortcode DdrTQBVjbLQ). 12° e ULTIMO post della collab estiva secondo Nick (post_previsti = 12). Quote della nota = screenshot Polymarket in slide 3; la slide non riporta il volume e l'API gamma dell'evento restituisce ancora outcome placeholder (Player A/B 50%), volume evento $9.353 al 24/9. La slide 3 porta il disclaimer 'Mercato non disponibile. Contenuto a esclusivo scopo informativo.'. Insights, overall e pubblici null: caricato pochi minuti dopo la pubblicazione."
+      "pubblici": {
+        "like": 1796,
+        "commenti": 22,
+        "condivisioni": 4,
+        "aggiornato": "2026-09-25"
+      },
+      "note": "Pubblicato 24/9 18:20 (ora da shortcode DdrTQBVjbLQ). 12° e ULTIMO post della collab estiva secondo Nick (post_previsti = 12). Quote della nota = screenshot Polymarket in slide 3; la slide non riporta il volume e l'API gamma dell'evento restituisce ancora outcome placeholder (Player A/B 50%), volume evento $9.353 al 24/9. La slide 3 porta il disclaimer 'Mercato non disponibile. Contenuto a esclusivo scopo informativo.'. Insights, overall e pubblici null: caricato pochi minuti dopo la pubblicazione. g1 = screen 25/9 19:19 (~25h): views 99.362 · reach 39.767 (box destro) · commenti 22 · repost 4 · salvati 16 · dm 78 = aeroplanino feed (insight '--') · sondaggi non visibili (caption troncata) · like 1.796."
     }
   ]
 }

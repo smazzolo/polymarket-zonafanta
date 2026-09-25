@@ -1,4 +1,4 @@
-<!-- OUTPUT GENERATO da scripts/build.py il 2026-09-24 — NON MODIFICARE A MANO.
+<!-- OUTPUT GENERATO da scripts/build.py il 2026-09-25 — NON MODIFICARE A MANO.
      La fonte è data/posts.json. -->
 
 # Contesto progetto — ZonaFanta × Polymarket Italia
@@ -13,11 +13,11 @@
 - **Floor aggregato:** 1.500.000 views totali sulla collab
 - **Recupero:** se un floor non è raggiunto a fine ciclo, si aggiungono post fino al 2026-08-30
 
-## Stato floor (al 2026-09-24)
+## Stato floor (al 2026-09-25)
 
-- **Aggregato:** 2.492.563 / 1.500.000 views
-  (**166.2%**, gap 0) — 11/12 post con dato
-- **Reach media per post:** 104.282
+- **Aggregato:** 2.649.826 / 1.500.000 views
+  (**176.7%**, gap 0) — 12/12 post con dato
+- **Reach media per post:** 101.309
 
 | n | titolo | pubblicato | views (overall) | floor 100K |
 |---|--------|-----------|-----------------|------------|
@@ -29,9 +29,9 @@
 | 11 | Haaland è il Majin Bu di questo Mondiale: ora è il cattivo d | 2026-07-06 | 177.683 | ✓ |
 | 12 | Semifinaliste Mondiale | 2026-07-13 | 152.686 | ✓ |
 | 13 | Lamine Yamal ha 19 anni e potrebbe già vincere il suo primo  | 2026-07-20 | 244.862 | ✓ |
-| 14 | -7 giorni alla Serie A: il Como ha il 4% di Scudetto | 2026-08-15 | 216.513 | ✓ |
-| 15 | Il capocannoniere farà 20 gol... Malen che vada | 2026-08-21 | 309.202 | ✓ |
-| 16 | La classifica cannonieri dopo 3 giornate non ha senso | 2026-09-08 | 222.110 | ✓ |
-| 17 | Chi segnerà di più in Nations tra Kean e Haaland? | 2026-09-24 | n/d | ✗ |
+| 14 | -7 giorni alla Serie A: il Como ha il 4% di Scudetto | 2026-08-15 | 216.805 | ✓ |
+| 15 | Il capocannoniere farà 20 gol... Malen che vada | 2026-08-21 | 312.642 | ✓ |
+| 16 | La classifica cannonieri dopo 3 giornate non ha senso | 2026-09-08 | 276.279 | ✓ |
+| 17 | Chi segnerà di più in Nations tra Kean e Haaland? | 2026-09-24 | 99.362 | ✗ |
 
 *I 5 post `storico` (collab precedente) sono tracciati in dashboard ma esclusi dai floor.*
