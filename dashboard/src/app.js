@@ -251,7 +251,9 @@ function render(){
   // Floor: tutto precalcolato da build.py (derivati.floor)
   const F=DERIV.floor;
   const aggCur=F.post_con_dato?F.views_totali:null;
-  const aggPct=isND(aggCur)?0:Math.min(100,F.pct);
+  const aggPct=isND(aggCur)?0:Math.min(100,F.pct);          // barra: piena al 100%
+  const aggReal=isND(aggCur)?0:F.pct;                         // valore vero, anche oltre 100%
+  const pct1=x=>(Math.round(x*10)/10).toString().replace(".",",");
   const postiConDato={length:F.post_con_dato};
   const postiOk={length:F.post_ok};
   const postiSotto={length:F.post_sotto};
@@ -265,13 +267,14 @@ function render(){
           <h3>Floor aggregato — il ciclo raggiunge ${aggGoalLbl} views?</h3>
           <div class="scope">Somma views sui ${nPrev} post previsti · collab estiva</div>
         </div>
-        <span class="mk-chip ${aggPct>=100?'':'neutral'}">${aggPct>=100?'Risolto SÌ':'In corso'}</span>
+        <span class="mk-chip ${aggPct>=100?'':'neutral'}">${aggPct>=100?'Obiettivo superato ✓':'In corso'}</span>
       </div>
       <div class="mk-outcome">
         <div class="mk-name">Progresso verso il floor <small>${fmt(aggCur)} / ${fmt(floorAgg)}</small></div>
-        <div class="mk-pct ${isND(aggCur)?'nd':''}">${isND(aggCur)?'n/d':Math.round(aggPct)+'%'}</div>
+        <div class="mk-pct ${isND(aggCur)?'nd':''}">${isND(aggCur)?'n/d':pct1(aggReal)+'%'}</div>
       </div>
       <div class="bar"><span style="width:${aggPct}%"></span></div>
+      ${aggReal>100?`<div class="mk-over"><b>+${pct1(aggReal-100)}%</b> oltre l'obiettivo · ${fmt(aggCur-floorAgg)} views in più del floor ${aggGoalLbl}</div>`:''}
       <div class="mk-foot"><span class="cur ${isND(aggCur)?'nd':''}">${fmt(aggCur)} views accumulate</span><span>${POSTS.length}/${nPrev} post pubblicati · ${postiConDato.length} con insights</span></div>
     </div>
     <div class="target">
