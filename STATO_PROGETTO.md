@@ -129,3 +129,21 @@ Code residue NON bloccanti:
 - dubbi dati storici in docs/DATI_MANCANTI.md (A2 conferma screen, A4, A5,
   A8) — si chiudono quando l'utente guarda gli screenshot;
 - incollare il testo nuovo della skill nel progetto Claude (fonte viva).
+
+---
+
+## 🏁 Fine collab estiva (25/9/2026)
+
+- 12/12 post pubblicati (ultimo: n17 Kean vs Haaland, 24/9). La collab è
+  finita "in teoria": si aspetta di sapere da Antonio/Polymarket se continua.
+  `meta.scadenza` (30/8), `post_previsti` e floor NON toccati: se riparte,
+  i nuovi parametri li decide Nick.
+- Floor aggregato: **2.649.826 / 1.500.000 views = 176,7%** (+76,7% oltre
+  l'obiettivo, mostrato in dashboard). Floor singolo: 11/12 sopra 100K; n17
+  sotto di 638 views alla sola g1 (in crescita).
+- Letture 25/9: n14 g30 e n15 g30 (tardive), n16 lettura a oggi in overall,
+  n17 g1. dm n8 g30 confermato 178. Irrecuperabili: 10:g3, 11:g3, 12:g3,
+  14:g3, 15:g7, 16:g3, 16:g7.
+- Foto ancora da caricare: n17 g3 (27/9) · n17 g7 (1/10) · n16 g30 (8/10) ·
+  n17 g30 (24/10). Sondaggi n15/n16/n17: serve lo screen del feed con la
+  riga "Risposte".
