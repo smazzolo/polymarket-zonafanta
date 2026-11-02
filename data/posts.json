@@ -19,7 +19,9 @@
       "15:g7",
       "14:g3",
       "16:g3",
-      "16:g7"
+      "16:g7",
+      "17:g3",
+      "17:g7"
     ]
   },
   "posts": [
@@ -1173,23 +1175,23 @@
           "sondaggi": null
         },
         "g30": {
-          "reach": null,
-          "views": null,
-          "commenti": null,
-          "condivisioni": null,
-          "salvati": null,
+          "reach": 53910,
+          "views": 135249,
+          "commenti": 26,
+          "condivisioni": 3,
+          "salvati": 21,
           "dm": null,
           "sondaggi": null
         }
       },
       "overall": null,
       "pubblici": {
-        "like": 1796,
-        "commenti": 22,
-        "condivisioni": 4,
-        "aggiornato": "2026-09-25"
+        "like": 2332,
+        "commenti": 26,
+        "condivisioni": 3,
+        "aggiornato": "2026-11-02"
       },
-      "note": "Pubblicato 24/9 18:20 (ora da shortcode DdrTQBVjbLQ). 12° e ULTIMO post della collab estiva secondo Nick (post_previsti = 12). Quote della nota = screenshot Polymarket in slide 3; la slide non riporta il volume e l'API gamma dell'evento restituisce ancora outcome placeholder (Player A/B 50%), volume evento $9.353 al 24/9. La slide 3 porta il disclaimer 'Mercato non disponibile. Contenuto a esclusivo scopo informativo.'. Insights, overall e pubblici null: caricato pochi minuti dopo la pubblicazione. g1 = screen 25/9 19:19 (~25h): views 99.362 · reach 39.767 (box destro) · commenti 22 · repost 4 · salvati 16 · dm 78 = aeroplanino feed (insight '--') · sondaggi non visibili (caption troncata) · like 1.796."
+      "note": "Pubblicato 24/9 18:20 (ora da shortcode DdrTQBVjbLQ). 12° e ULTIMO post della collab estiva secondo Nick (post_previsti = 12). Quote della nota = screenshot Polymarket in slide 3; la slide non riporta il volume e l'API gamma dell'evento restituisce ancora outcome placeholder (Player A/B 50%), volume evento $9.353 al 24/9. La slide 3 porta il disclaimer 'Mercato non disponibile. Contenuto a esclusivo scopo informativo.'. Insights, overall e pubblici null: caricato pochi minuti dopo la pubblicazione. g1 = screen 25/9 19:19 (~25h): views 99.362 · reach 39.767 (box destro) · commenti 22 · repost 4 · salvati 16 · dm 78 = aeroplanino feed (insight '--') · sondaggi non visibili (caption troncata) · like 1.796. g30 = lettura tardiva 2/11 18:19 (scadeva 24/10, giorno 39): views 135.249 · reach 53.910 (box destro) · commenti 26 · repost 3 (era 4 in g1, calo IG) · salvati 21 · visite al profilo 69 · follow 0 · origine Feed 80,9% · like 2.332 · dm null = screen solo insights (aeroplanino insight '--', manca la feed) · sondaggi non visibili. g3 (27/9) e g7 (1/10) mai fotografate, flag irrecuperabili."
     }
   ]
 }
