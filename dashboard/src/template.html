@@ -25,15 +25,21 @@
   <header>
     <div class="head-main">
       <div class="eyebrow"><span id="brandLogo"></span>ZonaFanta × Polymarket Italia</div>
-      <h1>Performance Feed — Post sponsorizzati Instagram</h1>
-      <div class="sub">Reach-first reporting · Publisher: ZonaFanta · Cliente: Polymarket Italia</div>
+      <h1 data-i18n="h1">Performance Feed — Post sponsorizzati Instagram</h1>
+      <div class="sub" data-i18n="sub">Reach-first reporting · Publisher: ZonaFanta · Cliente: Polymarket Italia</div>
     </div>
     <div class="head-side">
-      <div class="theme-toggle" id="themeToggle">
-        <button data-theme-set="light" class="on" aria-label="Tema chiaro" title="Chiaro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6L19 19M19 5l-1.4 1.4M6.4 17.6L5 19"/></svg></button>
-        <button data-theme-set="dark" aria-label="Tema scuro" title="Scuro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg></button>
+      <div class="toggles">
+      <div class="theme-toggle lang-toggle" id="langToggle" role="group" aria-label="Lingua / Language">
+        <button data-lang-set="it" class="on" aria-label="Italiano" title="Italiano"><span class="flag"><svg viewBox="0 0 3 3" preserveAspectRatio="xMidYMid slice"><rect width="1" height="3" fill="#009246"/><rect x="1" width="1" height="3" fill="#fff"/><rect x="2" width="1" height="3" fill="#CE2B37"/></svg></span></button>
+        <button data-lang-set="en" aria-label="English" title="English"><span class="flag"><svg viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice"><clipPath id="flUkT"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><rect width="60" height="30" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#flUkT)" stroke="#C8102E" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/></svg></span></button>
       </div>
-      <div class="updated">Aggiornato: <b id="lastUpdate">—</b></div>
+      <div class="theme-toggle" id="themeToggle">
+        <button data-theme-set="light" class="on" aria-label="Tema chiaro" title="Chiaro" data-i18n-attr="aria-label:aria_light;title:title_light"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.4 1.4M17.6 17.6L19 19M19 5l-1.4 1.4M6.4 17.6L5 19"/></svg></button>
+        <button data-theme-set="dark" aria-label="Tema scuro" title="Scuro" data-i18n-attr="aria-label:aria_dark;title:title_dark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg></button>
+      </div>
+      </div>
+      <div class="updated"><span data-i18n="updated">Aggiornato:</span> <b id="lastUpdate">—</b></div>
     </div>
   </header>
   <div class="section-label">Performance — Views &amp; Reach</div>
@@ -42,24 +48,24 @@
     <div class="north-inner">
       <div class="filters">
         <div class="filter-card">
-          <div class="sel-label">Sorgenti · clicca per sommare</div>
+          <div class="sel-label" data-i18n="sel_sources">Sorgenti · clicca per sommare</div>
           <div class="pill-row" id="selCollab"></div>
         </div>
         <div class="filter-card">
-          <div class="sel-label">Finestra temporale</div>
+          <div class="sel-label" data-i18n="sel_window">Finestra temporale</div>
           <div class="slider-wrap">
-            <input type="range" id="winSlider" min="0" max="4" step="1" value="0" aria-label="Finestra temporale">
+            <input type="range" id="winSlider" min="0" max="4" step="1" value="0" aria-label="Finestra temporale" data-i18n-attr="aria-label:sel_window">
             <div class="slider-ticks" id="winTicks"></div>
           </div>
         </div>
       </div>
       <div class="total-hero" id="totalHero"></div>
       <div class="collab-split" id="collabSplit"></div>
-      <div class="nstar-sub">Collab estiva · visualizzazioni per finestra temporale (totale e media per post)</div>
+      <div class="nstar-sub" data-i18n="nstar_sub">Collab estiva · visualizzazioni per finestra temporale (totale e media per post)</div>
       <div class="grid-windows" id="windows" data-sec="finestre"></div>
       <div class="drop-wrap">
         <button class="drop-btn" id="dropBtn" aria-expanded="false">
-          <span>Tabella dati compatta</span>
+          <span data-i18n="drop_btn">Tabella dati compatta</span>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>
         </button>
         <div class="drop-table" id="dropTable" hidden></div>
@@ -67,15 +73,15 @@
     </div>
   </div>
   <div class="targets" id="targets" data-sec="floor"></div>
-  <div class="section-label">Timeline collaborazione — scorri</div>
+  <div class="section-label" data-i18n="sec_timeline">Timeline collaborazione — scorri</div>
   <div class="timeline-wrap"><div class="timeline" id="timeline"></div></div>
-  <div class="section-label">Feed post — collab estiva</div>
+  <div class="section-label" data-i18n="sec_feed">Feed post — collab estiva</div>
   <div id="feed" data-sec="posts"></div>
-  <div class="section-label" id="storicoLabel" style="display:none">Collab precedente — blocco storico (chiuso)</div>
-  <div id="storicoNote" class="legend" style="display:none;margin:-6px 0 14px">Post della collaborazione precedente, entrambi i target superati. Esclusi dai calcoli della collab estiva.</div>
+  <div class="section-label" id="storicoLabel" style="display:none" data-i18n="sec_storico">Collab precedente — blocco storico (chiuso)</div>
+  <div id="storicoNote" class="legend" style="display:none;margin:-6px 0 14px" data-i18n="storico_note">Post della collaborazione precedente, entrambi i target superati. Esclusi dai calcoli della collab estiva.</div>
   <div id="storico" data-sec="storico"></div>
-  <footer>Dati popolati esclusivamente da screenshot insights Instagram. Valori non ancora rilevati = <b>n/d</b>. Nessun dato stimato.
-    <div class="legend">Metrica primaria: Reach. Finestre: +24h / +3g / +7g / +30g. I contatori like/commenti/condivisioni sono dati pubblici, non insights.</div>
+  <footer><span data-i18n-html="footer">Dati popolati esclusivamente da screenshot insights Instagram. Valori non ancora rilevati = <b>n/d</b>. Nessun dato stimato.</span>
+    <div class="legend" data-i18n="legend">Metrica primaria: Reach. Finestre: +24h / +3g / +7g / +30g. I contatori like/commenti/condivisioni sono dati pubblici, non insights.</div>
   </footer>
 </div>
 

@@ -147,3 +147,20 @@ Code residue NON bloccanti:
 - Foto ancora da caricare: n17 g3 (27/9) · n17 g7 (1/10) · n16 g30 (8/10) ·
   n17 g30 (24/10). Sondaggi n15/n16/n17: serve lo screen del feed con la
   riga "Risposte".
+
+## 🔄 Aggiornamento 2/11/2026 (collab in pausa fino al TAR del 13/12)
+
+- **n17 g30** caricata dalla lettura tardiva del 2/11 18:19 (scadeva 24/10):
+  views 135.249 · reach 53.910 · commenti 26 · repost 3 (era 4 in g1, calo
+  IG) · salvati 21 · like 2.332. dm null: c'era solo lo screen insights
+  (aeroplanino insight '--'), serve la feed. Irrecuperabili aggiunti:
+  17:g3, 17:g7.
+- Floor singolo: **12/12 sopra 100K** ("Tutti sopra ✓"). Floor aggregato:
+  **2.685.713 / 1.500.000 = 179,0%**.
+- **Bandierina IT/EN** in alto a destra (accanto al tema): traduce tutta
+  l'interfaccia, numeri e date nel formato della lingua. `?lang=en` nel link
+  apre già in inglese; la scelta resta nel browser. Titoli, mercati e note
+  dei post restano in italiano (contenuti originali). Testi in `I18N` in
+  cima a `dashboard/src/app.js`; i testi fissi del template hanno
+  `data-i18n` / `data-i18n-html` / `data-i18n-attr`.
+- Ancora aperti: n16 g30 (8/10) mai loggata · dm n17 g30 · sondaggi n15–n17.
